@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="{{ metadata.language }}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ title or metadata.title }}</title>
+		<meta name="description" content="{{ description or metadata.description }}">
+
+		{#- Atom and JSON feeds included by default #}
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+
+		<link href="get-involved" rel="canonical"/>
+
+		<meta content="en_US" property="og:locale"/>
+		<meta content="fr_CA" property="og:locale:alternate"/>
+		<meta content="website" property="og:type"/>
+
+		<meta content="{{ metadata.title }}" property="og:title"/>
+		<meta content="{{ description or metadata.description }}" property="og:description"/>
+		<meta content="{{ metadata.url }}" property="og:url"/>
+		<meta content="{{ metadata.name }}" property="og:site_name"/>
+		<meta content="summary_large_image" name="twitter:card"/>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" name="viewport"/>
+
+		<link href="wp-content/uploads/2018/10/cropped-logo-ffpf-icon-32x32.png"
+			rel="icon"
+			sizes="32x32"
+		/>
+		<link href="wp-content/uploads/2018/10/cropped-logo-ffpf-icon-192x192.png"
+			rel="icon"
+			sizes="192x192"
+		/>
+		<link href="wp-content/uploads/2018/10/cropped-logo-ffpf-icon-180x180.png"
+			rel="apple-touch-icon"
+		/>
+		<meta
+			content="https://www.ffpf.org/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-270x270.png"
+			name="msapplication-TileImage"
+		/>
+
+		<link href="https://startr.style/style.css" rel="stylesheet"/>
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">{{ metadata.title }}</a>
+
+			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			{{ content | safe }}
+		</main>
+
+		<footer>
+			<div>
+				<div>
+					<ul>
+						<li>
+							<a href="/contact/"> Contact </a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/freedomfrompoverty/">
+                    Follow us on facebook
+                  </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<div>
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/freedomfrompoverty/">
+								<span> Facebook </span>
+							</a>
+						</li>
+					</ul>
+					<div>
+                Copyright © Freedom From Poverty Foundation /
+                BN/Registration#89257 0938 RR001
+                <br/>
+                Contact: Dr.S.D.Dwivedi 514 946-1756
+              </div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</div>
+
+
+</body>
+</html>

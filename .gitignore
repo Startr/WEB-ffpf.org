@@ -1,6 +1,8 @@
 # Apple specific files 
 .DS_Store
 
+
+
 # Logs
 logs
 *.log
@@ -90,7 +92,7 @@ web_modules/
 .next
 out
 
-# Nuxt.js build / generate output
+# Nuxt.js build / generate output and 11ty
 .nuxt
 dist
 
