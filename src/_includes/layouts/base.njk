@@ -41,6 +41,18 @@
 
 		<link href="https://startr.style/style.css" rel="stylesheet"/>
 		<style>
+			nav a{
+				color:#888;
+			}
+			nav li li{
+				padding: 0.5em 1em;
+			}
+
+			nav li li:hover{
+				color:#ed1c24;
+				background-color: #eee;
+			}
+
 			li[style*="--cur:pointer"]:hover > ul {
 				display: block !important;
 				height: auto !important;
@@ -61,51 +73,50 @@
 		<a href="#skip" style="--d:none"Skip to main content</a>
 
 		<header>
-			<a class="home-link" href="/">{{ metadata.title }}</a>
+			<a class="home-link" style="--d:none" href="/">{{ metadata.title }}</a>
 
-			<nav style="--bg:var(--oklch-lch-4); --p:1rem; --m:0 auto; --maxw:var(--size-10);">
+			<nav style="--bg:var(--oklch-lch-4); --m:0 auto; --maxw:var(--size-10);">
 				<a href="/"><img alt="FFPF" data-height-percentage="53" height="113" src=
 				"wp-content/uploads/2018/10/logo-ffpf.webp" width="505"></a>
 
-				<ul style="--d:flex; --jc:space-between; --ai:center; --list:none; --m:0; --p:0;">
-				<li style="--cur:pointer;">About Us
-
+				<ul style="--d:flex; --jc:space-evenly; --ai:center; --list:none; --m:0;">
+				<li style="--cur:pointer;">
+					<a style=" --p:1em" href="/about-us/">About Us</a>
 					<ul style=" --d:none; --list:none; --p:1em; --pt:0.8em;
 						--m:0; --bgc:white; --pos:absolute; 
 						--bt:4px solid #ed1c24">
-					<li>Our History</li>
-					<li>Our Vision</li>
-					<li>Our Values</li>
-					<li>Partnership</li>
-					<li>Board of Directors</li>
+						<li><a href="/about-us#history">Our History</a></li>
+						<li><a href="/about-us#vision">Our Vision
+						<li><a href="/about-us#values">Our Values</li>
+						<li><a href="/about-us#partnership">Partnership</li>
+						<li><a href="/about-us#board">Board of Directors</li>
 					</ul>
 				</li>
 
-				<li style=" --cur:pointer;">Mission
+				<li style=" --cur:pointer;"><a style=" --p:1em" href="/mission">Mission</a>
 					<ul style=" --d:none; --list:none; --p:1em; --pt:0.8em;
 						--m:0; --bgc:white; --pos:absolute; 
 						--bt:4px solid #ed1c24">
-						<li>Upcoming Mission</li>
-						<li>Past Mission</li>
-						<li>Covid-19</li>
-						<li>Sponsorship</li>
+						<li><a href="/mission#upcoming">Upcoming Mission</a></li>
+						<li><a href="/mission#past">Past Mission</a></li>
+						<li><a href="/mission#covid-19">Covid-19</a></li>
+						<li><a href="/mission#sponsorship">Sponsorship</a></li>
 					</ul>
 				</li>
 
-
-				<li style=" --cur:pointer;">Get Involved
+				<li style=" --cur:pointer;"><a style=" --p:1em" href="/get-involved">Get Involved</a>	
 					<ul style=" --d:none; --list:none; --p:1em; --pt:0.8em;
 						--m:0; --bgc:white; --pos:absolute; 
 						--bt:4px solid #ed1c24">
-						<li>Be a Volunteer</li>
-						<li>How to Apply?</li>
-						<li>Fundraising</li>
-						<li>Make a Donation</li>
+						<li><a href="/get-involved#volunteer">Be a Volunteer</a></li>
+						<li><a href="/get-involved#apply">How to Apply?</a></li>
+						<li><a href="/get-involved#fundraising">Fundraising</a></li>
+						<li><a href="/get-involved#make_a_donation">Make a Donation</a></li>
 					</ul>
 				</li>
 
 
-				<li style="--m:0 var(--space-3); --cur:pointer;">Français</li>
+				<li style="--cur:pointer; --p:1em">Français</li>
 				</ul>
 			</nav>
 		</header>
