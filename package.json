@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd src && npx @11ty/eleventy --serve --output=../dist",
     "build": "cd src && npx @11ty/eleventy --output=../dist",
-    "unstylish": "pipenv run ./unstylish.py src/",
+    "unstylish": "pipenv run ./_unstylish.py src/",
     "srvsrc": "cd src && python -m http.server 8000 && cd .."
   },
   "keywords": [],
