@@ -1,6 +1,8 @@
 # Apple specific files 
 .DS_Store
 
+# Ignore our src~ quick backups
+src~
 
 
 # Logs

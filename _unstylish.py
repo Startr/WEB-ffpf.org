@@ -68,6 +68,29 @@ def remove_unwanted_elements_and_add_css(file_path):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(format_prettify(soup))
 
+def process_html_for_njk(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+
+    header_end_index = content.find('</header>')
+    footer_start_index = content.find('<footer')
+
+    # Strip content until the header end and from the footer start
+    if header_end_index != -1 and footer_start_index != -1:
+        content = content[header_end_index + len('</header>'):footer_start_index]
+
+    # Insert the new header
+    new_header = "---\nlayout: layouts/base.njk\neleventyNavigation:\n  key: Home\n  order: 1\nnumberOfLatestPostsToShow: 3\n---\n"
+    content = new_header + content
+
+    # Write back the modified content with a .njk extension
+    new_file_path = os.path.splitext(file_path)[0] + '.njk'
+    with open(new_file_path, 'w', encoding='utf-8') as file:
+        file.write(content)
+
+    # Optionally, remove the original .html file
+    os.remove(file_path)
+
 def process_images(directory, archive_dir):
     for root, dirs, files in os.walk(directory):
         for file_name in files:
@@ -82,7 +105,6 @@ def process_images(directory, archive_dir):
                 convert_to_webp(file_path, output_path)
                 archive_gif(file_path, archive_dir)
             print(f"Processed {file_path}")
-                
 
 def process_archive(archive_path, image_archive_dir):
     process_images(archive_path, image_archive_dir)
@@ -90,7 +112,10 @@ def process_archive(archive_path, image_archive_dir):
         for file_name in files:
             if file_name.endswith('.html'):
                 file_path = os.path.join(root, file_name)
-                remove_unwanted_elements_and_add_css(file_path)
+                if not os.path.basename(root).startswith('_'):  # Check if not in a directory starting with "_"
+                    process_html_for_njk(file_path)
+                else:
+                    remove_unwanted_elements_and_add_css(file_path)
                 print(f"Processed {file_path}")
 
 if __name__ == "__main__":
