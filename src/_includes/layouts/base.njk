@@ -40,62 +40,99 @@
 		/>
 
 		<link href="https://startr.style/style.css" rel="stylesheet"/>
+		<style>
+			li[style*="--cur:pointer"]:hover > ul {
+				display: block !important;
+				height: auto !important;
+				animation: fadeIn 0.6s;
+			}
+
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<a href="#skip" style="--d:none"Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
+			<a class="home-link" href="/">{{ metadata.title }}</a>
 
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 style="--d:none"Top level navigation menu</h2>
-				<ul class="nav">
+			<nav style="--bg:var(--oklch-lch-4); --p:1rem; --m:0 auto; --maxw:var(--size-10);">
+				<a href="/"><img alt="FFPF" data-height-percentage="53" height="113" src=
+				"wp-content/uploads/2018/10/logo-ffpf.webp" width="505"></a>
 
+				<ul style="--d:flex; --jc:space-between; --ai:center; --list:none; --m:0; --p:0;">
+				<li style="--cur:pointer;">About Us
+
+					<ul style=" --d:none; --list:none; --p:1em; --pt:0.8em;
+						--m:0; --bgc:white; --pos:absolute; 
+						--bt:4px solid #ed1c24">
+					<li>Our History</li>
+					<li>Our Vision</li>
+					<li>Our Values</li>
+					<li>Partnership</li>
+					<li>Board of Directors</li>
+					</ul>
+				</li>
+
+				<li style=" --cur:pointer;">Mission
+					<ul style=" --d:none; --list:none; --p:1em; --pt:0.8em;
+						--m:0; --bgc:white; --pos:absolute; 
+						--bt:4px solid #ed1c24">
+						<li>Upcoming Mission</li>
+						<li>Past Mission</li>
+						<li>Covid-19</li>
+						<li>Sponsorship</li>
+					</ul>
+				</li>
+
+
+				<li style=" --cur:pointer;">Get Involved
+					<ul style=" --d:none; --list:none; --p:1em; --pt:0.8em;
+						--m:0; --bgc:white; --pos:absolute; 
+						--bt:4px solid #ed1c24">
+						<li>Be a Volunteer</li>
+						<li>How to Apply?</li>
+						<li>Fundraising</li>
+						<li>Make a Donation</li>
+					</ul>
+				</li>
+
+
+				<li style="--m:0 var(--space-3); --cur:pointer;">Français</li>
 				</ul>
 			</nav>
 		</header>
 
+
 		<main id="skip">
-			{{ content | safe }}
+		{{ content | safe }}
 		</main>
 
-		<footer>
-			<div>
-				<div>
-					<ul>
-						<li>
-							<a href="/contact/"> Contact </a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/freedomfrompoverty/">
-                    Follow us on facebook
-                  </a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div>
-				<div>
-					<ul>
-						<li>
-							<a href="https://www.facebook.com/freedomfrompoverty/">
-								<span> Facebook </span>
-							</a>
-						</li>
-					</ul>
-					<div>
-                Copyright © Freedom From Poverty Foundation /
-                BN/Registration#89257 0938 RR001
-                <br/>
-                Contact: Dr.S.D.Dwivedi 514 946-1756
-              </div>
-				</div>
-			</div>
+		<!-- Footer -->
+		<footer style="--bg:#333; --c:white; --p:20px; ">
+			<p style="--m:10px 0;">
+				<a href="/contact/">Contact</a><br>
+				<a href="https://www.facebook.com/freedomfrompoverty/" 
+				target="_blank" 
+				style="--c:white; --td:none;  --f:block; float:right">
+					Follow us on facebook
+				<b style=" --bg:white;--c:#333;--p:0 0.3em; --m:0.2em">f</b>
+				</a>
+			<p>
+			<p style="--m:10px 0;">
+				Copyright © Freedom From Poverty Foundation<br>
+				Contact: Dr.S.D.Dwivedi 514 946-1756
+			</p>
+			<p href="#contact" style="--m:10px 0;">
+				Contact: Dr.S.D.Dwivedi 514 946-1716
+			</p>
 		</footer>
-	</div>
-</div>
-
-
-</body>
+	</body>
 </html>
