@@ -69,10 +69,11 @@
 			}
 		</style>
 	</head>
-	<body>
+	<body style="--maxw-md: 80rem; --m: auto; flex">
 		<a href="#skip" style="--d:none"Skip to main content</a>
 
-		<header>
+		<header style="	--w-xl: calc(100vw + 1rem);
+    					--t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem));">
 			<a class="home-link" style="--d:none" href="/">{{ metadata.title }}</a>
 
 			<nav style="--bg:var(--oklch-lch-4); --m:0 auto; --maxw:var(--size-10);">
@@ -127,12 +128,15 @@
 		</main>
 
 		<!-- Footer -->
-		<footer style="--bg:#333; --c:white; --p:20px; ">
+		<footer style="	--mt: 2rem;
+						--w-xl: calc(100vw + 1rem);
+    					--t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem));
+						--bg:#333; --c:white; --p:20px; ">
 			<p style="--m:10px 0;">
-				<a href="/contact/">Contact</a><br>
+				<a style="--c:white" href="/contact/">Contact</a><br>
 				<a href="https://www.facebook.com/freedomfrompoverty/" 
 				target="_blank" 
-				style="--c:white; --td:none;  --f:block; float:right">
+				style="--c:white; --td:none;  --f:block; --ft:right; --m:1em">
 					Follow us on facebook
 				<b style=" --bg:white;--c:#333;--p:0 0.3em; --m:0.2em">f</b>
 				</a>
