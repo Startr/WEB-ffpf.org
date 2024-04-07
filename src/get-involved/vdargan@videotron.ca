@@ -33,7 +33,7 @@
 
 <link rel="alternate" type="application/rss+xml" title="FFPF &raquo; Feed" href="/feed/" />
 <link rel="alternate" type="application/rss+xml" title="FFPF &raquo; Comments Feed" href="/comments/feed/" />
-<style id="wp-block-library-theme-inline-css" type="text/css">
+<style id="/wp-block-library-theme-inline-css" type="text/css">
 .wp-block-audio figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio figcaption{color:hsla(0,0%,100%,.65)}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed figcaption{color:hsla(0,0%,100%,.65)}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:hsla(0,0%,100%,.65)}.wp-block-image figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-image figcaption{color:hsla(0,0%,100%,.65)}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote cite,.wp-block-pullquote footer,.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote.has-text-align-right{border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote.has-text-align-center{border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote.is-style-plain{border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video figcaption{color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video figcaption{color:hsla(0,0%,100%,.65)}.wp-block-video{margin:0 0 1em}.wp-block-template-part.has-background{margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
 </style>
 <style id="global-styles-inline-css" type="text/css">
@@ -125,19 +125,19 @@ var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":
 /* ]]> */
 </script>
 <script type="text/javascript" src="/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.7.0" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
-<script type="text/javascript" src="/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script type="text/javascript" src="/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="/wp-polyfill-inert-js"></script>
 <script type="text/javascript" src="/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
-<script type="text/javascript" src="/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
-<script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
-<script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
-<script type="text/javascript" id="wp-i18n-js-after">
+<script type="text/javascript" src="/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="/wp-polyfill-js"></script>
+<script type="text/javascript" src="/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="/wp-hooks-js"></script>
+<script type="text/javascript" src="/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="/wp-i18n-js"></script>
+<script type="text/javascript" id="/wp-i18n-js-after">
 /* <![CDATA[ */
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 /* ]]> */
 </script>
 <script type="text/javascript" id="give-js-extra">
 /* <![CDATA[ */
-var give_global_vars = {"ajaxurl":"https:\/\/www.ffpf.org\/wp-admin\/admin-ajax.php","checkout_nonce":"1cf865ec9b","currency":"CAD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Please select a payment method.","bad_minimum":"The minimum custom donation amount for this form is","bad_maximum":"The maximum custom donation amount for this form is","general_loading":"Loading\u2026","purchase_loading":"Please Wait\u2026","textForOverlayScreen":"<h3>Processing\u2026<\/h3><p>This will only take a second!<\/p>","number_decimals":"2","is_test_mode":"","give_version":"3.6.1","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Please select payment mode.","give_first":"Please enter your first name.","give_last":"Please enter your last name.","give_email":"Please enter a valid email address.","give_user_login":"Invalid email address or username.","give_user_pass":"Enter a password.","give_user_pass_confirm":"Enter the password confirmation.","give_agree_to_terms":"You must agree to the terms and conditions."},"confirm_email_sent_message":"Please check your email and click on the link to access your complete donation history.","ajax_vars":{"ajaxurl":"https:\/\/www.ffpf.org\/wp-admin\/admin-ajax.php","ajaxNonce":"8bbc9d0d89","loading":"Loading","select_option":"Please select an option","default_gateway":"paypal","permalinks":"1","number_decimals":2},"cookie_hash":"12393d8542888e3c4f0dca9290c895c8","session_nonce_cookie_name":"wp-give_session_reset_nonce_12393d8542888e3c4f0dca9290c895c8","session_cookie_name":"wp-give_session_12393d8542888e3c4f0dca9290c895c8","delete_session_nonce_cookie":"0"};
+var give_global_vars = {"ajaxurl":"https:\/\/www.ffpf.org\/wp-admin\/admin-ajax.php","checkout_nonce":"1cf865ec9b","currency":"CAD","currency_sign":"$","currency_pos":"before","thousands_separator":",","decimal_separator":".","no_gateway":"Please select a payment method.","bad_minimum":"The minimum custom donation amount for this form is","bad_maximum":"The maximum custom donation amount for this form is","general_loading":"Loading\u2026","purchase_loading":"Please Wait\u2026","textForOverlayScreen":"<h3>Processing\u2026<\/h3><p>This will only take a second!<\/p>","number_decimals":"2","is_test_mode":"","give_version":"3.6.1","magnific_options":{"main_class":"give-modal","close_on_bg_click":false},"form_translation":{"payment-mode":"Please select payment mode.","give_first":"Please enter your first name.","give_last":"Please enter your last name.","give_email":"Please enter a valid email address.","give_user_login":"Invalid email address or username.","give_user_pass":"Enter a password.","give_user_pass_confirm":"Enter the password confirmation.","give_agree_to_terms":"You must agree to the terms and conditions."},"confirm_email_sent_message":"Please check your email and click on the link to access your complete donation history.","ajax_vars":{"ajaxurl":"https:\/\/www.ffpf.org\/wp-admin\/admin-ajax.php","ajaxNonce":"8bbc9d0d89","loading":"Loading","select_option":"Please select an option","default_gateway":"paypal","permalinks":"1","number_decimals":2},"cookie_hash":"12393d8542888e3c4f0dca9290c895c8","session_nonce_cookie_name":"/wp-give_session_reset_nonce_12393d8542888e3c4f0dca9290c895c8","session_cookie_name":"/wp-give_session_12393d8542888e3c4f0dca9290c895c8","delete_session_nonce_cookie":"0"};
 var giveApiSettings = {"root":"https:\/\/www.ffpf.org\/wp-json\/give-api\/v2\/","rest_base":"give-api\/v2"};
 /* ]]> */
 </script>
@@ -262,7 +262,7 @@ Poverty Foundation</h1></div>
 <div class="et_pb_row et_pb_row_2 et_pb_row_fullwidth et_pb_equal_columns et_pb_gutters1">
 <div class="et_pb_column et_pb_column_1_3 et_pb_column_3  et_pb_css_mix_blend_mode_passthrough">
 <div class="et_pb_module et_pb_image et_pb_image_0">
-<span class="et_pb_image_wrap "><img fetchpriority="high" decoding="async" width="621" height="282" src="/wp-content/uploads/2018/10/icon-1.png" alt title srcset="/wp-content/uploads/2018/10/icon-1.png 621w, /wp-content/uploads/2018/10/icon-1-600x272.png 600w, /wp-content/uploads/2018/10/icon-1-300x136.png 300w" sizes="(max-width: 621px) 100vw, 621px" class="wp-image-35" /></span>
+<span class="et_pb_image_wrap "><img fetchpriority="high" decoding="async" width="621" height="282" src="/wp-content/uploads/2018/10/icon-1.png" alt title srcset="/wp-content/uploads/2018/10/icon-1.png 621w, /wp-content/uploads/2018/10/icon-1-600x272.png 600w, /wp-content/uploads/2018/10/icon-1-300x136.png 300w" sizes="(max-width: 621px) 100vw, 621px" class="/wp-image-35" /></span>
 </div><div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_center et_pb_bg_layout_dark">
 <div class="et_pb_text_inner"><h1>Donate</h1>
 <p><strong>We need your help!</strong><br/>
@@ -270,7 +270,7 @@ let&#8217;s help the needy to lead a self-dependent life</div>
 </div><div class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module ">
 <a class="et_pb_button et_pb_button_0 et_pb_bg_layout_dark" href="/donate/">Donate now</a>
 </div><div class="et_pb_module et_pb_image et_pb_image_1">
-<span class="et_pb_image_wrap "><img decoding="async" width="608" height="292" src="/wp-content/uploads/2018/10/icon-2.png" alt title srcset="/wp-content/uploads/2018/10/icon-2.png 608w, /wp-content/uploads/2018/10/icon-2-600x288.png 600w, /wp-content/uploads/2018/10/icon-2-300x144.png 300w" sizes="(max-width: 608px) 100vw, 608px" class="wp-image-34" /></span>
+<span class="et_pb_image_wrap "><img decoding="async" width="608" height="292" src="/wp-content/uploads/2018/10/icon-2.png" alt title srcset="/wp-content/uploads/2018/10/icon-2.png 608w, /wp-content/uploads/2018/10/icon-2-600x288.png 600w, /wp-content/uploads/2018/10/icon-2-300x144.png 300w" sizes="(max-width: 608px) 100vw, 608px" class="/wp-image-34" /></span>
 </div>
 </div><div class="et_pb_column et_pb_column_2_3 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
 <div class="et_pb_module et_pb_divider_1 et_pb_space et_pb_divider_hidden"><div class="et_pb_divider_internal"></div></div><div class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_center et_pb_bg_layout_light">
@@ -340,8 +340,8 @@ let&#8217;s help the needy to lead a self-dependent life</div>
 		})();
 	</script>
 <link rel="stylesheet" id="mediaelement-css" href="/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.17" type="text/css" media="all" />
-<link rel="stylesheet" id="wp-mediaelement-css" href="/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.4.3" type="text/css" media="all" />
-<link rel="stylesheet" id="wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3" type="text/css" media="none" onload="media='all'" />
+<link rel="stylesheet" id="/wp-mediaelement-css" href="/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.4.3" type="text/css" media="all" />
+<link rel="stylesheet" id="/wp-block-library-css" href="/wp-includes/css/dist/block-library/style.min.css?ver=6.4.3" type="text/css" media="none" onload="media='all'" />
 <script type="text/javascript" id="superpwa-register-sw-js-extra">
 /* <![CDATA[ */
 var superpwa_sw = {"url":"\/superpwa-sw.js?1711970947","disable_addtohome":"0","enableOnDesktop":"","offline_message":"1","offline_message_txt":"You are currently offline."};
@@ -387,6 +387,6 @@ var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File",
 var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.4.3" id="wp-mediaelement-js"></script>
+<script type="text/javascript" src="/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.4.3" id="/wp-mediaelement-js"></script>
 </body>
 </html>
