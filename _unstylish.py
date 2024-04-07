@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import re
 import os
 import argparse
 from PIL import Image
@@ -91,6 +92,30 @@ def process_html_for_njk(file_path):
     # Optionally, remove the original .html file
     os.remove(file_path)
 
+def process_html_and_save(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()  # Reads the entire content of the file
+
+    # Identifies the positions of the </header> closing tag and the <footer> opening tag
+    header_end_index = content.find('</header>')
+    footer_start_index = content.find('<footer')
+
+    # If both tags are found, the content outside these tags is stripped
+    if header_end_index != -1 and footer_start_index != -1:
+        content = content[header_end_index + len('</header>'):footer_start_index]
+
+    # Prepends a predefined header to the stripped content
+    new_header = "---\nlayout: layouts/base.njk\neleventyNavigation:\n  key: Home\n  order: 1\nnumberOfLatestPostsToShow: 3\n---\n"
+    content = new_header + content
+
+    # Updated regex pattern to exclude specific media tags (img, audio, video)
+    empty_tags_pattern = re.compile(r'<(?!img|audio|video)(\w+)(\s+[^>]*)?>\s*</\1>|<(?!img|audio|video|iframe)(\w+)(\s+[^>]*)?/>')
+    content = re.sub(empty_tags_pattern, '', content)  # Remove empty tags except for media tags
+
+    # Overwrites the original file with the modified content
+    with open(file_path, 'w', encoding='utf-8') as file:
+        file.write(content)
+
 def process_images(directory, archive_dir):
     for root, dirs, files in os.walk(directory):
         for file_name in files:
@@ -113,7 +138,7 @@ def process_archive(archive_path, image_archive_dir):
             if file_name.endswith('.html'):
                 file_path = os.path.join(root, file_name)
                 if not os.path.basename(root).startswith('_'):  # Check if not in a directory starting with "_"
-                    process_html_for_njk(file_path)
+                    process_html_and_save(file_path)
                 else:
                     remove_unwanted_elements_and_add_css(file_path)
                 print(f"Processed {file_path}")
