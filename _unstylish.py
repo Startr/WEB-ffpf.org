@@ -81,11 +81,11 @@ def process_html_for_njk(file_path):
         content = content[header_end_index + len('</header>'):footer_start_index]
 
     # Insert the new header
-    new_header = "---\nlayout: layouts/base.njk\neleventyNavigation:\n  key: Home\n  order: 1\nnumberOfLatestPostsToShow: 3\n---\n"
+    new_header = "---\nlayout: layouts/base.html\neleventyNavigation:\n  key: Home\n  order: 1\nnumberOfLatestPostsToShow: 3\n---\n"
     content = new_header + content
 
-    # Write back the modified content with a .njk extension
-    new_file_path = os.path.splitext(file_path)[0] + '.njk'
+    # Write back the modified content with a .html extension
+    new_file_path = os.path.splitext(file_path)[0] + '.html'
     with open(new_file_path, 'w', encoding='utf-8') as file:
         file.write(content)
 
@@ -105,7 +105,7 @@ def process_html_and_save(file_path):
         content = content[header_end_index + len('</header>'):footer_start_index]
 
     # Prepends a predefined header to the stripped content
-    new_header = "---\nlayout: layouts/base.njk\neleventyNavigation:\n  key: Home\n  order: 1\nnumberOfLatestPostsToShow: 3\n---\n"
+    new_header = "---\nlayout: layouts/base.html\neleventyNavigation:\n  key: Home\n  order: 1\nnumberOfLatestPostsToShow: 3\n---\n"
     content = new_header + content
 
     # Updated regex pattern to exclude specific media tags (img, audio, video)
