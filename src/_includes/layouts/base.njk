@@ -20,6 +20,7 @@
 		<meta content="{{ description or metadata.description }}" property="og:description"/>
 		<meta content="{{ metadata.url }}" property="og:url"/>
 		<meta content="{{ metadata.name }}" property="og:site_name"/>
+		<meta content="{{ metadata.big_image| default("https://www.ffpf.org/wp-content/uploads/2018/10/logo-ffpf.webp") }}" property="og:image"/>
 		<meta content="summary_large_image" name="twitter:card"/>
 		<meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" name="viewport"/>
 
@@ -77,8 +78,9 @@
 			<a class="home-link" style="--d:none" href="/">{{ metadata.title }}</a>
 
 			<nav style="--bg:var(--oklch-lch-4); --m:0 auto; --maxw:var(--size-10);">
-				<a href="/"><img alt="FFPF" data-height-percentage="53" height="113" src=
-				"/wp-content/uploads/2018/10/logo-ffpf.webp" width="505"></a>
+				<a href="/">
+					<img alt="FFPF" src="/wp-content/uploads/2018/10/logo-ffpf.webp" 
+				 		style="--p:0.6em"></a>
 
 				<ul style="--d:flex; --jc:space-evenly; --ai:center; --list:none; --m:0;">
 				<li style="--cur:pointer;">
@@ -122,9 +124,21 @@
 			</nav>
 		</header>
 
-
 		<main id="skip">
+			<section>
+				<h1>{{ title }}</h1>
+				<div class="accent primary" style="--mb: 1.5rem; --pos: relative; --pt: 75%">
+        <div style="--pos: absolute; --inset: 0"><img alt="Aliquam erat volutpat" src="https://source.unsplash.com/random/300x400" style="--objf: cover; --h: 100%; --w: 100%"></div>
+        <div style="--p: 1rem">
+          <button aria-label="Sample Button" class="white" style="--w: 100%">Sign in</button>
+          <button aria-label="Sample Button" style="--w: 100%; --bc: var(--primary)">Create
+              an account</button>
+        </div>
+      </div>
+	  </section>
+	  <section>
 		{{ content | safe }}
+		</section>
 		</main>
 
 		<!-- Footer -->
