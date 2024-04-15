@@ -11,6 +11,7 @@ python-magic = "*"
 lxml = "*"
 pillow = "*"
 beautifulsoup4 = "*"
+html2text = "*"
 
 [dev-packages]
 
