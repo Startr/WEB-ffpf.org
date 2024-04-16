@@ -1,11 +1,19 @@
 ---
+title: 
+     surgery Archives - FFPF
+    
+og_title: 
+     surgery Archives - FFPF
+    
+og_description: No Description
+og_image: No Image
 layout: layouts/base.html
 ---
-heal Archives - FFPF  https://www.ffpf.org/sponsorship-tag/heal/  Freedom from
-poverty foundation  Fri, 18 Oct 2019 00:04:15 +0000  en-CA  hourly  1
-https://wordpress.org/?v=6.4.3  https://www.ffpf.org/wp-
-content/uploads/2018/10/cropped-logo-ffpf-icon-32x32.png  heal Archives - FFPF
-https://www.ffpf.org/sponsorship-tag/heal/  32  32  Sangita
+surgery Archives - FFPF  https://www.ffpf.org/sponsorship-category/surgery/
+Freedom from poverty foundation  Fri, 18 Oct 2019 00:04:15 +0000  en-CA
+hourly  1  https://wordpress.org/?v=6.4.3  https://www.ffpf.org/wp-
+content/uploads/2018/10/cropped-logo-ffpf-icon-32x32.png  surgery Archives -
+FFPF  https://www.ffpf.org/sponsorship-category/surgery/  32  32  Sangita
 https://www.ffpf.org/sponsorship/sangita/  Thu, 17 Oct 2019 23:41:22 +0000
 https://www.ffpf.org/?post_type=product&p=1026  Sangita is a 60-year old
 woman. She has a cyst on her left hand, which continues to increase in size.

@@ -1,12 +1,17 @@
 ---
+title: surgery Archives - FFPF    
+og_title: surgery Archives - FFPF
+og_description: surgery Archives - FFPF
+og_image: No Image
 layout: layouts/base.html
 ---
 
-[ Home ](/en/get-involved) / Products tagged “burn”
 
-#  burn
+[ Home ](/en/get-involved) / surgery
 
-Showing all 20 results
+#  surgery
+
+Showing all 5 results
 
 Default sorting  Sort by popularity  Sort by latest  Sort by price: low to
 high  Sort by price: high to low
@@ -37,5 +42,11 @@ high  Sort by price: high to low
   * [ November 2018 ]( /en/article/2018/11/)
   * [ May 2018 ]( /en/article/2018/05/)
 
+  * [ Contact ](/en/contact/)
+  * [ Follow us on facebook ](https://www.facebook.com/freedomfrompoverty/)
 
+  * [ Facebook  ](https://www.facebook.com/freedomfrompoverty/)
+
+Copyright © Freedom From Poverty Foundation / BN/Registration#89257 0938 RR001  
+Contact: Dr.S.D.Dwivedi 514 946-1756
 
