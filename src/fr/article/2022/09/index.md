@@ -16,21 +16,6 @@ layout: layouts/base.html
 [ <img src='/wp-content/uploads/2018/10/logo-ffpf.webp' width='505'
 height='113' alt='FFPF' /> ](/en/sponsorship-tag/surgery/)
 
-  * [ À propos ](/fr/a-propos)
-    * [ Notre histoire ](/fr/a-propos#histoire)
-    * [ Vision ](/fr/a-propos#vision)
-    * [ Les valeurs ](/fr/a-propos#valeurs)
-    * [ Conseil administratif ](/fr/a-propos#conseil)
-  * [ Mission ](/fr/mission)
-    * [ Mission à venir ](/fr/mission#venir)
-    * [ Missions Passées ](/fr/mission#passées)
-    * [ Covid-19 ](/fr/covid-19)
-  * [ Parrainage ](/fr/parrainage/)
-  * [ S’impliquer ](/fr/simpliquer)
-    * [ Devenez bénévole ](/fr/simpliquer#benevole)
-    * [ Qui peut postuler? ](/fr/simpliquer#inscrire)
-    * [ Collecte de fond ](/fr/simpliquer#collecte)
-  * [ Donner ](/donner)
   * [ English ]( /en/article/2022/09/)
 
 [ ]( )
