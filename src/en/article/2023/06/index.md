@@ -13,25 +13,7 @@ links:
       fr: null
 layout: layouts/base.html
 ---
-[ <img src='/wp-content/uploads/2018/10/logo-ffpf.webp' width='505'
-height='113' alt='FFPF' /> ](/en/get-involved)
 
-  * [ About Us ](/en/about-us)
-    * [ Our history ](/en/about-us#history)
-    * [ Our vision ](/en/about-us#vision)
-    * [ Our values ](/en/about-us#values)
-    * [ Partnership ](/en/about-us#partnership)
-    * [ Board of directors ](/en/about-us#board)
-  * [ Mission ](/en/mission)
-    * [ Up coming mission ](/en/mission#up)
-    * [ Past mission ](/en/mission#past)
-    * [ Covid-19 ]( /en/article/2020/covid-19-en/)
-  * [ Sponsorship ](/en/sponsorship)
-  * [ Get Involved ](/en/get-involved)
-    * [ Be a volunteer ](/en/get-involved#apply)
-      * [ How to apply? ](/en/get-involved#apply)
-    * [ Fundraising ](/en/get-involved#collecte)
-  * [ Make a donation ](/en/donate/)
   * [ Français ]( /fr/article/2023/06/)
 
 [ ]( )
