@@ -7,29 +7,7 @@ og_description: Sangita is a 60-year old woman. She has a cyst on her left hand,
 og_image: https://www.ffpf.org/wp-content/uploads/2019/10/Capture-d’écran-2019-10-17-à-19.42.19.png
 layout: layouts/base.html
 ---
-[ ](/en/get-involved)
 
-  * [ About Us ](/en/about-us)
-    * [ Our history ](/en/about-us#history)
-    * [ Our vision ](/en/about-us#vision)
-    * [ Our values ](/en/about-us#values)
-    * [ Partnership ](/en/about-us#partnership)
-    * [ Board of directors ](/en/about-us#board)
-  * [ Mission ](/en/mission)
-    * [ Up coming mission ](/en/mission#up)
-    * [ Past mission ](/en/mission#past)
-    * [ Covid-19 ]( /en/article/2020/covid-19-en/)
-  * [ Sponsorship ](/en/sponsorship)
-  * [ Get Involved ](/en/get-involved)
-    * [ Be a volunteer ](/en/get-involved#apply)
-      * [ How to apply? ](/en/get-involved#apply)
-    * [ Fundraising ](/en/get-involved#collecte)
-  * [ Make a donation ](/en/donate/)
-  * [ Français ](/fr/sponsorship-tag/surgery/)
-
-[ ]( )
-
-Select Page
 
 [ Home ](/en/get-involved) / [ surgery ](/en/sponsorship-category/surgery/) /
 Sangita
