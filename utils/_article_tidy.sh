@@ -6,30 +6,28 @@ if [ "$#" -ne 1 ]; then
     exit 1
 fi
 
-# The first command line argument is the base directory containing 'en' and 'fr' folders
-BASE_DIR=$1
+# Remove trailing slash from the base directory if present and assign to BASE_DIR
+BASE_DIR="${1%/}"
 
 # Loop over each language directory
 for lang in "$BASE_DIR"/{en,fr}; do
     # Find all index.md files within the language directory
     find "$lang" -type f -name "index.md" | while read -r filepath; do
         # Extract directory components
-        # Path format assumed: /lang/month/day/articletitle/index.md
-        year=$(echo "$filepath" | cut -d'/' -f4)
-        month=$(echo "$filepath" | cut -d'/' -f5)
-        day=$(echo "$filepath" | cut -d'/' -f6)
-        articletitle=$(echo "$filepath" | cut -d'/' -f7)
+        year=$(echo "$filepath" | cut -d'/' -f5)
+        month=$(echo "$filepath" | cut -d'/' -f6)
+        day=$(echo "$filepath" | cut -d'/' -f7)
+        articletitle=$(echo "$filepath" | cut -d'/' -f8)
 
-        # Define new file path without creating a new directory
+        # Define new file path based on the original title directory
         newfile="$lang/article/$year/$month/$day/${articletitle}.md"
 
         # Move file to the new location
         mv "$filepath" "$newfile"
 
-        # Remove the old directory potentially containing extra content like 'feed'
-        # Be very careful with this command to avoid deleting unintended data
+        # Attempt to remove the old directory, it will fail silently if not empty
         olddir=$(dirname "$filepath")
-        rm -rf "$olddir"
+        rmdir --ignore-fail-on-non-empty "$olddir"
     done
 done
 
