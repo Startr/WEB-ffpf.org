@@ -6,21 +6,34 @@ import re
 from bs4 import BeautifulSoup
 
 def convert_html_to_markdown(html_content):
-    """Convert HTML content to Markdown, preserving 11ty front matter."""
+    """Convert HTML content to Markdown, preserving 11ty front matter and images with links."""
     text_maker = html2text.HTML2Text()
     text_maker.ignore_links = False
-    text_maker.ignore_images = True
+    text_maker.ignore_images = False  # Ensure images are included
+    text_maker.images_to_alt = True  # Uses alt text if images cannot be displayed
+    text_maker.images_with_size = True  # Includes width and height attributes if available
+    text_maker.inline_links = True  # Ensures links are kept inline, important for image links
     markdown_content = text_maker.handle(html_content)
     return markdown_content
 
 def extract_and_include_meta(html_content):
-    """Extract title and social share meta information and format as YAML for 11ty front matter."""
+    """Extract title, social share meta information including detailed image metadata and format as YAML for 11ty front matter."""
     soup = BeautifulSoup(html_content, 'html.parser')
     title = soup.find('title').text if soup.find('title') else 'No Title'
     og_title = soup.find('meta', property='og:title')['content'] if soup.find('meta', property='og:title') else title
     og_description = soup.find('meta', property='og:description')['content'] if soup.find('meta', property='og:description') else 'No Description'
     og_image = soup.find('meta', property='og:image')['content'] if soup.find('meta', property='og:image') else 'No Image'
-    return f"---\ntitle: {title}\nog_title: {og_title}\nog_description: {og_description}\nog_image: {og_image}\nlayout: layouts/base.html\n---"
+    og_image_width = soup.find('meta', property='og:image:width')['content'] if soup.find('meta', property='og:image:width') else 'Unknown Width'
+    og_image_height = soup.find('meta', property='og:image:height')['content'] if soup.find('meta', property='og:image:height') else 'Unknown Height'
+    return f"""---
+title: {title}
+og_title: {og_title}
+og_description: {og_description}
+og_image: {og_image}
+og_image_width: {og_image_width}
+og_image_height: {og_image_height}
+layout: layouts/base.html
+---"""
 
 def extract_and_preserve_front_matter(html_content):
     """Extract 11ty front matter and return it along with the rest of the content, including new meta data."""
@@ -31,7 +44,6 @@ def extract_and_preserve_front_matter(html_content):
         content_without_front_matter = re.sub(front_matter_pattern, '', html_content, count=1)
         return front_matter, content_without_front_matter
     else:
-        # Extract meta information and create default front matter with it
         default_front_matter = extract_and_include_meta(html_content)
         return default_front_matter, html_content
 
