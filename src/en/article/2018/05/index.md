@@ -51,11 +51,5 @@ the region of Jamkhed, India....
   * [ November 2018 ](/11/)
   * [ May 2018 ](index.html)
 
-  * [ Contact ](/en/contact/)
-  * [ Follow us on facebook ](https://www.facebook.com/freedomfrompoverty/)
 
-  * [ Facebook  ](https://www.facebook.com/freedomfrompoverty/)
-
-Copyright © Freedom From Poverty Foundation / BN/Registration#89257 0938 RR001  
-Contact: Dr.S.D.Dwivedi 514 946-1756
 
