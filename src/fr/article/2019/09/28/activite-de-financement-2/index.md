@@ -3,7 +3,7 @@ title:
      ACTIVITÉ DE FINANCEMENT - FFPF
     
 og_title: ACTIVITÉ DE FINANCEMENT - FFPF
-og_description: Souper bénéfice – Fondation LIBÉRATION DE LA PAUVRETÉ 2 Novembre – 7985 boul. Maurice-Duplessis, Montréal Détails Venez découvrir des gens dévoués qui travaillent à forger un futur meilleur pour les pauvres de la région de Jamkhed, en Inde. Participez à cette inoubliable soirée imprégnée de la culture indienne. Vous y savourerez la gastronomie régionale, profiterez […]
+og_description: Souper bénéfice – Fondation LIBÉRATION DE LA PAUVRETÉ 2 Novembre – 7985 boul. Maurice-Duplessis, Montréal Détails Venez découvrir des gens dévoués qui travaillent à forger un futur meilleur pour les pauvres de la région de Jamkhed, en Inde. Participez à cette inoubliable soirée imprégnée de la culture indienne. Vous y savourerez la gastronomie régionale, profiterez
 og_image: https://www.ffpf.org/wp-content/uploads/2018/10/Family-04.jpeg
 og_image_width: 1000
 og_image_height: 667

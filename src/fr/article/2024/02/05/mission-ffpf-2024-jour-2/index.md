@@ -3,7 +3,7 @@ title:
      FFPF Mission Jour 2 2024 - FFPF
     
 og_title: FFPF Mission Jour 2 2024 - FFPF
-og_description: L’alarme a sonné aux petites heures du matin pour une dizaine de professionnels canadiens qui souhaitent débuter leur journée avec une marche santé. Ensemble, ils ont parcouru les petits sentiers adjacents de la ville de Jamkhed. Ils se sont dégourdis et ont pu assister à un magnifique lever du soleil. Rien de mieux pour débuter […]
+og_description: L’alarme a sonné aux petites heures du matin pour une dizaine de professionnels canadiens qui souhaitent débuter leur journée avec une marche santé. Ensemble, ils ont parcouru les petits sentiers adjacents de la ville de Jamkhed. Ils se sont dégourdis et ont pu assister à un magnifique lever du soleil. Rien de mieux pour débuter
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_2673-1-300x200.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height

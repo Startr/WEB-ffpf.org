@@ -3,7 +3,7 @@ title:
      2019 Fundraising Dinner – Freedom from Poverty Foundation - FFPF
     
 og_title: 2019 Fundraising Dinner – Freedom from Poverty Foundation - FFPF
-og_description: November 2nd – 7985 Maurice-Duplessis Blvd., Montreal Details Come to discover the dedicated, compassionate people who are working to forge a better future for the poor in the region of Jamkhed, India. Join us for this unforgettable evening steeped in Indian culture. You will enjoy regional cuisine with an open bar and dance to the […]
+og_description: November 2nd – 7985 Maurice-Duplessis Blvd., Montreal Details Come to discover the dedicated, compassionate people who are working to forge a better future for the poor in the region of Jamkhed, India. Join us for this unforgettable evening steeped in Indian culture. You will enjoy regional cuisine with an open bar and dance to the
 og_image: https://www.ffpf.org/wp-content/uploads/2018/10/Family-04.jpeg
 og_image_width: 1000
 og_image_height: 667

@@ -3,7 +3,7 @@ title:
      FFPF Mission Jour 3 2024 - FFPF
     
 og_title: FFPF Mission Jour 3 2024 - FFPF
-og_description: Nouveau jour est également synonyme de nouveaux défis à relever. Le début de journée est le même que celui qui l’a précédé et la marche matinale permet de commencer la journée sur le bon pied. l’équipe canadienne de professionnels de la santé s’est regroupée pour un post-mortem de leur première journée, leur permettant ainsi de […]
+og_description: Nouveau jour est également synonyme de nouveaux défis à relever. Le début de journée est le même que celui qui l’a précédé et la marche matinale permet de commencer la journée sur le bon pied. l’équipe canadienne de professionnels de la santé s’est regroupée pour un post-mortem de leur première journée, leur permettant ainsi de
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_3074-1-300x200.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height

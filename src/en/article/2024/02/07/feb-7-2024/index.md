@@ -3,7 +3,7 @@ title:
      Feb 7 2024 - FFPF
     
 og_title: Feb 7 2024 - FFPF
-og_description: Today is the 4th day of the FFPF camp at the CRHP Jamkhed, already halfway through the camp and many patients have received the care required for a better quality of life. The Canadien team of healthcare professionals are continually adapting to their new environment, each one is extremely satisfied and blessed to be making […]
+og_description: Today is the 4th day of the FFPF camp at the CRHP Jamkhed, already halfway through the camp and many patients have received the care required for a better quality of life. The Canadien team of healthcare professionals are continually adapting to their new environment, each one is extremely satisfied and blessed to be making
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_3302-1-200x300.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height

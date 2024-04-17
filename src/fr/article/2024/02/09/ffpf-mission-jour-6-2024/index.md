@@ -3,7 +3,7 @@ title:
      FFPF Mission Jour 6 2024 - FFPF
     
 og_title: FFPF Mission Jour 6 2024 - FFPF
-og_description: Cette dernière journée du camp chirurgical et dentaire a été remplie de bienveillance, d’amour et d’espoir. Tous les patients ayant reçu des soins chirurgicaux ont été vus en matinée par l’équipe médicale pour assurer un post-opération et une récupération sans compromis. Quelques chirurgiens ont mis la main à la pâte et ont même gonflé quelques […]
+og_description: Cette dernière journée du camp chirurgical et dentaire a été remplie de bienveillance, d’amour et d’espoir. Tous les patients ayant reçu des soins chirurgicaux ont été vus en matinée par l’équipe médicale pour assurer un post-opération et une récupération sans compromis. Quelques chirurgiens ont mis la main à la pâte et ont même gonflé quelques
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_3710-1-300x200.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height

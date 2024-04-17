@@ -3,7 +3,7 @@ title:
      Covid-19 - FFPF
     
 og_title: Covid-19 - FFPF
-og_description: Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. While most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment, many others need our help. HOW IT SPREADS The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person […]
+og_description: Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. While most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment, many others need our help. HOW IT SPREADS The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person
 og_image: No Image
 og_image_width: Unknown Width
 og_image_height: Unknown Height

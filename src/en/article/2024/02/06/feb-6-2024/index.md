@@ -3,7 +3,7 @@ title:
      Feb 6 2024 - FFPF
     
 og_title: Feb 6 2024 - FFPF
-og_description: New day also means new challenges to face. The start of the day is the same as the one that preceded it and the morning walk allows you to start the day on the right foot. The Canadian team of health professionals came together for a post-mortem of their first day, allowing them to put […]
+og_description: New day also means new challenges to face. The start of the day is the same as the one that preceded it and the morning walk allows you to start the day on the right foot. The Canadian team of health professionals came together for a post-mortem of their first day, allowing them to put
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_3074-300x200.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height

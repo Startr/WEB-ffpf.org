@@ -3,7 +3,7 @@ title:
      Mission Suyagya Vasishta Arya 2023 - FFPF Mission février 2023 - FFPF
     
 og_title: Mission Suyagya Vasishta Arya 2023 - FFPF Mission février 2023 - FFPF
-og_description: La Fondation Freedom from Poverty prévoit envoyer notre prochaine mission dans le village de Jamkhed en février 2022. Nous prévoyons envoyer au moins seize professionnels de Montréal. Suite aux fonds amassés par la fondation Libération de la pauvreté lors du souper bénéfice de Novembre 2022, 3 missions humanitaires de chirurgie ont été réalisées. En effet, […]
+og_description: La Fondation Freedom from Poverty prévoit envoyer notre prochaine mission dans le village de Jamkhed en février 2022. Nous prévoyons envoyer au moins seize professionnels de Montréal. Suite aux fonds amassés par la fondation Libération de la pauvreté lors du souper bénéfice de Novembre 2022, 3 missions humanitaires de chirurgie ont été réalisées. En effet,
 og_image: No Image
 og_image_width: Unknown Width
 og_image_height: Unknown Height

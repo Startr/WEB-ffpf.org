@@ -3,7 +3,7 @@ title:
      FFPF Mission Jour 4 2024 - FFPF
     
 og_title: FFPF Mission Jour 4 2024 - FFPF
-og_description: 7 février 20024: Aujourd’hui c’est le 4ième jour du camp FFPF au CRHP Jamkhed, déjà à la mi-camp et de nombreux patients ont reçu les soins requis pour une meilleure qualité de vie. L’équipe canadienne de professionnels de la santé s’adapte continuellement à leur nouvel environnement, chacun est extrêmement satisfait et choyé de faire une […]
+og_description: 7 février 2024 Aujourd’hui c’est le 4ième jour du camp FFPF au CRHP Jamkhed, déjà à la mi-camp et de nombreux patients ont reçu les soins requis pour une meilleure qualité de vie. L’équipe canadienne de professionnels de la santé s’adapte continuellement à leur nouvel environnement, chacun est extrêmement satisfait et choyé de faire une
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_3194-300x200.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height
@@ -44,7 +44,7 @@ Select Page
 <img src='/wp-content/uploads/2024/02/2-1-1024x576.webp' width='1024'
 height='576' />
 
-7 février 20024:
+7 février 2024
 
 Aujourd’hui c’est le 4ième jour du camp FFPF au CRHP Jamkhed, déjà à la mi-
 camp et de nombreux patients ont reçu les soins requis pour une meilleure

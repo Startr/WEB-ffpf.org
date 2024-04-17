@@ -3,7 +3,7 @@ title:
      Feb 9 2024 - FFPF
     
 og_title: Feb 9 2024 - FFPF
-og_description: This last day of surgical and dental camp was filled with kindness, love and hope. All patients who received surgical care were seen in the morning by the medical team to ensure uncompromised post-operation and recovery. A few surgeons got involved and even inflated a few surgical gloves to create personalized balloons for each child. […]
+og_description: This last day of surgical and dental camp was filled with kindness, love and hope. All patients who received surgical care were seen in the morning by the medical team to ensure uncompromised post-operation and recovery. A few surgeons got involved and even inflated a few surgical gloves to create personalized balloons for each child.
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_3545-300x200.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height

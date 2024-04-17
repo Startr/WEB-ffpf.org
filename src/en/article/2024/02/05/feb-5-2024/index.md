@@ -3,7 +3,7 @@ title:
      Feb 5 2024 - FFPF
     
 og_title: Feb 5 2024 - FFPF
-og_description: As dawn broke, our team, eager to greet the day with vitality, set out on the quaint trails leading towards Jamkhed. The early morning walk, a harmonious blend of gentle exercise and camaraderie, allowed them to stretch their limbs and immerse themselves in the tranquility of nature. The highlight was witnessing the magnificent sunrise, a […]
+og_description: As dawn broke, our team, eager to greet the day with vitality, set out on the quaint trails leading towards Jamkhed. The early morning walk, a harmonious blend of gentle exercise and camaraderie, allowed them to stretch their limbs and immerse themselves in the tranquility of nature. The highlight was witnessing the magnificent sunrise, a
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_2680-300x200.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height

@@ -3,7 +3,7 @@ title:
      FFPF Mission Jour 1 2024 - FFPF
     
 og_title: FFPF Mission Jour 1 2024 - FFPF
-og_description: L’équipe canadienne de professionnels de la santé est arrivée vers l’heure du dîner et a été accueillie chaleureusement par les enfants de l’école maternelle du CRHP. Une cérémonie, une petite danse, plusieurs sourires et rires étaient au rendez-vous. L’équipe a savouré un délicieux repas cuisiné par les femmes d’ici. Par la suite, ils se sont […]
+og_description: L’équipe canadienne de professionnels de la santé est arrivée vers l’heure du dîner et a été accueillie chaleureusement par les enfants de l’école maternelle du CRHP. Une cérémonie, une petite danse, plusieurs sourires et rires étaient au rendez-vous. L’équipe a savouré un délicieux repas cuisiné par les femmes d’ici. Par la suite, ils se sont
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_2358-copy-300x200.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height

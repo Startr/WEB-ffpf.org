@@ -3,7 +3,7 @@ title:
      FFPF Mission Jour 5 2024 - FFPF
     
 og_title: FFPF Mission Jour 5 2024 - FFPF
-og_description: 8 février 20024: La routine s’installe plus aisément, une familiarisation des lieux permet d’être proactive dès leur entrée à l’hôpital Julia. L’efficacité de l’équipe médicale canadienne a permis de réduire la liste de patients en attente d’une chirurgie. L’équipe continue le transfert de connaissances et compétences auprès de l’équipe de soins de Jamkhed, avec l’objectif […]
+og_description: 8 février 2024 La routine s’installe plus aisément, une familiarisation des lieux permet d’être proactive dès leur entrée à l’hôpital Julia. L’efficacité de l’équipe médicale canadienne a permis de réduire la liste de patients en attente d’une chirurgie. L’équipe continue le transfert de connaissances et compétences auprès de l’équipe de soins de Jamkhed, avec l’objectif
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_2621-200x300.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height
@@ -43,7 +43,7 @@ Select Page
 <img src='/wp-content/uploads/2024/02/2-1-1024x576.webp' width='1024'
 height='576' />
 
-8 février 20024:
+8 février 2024
 
 La routine s’installe plus aisément, une familiarisation des lieux permet
 d’être proactive dès leur entrée à l’hôpital Julia. L’efficacité de l’équipe

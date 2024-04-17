@@ -3,7 +3,7 @@ title:
      Day 1 of Dwivedi-Sareen Surgical Misson & Subhash Khanna Dental Mission - FFPF
     
 og_title: Day 1 of Dwivedi-Sareen Surgical Misson & Subhash Khanna Dental Mission - FFPF
-og_description: Our Canadian team of health professionals arrived around dinner time and were warmly welcomed by the children of CRHP nursery school. A ceremony, a little dance, several smiles and laughter were there. The team enjoyed a delicious meal cooked by local women. They then headed to Julia Hospital and began triaging patients requiring surgical and […]
+og_description: Our Canadian team of health professionals arrived around dinner time and were warmly welcomed by the children of CRHP nursery school. A ceremony, a little dance, several smiles and laughter were there. The team enjoyed a delicious meal cooked by local women. They then headed to Julia Hospital and began triaging patients requiring surgical and
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_2299-copy-300x200.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height

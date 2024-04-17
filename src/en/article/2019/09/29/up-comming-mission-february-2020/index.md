@@ -3,7 +3,7 @@ title:
      February 2020 Mission February 2020 - FFPF
     
 og_title: February 2020 Mission February 2020 - FFPF
-og_description: February 2020 Our February 2020 Mission took place at the Julia Hospital in Jamkhed. Over the past year, we carried out the medical evaluation of hundreds of people, from which we selected 150 patients judged to be of the highest priority. Here are the members who participated in the February 2020 mission Vinod Dargan Coordinator […]
+og_description: February 2020 Our February 2020 Mission took place at the Julia Hospital in Jamkhed. Over the past year, we carried out the medical evaluation of hundreds of people, from which we selected 150 patients judged to be of the highest priority. Here are the members who participated in the February 2020 mission Vinod Dargan Coordinator
 og_image: https://www.ffpf.org/wp-content/uploads/2018/10/GenevieveCote-Operating.jpeg
 og_image_width: 1200
 og_image_height: 800
@@ -41,7 +41,7 @@ VinodDargan ](/wp-content/uploads/2018/10/VinodDargan.jpeg "VinodDargan")
 
 ###  Vinod Dargan
 
-Coordinator / Coordinateur: Mr. Dargan
+Coordinator / Coordinateur Mr. Dargan
 
 [  
 AlexanderSomma-2 ](/wp-content/uploads/2018/11/AlexanderSomma-2.jpeg

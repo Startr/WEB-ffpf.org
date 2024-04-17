@@ -3,7 +3,7 @@ title:
      Feb 8 2024 - FFPF
     
 og_title: Feb 8 2024 - FFPF
-og_description: The routine settles in more easily and the familiarization with the place allows them to be proactive as soon as they enter Julia hospital. The efficiency of the Canadian medical team has made it possible to reduce the list of patients waiting for surgery. The team continues the transfer of knowledge and skills to the […]
+og_description: The routine settles in more easily and the familiarization with the place allows them to be proactive as soon as they enter Julia hospital. The efficiency of the Canadian medical team has made it possible to reduce the list of patients waiting for surgery. The team continues the transfer of knowledge and skills to the
 og_image: https://www.ffpf.org/wp-content/uploads/2024/02/IMG_3427-2-300x200.jpeg
 og_image_width: Unknown Width
 og_image_height: Unknown Height

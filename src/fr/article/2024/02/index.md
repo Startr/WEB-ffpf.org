@@ -51,7 +51,7 @@ post-opération et une récupération sans...
 
 9 février 2024
 
-8 février 20024: La routine s’installe plus aisément, une familiarisation des
+8 février 2024 La routine s’installe plus aisément, une familiarisation des
 lieux permet d’être proactive dès leur entrée à l’hôpital Julia. L’efficacité
 de l’équipe médicale canadienne a permis de réduire la liste de patients en
 attente d’une chirurgie....
@@ -61,7 +61,7 @@ ffpf-2024-jour-4/)
 
 8 février 2024
 
-7 février 20024: Aujourd’hui c’est le 4ième jour du camp FFPF au CRHP Jamkhed,
+7 février 2024 Aujourd’hui c’est le 4ième jour du camp FFPF au CRHP Jamkhed,
 déjà à la mi-camp et de nombreux patients ont reçu les soins requis pour une
 meilleure qualité de vie. L’équipe canadienne de professionnels de la santé
 s’adapte continuellement à...

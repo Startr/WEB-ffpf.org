@@ -3,7 +3,8 @@ title:
      MISSION À VENIR Février 2020 - FFPF
     
 og_title: MISSION À VENIR Février 2020 - FFPF
-og_description: Février 2020 Notre mission de février 2020 s’est déroulée à l’hôpital Julia de Jamkhed. Au cours de l’année écoulée, nous avons procédé à l’évaluation médicale de centaines de personnes, parmi lesquelles nous avons sélectionné 150 patients jugés prioritaires. Voici les membres qui ont participé à la mission de février 2020 VinodDargan Coordinator / Coordinateur: Mr. […]
+
+og_description: Février 2020 Notre mission de février 2020 s’est déroulée à l’hôpital Julia de Jamkhed. Au cours de l’année écoulée, nous avons procédé à l’évaluation médicale de centaines de personnes, parmi lesquelles nous avons sélectionné 150 patients jugés prioritaires. Voici les membres qui ont participé à la mission de février 2020 VinodDargan Coordinator / Coordinateur Mr.
 og_image: https://www.ffpf.org/wp-content/uploads/2018/10/GenevieveCote-Operating.jpeg
 og_image_width: 1200
 og_image_height: 800
@@ -13,6 +14,7 @@ links:
       fr: /?p=916
 layout: layouts/base.html
 ---
+
 [ <img src='/wp-content/uploads/2018/10/logo-ffpf.webp' width='505'
 height='113' alt='FFPF' /> ](/en/sponsorship-tag/surgery/)
 
@@ -58,7 +60,7 @@ VinodDargan ](/wp-content/uploads/2018/10/VinodDargan.jpeg "VinodDargan")
 
 ###  VinodDargan
 
-Coordinator / Coordinateur: Mr. Dargan
+Coordinator / Coordinateur Mr. Dargan
 
 [  
 AlexanderSomma-2 ](/wp-content/uploads/2018/11/AlexanderSomma-2.jpeg
