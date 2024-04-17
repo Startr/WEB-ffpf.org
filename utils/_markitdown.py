@@ -17,7 +17,7 @@ def convert_html_to_markdown(html_content):
     return markdown_content
 
 def extract_and_include_meta(html_content):
-    """Extract title, social share meta information including detailed image metadata and format as YAML for 11ty front matter."""
+    """Extract title, social share meta information including detailed image metadata and hreflang links, then format as YAML for 11ty front matter."""
     soup = BeautifulSoup(html_content, 'html.parser')
     title = soup.find('title').text if soup.find('title') else 'No Title'
     og_title = soup.find('meta', property='og:title')['content'] if soup.find('meta', property='og:title') else title
@@ -25,6 +25,11 @@ def extract_and_include_meta(html_content):
     og_image = soup.find('meta', property='og:image')['content'] if soup.find('meta', property='og:image') else 'No Image'
     og_image_width = soup.find('meta', property='og:image:width')['content'] if soup.find('meta', property='og:image:width') else 'Unknown Width'
     og_image_height = soup.find('meta', property='og:image:height')['content'] if soup.find('meta', property='og:image:height') else 'Unknown Height'
+    links = soup.find_all('link', attrs={'hreflang': True})
+    hreflangs = {link['hreflang']: (None if '?' not in link['href'] else link['href']) for link in links}
+
+    hreflang_yaml = '\n'.join([f"      {lang}: {url if url else 'null'}" for lang, url in hreflangs.items()])
+
     return f"""---
 title: {title}
 og_title: {og_title}
@@ -32,8 +37,12 @@ og_description: {og_description}
 og_image: {og_image}
 og_image_width: {og_image_width}
 og_image_height: {og_image_height}
+links:
+   hreflangs:
+{hreflang_yaml}
 layout: layouts/base.html
 ---"""
+
 
 def extract_and_preserve_front_matter(html_content):
     """Extract 11ty front matter and return it along with the rest of the content, including new meta data."""
