@@ -11,7 +11,10 @@
     "srvsrc": "cd src && python -m http.server 8000 && cd ..",
     "setup": "cd utils && pipenv install",
     "unstylish": "cd utils && pipenv run ./_unstylish.py ../src/",
-    "markdown": "cd utils && pipenv run ./_markdown.py ../src/"
+    "markdown": "cd utils && pipenv run ./_markdown.py ../src/",
+    "startstartr": "cd startr_src && npx @11ty/eleventy --serve --output=../dist",
+    "buildstartr": "cd startr_src && npx @11ty/eleventy --output=../dist",
+    "buildfreshstartr": "rm -rf dist && mkdir dist && cd startr_src && npx @11ty/eleventy --output=../dist"
   },
   "keywords": [],
   "author": "",
