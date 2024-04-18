@@ -1,0 +1,103 @@
+---
+layout: layouts/base.html
+eleventyNavigation:
+  key: Home
+  order: 1
+numberOfLatestPostsToShow: 3
+title: The Freedom from Poverty Foundation
+big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
+---
+
+<article style="--d-sm: flex">
+  <h2 style="font-size: 40px; --c: var(--primary); --p: 0.6em">
+    Breaking the poverty cycle<br />
+    of the most disadvantaged
+  </h2>
+
+  <div>
+    <p>With your help, we will save lives...</p>
+
+    <p>
+      The Freedom from Poverty Foundation is a non-profit foundation working in the community of Jamkhed, located in
+      Maharashtra, India, to break the cycle of poverty in families through surgical, educational and community-based
+      missions. Each dollar raised is used to improve the quality of life of the population in this region and to help
+      them become independent, in the short, medium and long term.
+    </p>
+
+    <p>
+      Our work is possible due to a large group of dedicated volunteers from Canada, Europe and around the world
+      comprised of doctors, nurses, occupational therapists, public health professionals, accountants, students and
+      various other fields of activity. These passionate and dedicated individuals volunteer their services and use
+      their skills to help the foundation reach its objective of “breaking the poverty cycle of the most disadvantaged”.
+    </p>
+  </div>
+</article>
+
+<div style="--d: flex; --jc:space-between; --m:2em 0">
+  <figure style="--bg:grey; --br: 5px; --of: hidden; --grad: 0deg; --pos: relative;     --d: none;
+  --d-sm: block;">
+    <img src="/wp-content/uploads/2018/10/icon-1.webp" alt="sample" />
+    <figcaption
+      id="target-grad"
+      style="--inset: 0; --pos: absolute; --grad: 180deg; --grad-color: hsl(273, 99%, 31%)"
+    ><h2>Donate</h2>
+
+    <p>
+      <strong>We need your help!</strong><br />
+      let’s help the needy to lead a self-dependent life
+    </p></figcaption>
+  </figure>
+
+ 
+
+  <section aria-roledescription="News Card"
+    style="--pl:2rem">
+    <h2>Latest News</h2>
+
+    <div data-columns="">
+      {% for post in collections.posts | reverse | slice(0, numberOfLatestPostsToShow) %}
+      <article>
+        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+
+        <div>
+          <div>
+            <p>{{ post.data.description }}</p>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <a href="/en/article/2024/02/">« Older Entries</a>
+
+    <div data-columns="">
+      <article>
+        <h2><a href="/en/article/2024/02/09/feb-9-2024/">Feb 9 2024</a></h2>
+
+        <div>
+          <div>
+            <p>
+              This last day of surgical and dental camp was filled with kindness, love and hope. All patients who
+              received surgical care were seen in the morning by the medical team to ensure uncompromised post-operation
+              and recovery. A few surgeons got involved and even inflated a...
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <h2><a href="/en/article/2024/02/08/feb-8-2024/">Feb 8 2024</a></h2>
+
+        <div>
+          <div>
+            <p>
+              The routine settles in more easily and the familiarization with the place allows them to be proactive as
+              soon as they enter Julia hospital. The efficiency of the Canadian medical team has made it possible to
+              reduce the list of patients waiting for surgery. The team...
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <a href="/en/article/2024/02/">« Older Entries</a>
+  </section>{% # end of news section %}
+</div>
