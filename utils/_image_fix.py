@@ -2,6 +2,8 @@
 import os
 import imghdr
 import sys
+# Import logging module
+import logging
 
 def fix_file_suffixes(base_dir):
     # Counter for renamed files
@@ -24,7 +26,21 @@ def fix_file_suffixes(base_dir):
                     os.rename(file_path, new_file_path)  # Rename the file
                     renamed_files += 1
                     print(f"Renamed '{file_path}' to '{new_file_path}'")
-    
+            
+            # Renaming 'index.jpeg' files
+            if filename == 'index.jpeg':
+                parent_dir = os.path.basename(dirpath)
+                new_file_name = f"{parent_dir}.jpeg"
+                new_file_path = os.path.join(os.path.dirname(dirpath), new_file_name)  # Move up one directory
+                os.rename(file_path, new_file_path)
+                print(f"Moved and renamed '{file_path}' to '{new_file_path}'")
+                # Delete the original parent directory if empty
+                if not os.listdir(dirpath):  # Check if the directory is empty
+                    os.rmdir(dirpath)
+                    print(f"Deleted empty directory '{dirpath}'")
+
+    print(f"Total renamed files: {renamed_files}")
+
     return renamed_files
 
 if __name__ == "__main__":
