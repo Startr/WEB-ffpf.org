@@ -32,13 +32,14 @@
         <figure style="--br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
           <img src="{{ big_image }}" alt="sample" />
           <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
-            <h1 style="--c: white; --ts: black 1px 0 10px">{{ title }}</h1>
+            <h1 style="{% if big_image_offset %}--mt:{{ big_image_offset }};{% endif %} --c: white; --ts: black 1px 0 10px">{{ title }}</h1>
             <span style="--c: white; --ts: black 1px 0 10px"> {{ subtitle }} </span>
           </figcaption>
         </figure>
       </section>
       {% endif %}
-      <section>{{ content }}</section>
+      <section aria-roledescription="Main Content" style="
+          --p: 0 1rem;">{{ content }}</section>
     </main>
 
     <!-- Footer -->
