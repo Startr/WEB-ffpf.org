@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ metadata.language }}">
+
   <head>
     {% include "./base/head.html" %}
   </head>
-  <body
-    style="
+
+  <body style="
       --minh: 100vh;
       --maxw-md: 80rem;
       --m: auto;
@@ -15,11 +16,9 @@
       --links: var(--primary);
       --typo-size-6: 12px;
       font-size: var(--typo-size-5);
-    "
-  >
+    ">
     <header
-      style="--w-xl: calc(100vw + 1rem); --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem)); --z: 1000"
-    >
+      style="--w-xl: calc(100vw + 1rem); --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem)); --z: 1000">
       <a href="#skip" style="--d: none">Skip to main content</a>
       <a class="home-link" style="--d: none" href="/">{{ metadata.title }}</a>
       {% include "./base/nav_en.html" %}
@@ -27,8 +26,10 @@
 
     <main style="--z: 10" id="skip">
       {% if title and big_image %}
-      <section aria-roledescription="Title Card">
-        <figure style="--br: 5px; --of: hidden; --grad: 0deg; --pos: relative">
+      <section aria-roledescription="Title Card" style="
+          --w-xl: calc(100vw + 1rem);
+          --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem));">
+        <figure style="--br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
           <img src="{{ big_image }}" alt="sample" />
           <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
             <h1 style="--c: white; --ts: black 1px 0 10px">{{ title }}</h1>
@@ -41,22 +42,17 @@
     </main>
 
     <!-- Footer -->
-    <footer
-      style="
+    <footer style="
         --w-xl: calc(100vw + 1rem);
         --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem));
         --bg: #333;
         --c: white;
         --p: 20px;
-      "
-    >
+      ">
       <p style="--m: 10px 0">
         <a style="--c: white" href="/en/contact/">Contact</a><br />
-        <a
-          href="https://www.facebook.com/freedomfrompoverty/"
-          target="_blank"
-          style="--c: white; --td: none; --f: block; --ft: right; --m: 1em"
-        >
+        <a href="https://www.facebook.com/freedomfrompoverty/" target="_blank"
+          style="--c: white; --td: none; --f: block; --ft: right; --m: 1em">
           Follow us on facebook
           <b style="--bg: white; --c: #333; --p: 0 0.3em; --m: 0.2em">f</b>
         </a>
@@ -70,4 +66,5 @@
       <p href="#contact" style="--m: 10px 0">Contact: Dr.S.D.Dwivedi 514 946-1716</p>
     </footer>
   </body>
+
 </html>
