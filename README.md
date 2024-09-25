@@ -8,5 +8,4 @@ To get started simply install the dependencies using bun and then run the develo
 bun install
 bun run start
 ```
-
-This will start a development server on `http://localhost:8080` and you can view the site in your browser.
+ This will start a development server on and you can view the site in your browser.
