@@ -17,8 +17,29 @@
       --typo-size-6: 12px;
       font-size: var(--typo-size-5);
     ">
+
+
+    <div id="google_translate_element"></div>
+
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script>
+
+
+    <script type="text/javascript" 
+            src=
+"https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+    </script>
+
     <header
-      style="--w-xl: calc(100vw + 1rem); --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem)); --z: 1000">
+      style="--w-xl: calc(100vw + 1rem); --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 1rem)); --z: 1000">
       <a href="#skip" style="--d: none">Skip to main content</a>
       <a class="home-link" style="--d: none" href="/">{{ metadata.title }}</a>
       {% include "./base/nav_en.html" %}
@@ -28,7 +49,7 @@
       {% if title and big_image %}
       <section aria-roledescription="Title Card" style="
           --w-xl: calc(100vw + 1rem);
-          --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem));">
+          --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 1rem));">
         <figure style="--br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
           <img src="{{ big_image }}" alt="sample" />
           <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
@@ -45,7 +66,7 @@
     <!-- Footer -->
     <footer style="
         --w-xl: calc(100vw + 1rem);
-        --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) - 0rem));
+        --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 1rem));
         --bg: #333;
         --c: white;
         --p: 20px;
