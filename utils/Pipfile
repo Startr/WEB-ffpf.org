@@ -12,6 +12,8 @@ lxml = "*"
 pillow = "*"
 beautifulsoup4 = "*"
 html2text = "*"
+feedparser = "*"
+requests = "*"
 
 [dev-packages]
 
