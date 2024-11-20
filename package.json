@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd src && npx @11ty/eleventy --serve --output=../dist",
+    "admin": "npx decap-server & cd src && npx @11ty/eleventy --serve --output=../dist",
     "build": "cd src && npx @11ty/eleventy --output=../dist",
     "buildfresh": "rm -rf dist && mkdir dist && cd src && npx @11ty/eleventy --output=../dist",
     "srvsrc": "cd src && python -m http.server 8000 && cd ..",
