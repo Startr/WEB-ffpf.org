@@ -19,24 +19,7 @@
     ">
 
 
-    <div id="google_translate_element"></div>
-
-
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                {pageLanguage: 'en'},
-                'google_translate_element'
-            );
-        }
-    </script>
-
-
-    <script type="text/javascript" 
-            src=
-"https://translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit">
-    </script>
+  
 
     <header
       style="--w-xl: calc(100vw + 1rem); --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 1rem)); --z: 1000">
@@ -53,7 +36,9 @@ cb=googleTranslateElementInit">
         <figure style="--br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
           <img src="{{ big_image }}" alt="sample" />
           <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
-            <h1 style="{% if big_image_offset %}--mt:{{ big_image_offset }};{% endif %} --c: white; --ts: black 1px 0 10px">{{ title }}</h1>
+            <h1
+              style="{% if big_image_offset %}--mt:{{ big_image_offset }};{% endif %} --c: white; --ts: black 1px 0 10px">
+              {{ title }}</h1>
             <span style="--c: white; --ts: black 1px 0 10px"> {{ subtitle }} </span>
           </figcaption>
         </figure>
@@ -83,10 +68,11 @@ cb=googleTranslateElementInit">
       <p></p>
       <p style="--m: 10px 0">
         Copyright © Freedom From Poverty Foundation<br />
-        Contact: Dr.S.D.Dwivedi 514 946-1756
       </p>
       <p href="#contact" style="--m: 10px 0">Contact: Dr.S.D.Dwivedi 514 946-1716</p>
     </footer>
+
+    {% include "../plugins/google_translate.html" %}
   </body>
 
 </html>
