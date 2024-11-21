@@ -31,10 +31,10 @@
     <main style="--z: 10" id="skip">
       {% if title and big_image %}
       <section aria-roledescription="Title Card" style="
-          --w-xl: calc(100vw + 1rem);
+          --w-xl: calc(100vw + 0%);
           --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 0rem));">
         <figure style="--br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
-          <img src="{{ big_image }}" alt="sample" />
+          <img src="{{ big_image }}" alt="sample" style="--minh: 12rem; --objf:cover" />
           <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
             <h1
               style="{% if big_image_offset %}--mt:{{ big_image_offset }};{% endif %} --c: white; --ts: black 1px 0 10px">
