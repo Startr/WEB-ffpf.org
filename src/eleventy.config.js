@@ -18,6 +18,8 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addTemplateFormats("md");
 	// Video passthrough
 	eleventyConfig.addPassthroughCopy("**/*.{mp4,webm}");
+	// Netlify redirects
+	eleventyConfig.addPassthroughCopy("_redirects");
 	// yml passthrough
 	eleventyConfig.addPassthroughCopy("**/*.yml");
 	// Admin index.html passthrough
