@@ -7,71 +7,63 @@
 <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
 <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
-<link href="get-involved" rel="canonical"/>
+<link href="get-involved" rel="canonical" />
 
-<meta content="en_US" property="og:locale"/>
-<meta content="fr_CA" property="og:locale:alternate"/>
-<meta content="website" property="og:type"/>
+<meta content="en_US" property="og:locale" />
+<meta content="fr_CA" property="og:locale:alternate" />
+<meta content="website" property="og:type" />
 
-<meta content="{{ metadata.title }}" property="og:title"/>
-<meta content="{{ description | default: metadata.description }}" property="og:description"/>
-<meta content="{{ metadata.url }}" property="og:url"/>
-<meta content="{{ metadata.name }}" property="og:site_name"/>
-<meta content="{{ metadata.big_image | default: 'https://www.ffpf.org/wp-content/uploads/2018/10/logo-ffpf.webp' }}" property="og:image"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" name="viewport"/>
+<meta content="{{ metadata.title }}" property="og:title" />
+<meta content="{{ description | default: metadata.description }}" property="og:description" />
+<meta content="{{ metadata.url }}" property="og:url" />
+<meta content="{{ metadata.name }}" property="og:site_name" />
+<meta content="{{ metadata.big_image | default: 'https://www.ffpf.org/wp-content/uploads/2018/10/logo-ffpf.webp' }}"
+    property="og:image" />
+<meta content="summary_large_image" name="twitter:card" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" name="viewport" />
 
-<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-32x32.png"
-    rel="icon"
-    sizes="32x32"
-/>
-<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-192x192.png"
-    rel="icon"
-    sizes="192x192"
-/>
-<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-180x180.png"
-    rel="apple-touch-icon"
-/>
-<meta
-    content="https://www.ffpf.org/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-270x270.png"
-    name="msapplication-TileImage"
-/>
+<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-32x32.png" rel="icon" sizes="32x32" />
+<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-192x192.png" rel="icon" sizes="192x192" />
+<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-180x180.png" rel="apple-touch-icon" />
+<meta content="https://www.ffpf.org/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-270x270.png"
+    name="msapplication-TileImage" />
 
 <!-- Include WOW.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
-integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
-crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-new WOW().init();
-// Add smooth scrolling on # links use only native javascript
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+    new WOW().init();
+    // Add smooth scrolling on # links use only native javascript
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
-  });
-});
 </script>
 
-<link href="https://startr.style/style.css" rel="stylesheet"/>
+<link href="https://startr.style/style.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-      integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
-    nav a{
-        color:#888;
+    nav a {
+        color: #888;
     }
-    nav li li{
+
+    nav li li {
         padding: 0.5em 1em;
     }
 
-    nav li li:hover{
-        color:#ed1c24;
+    nav li li:hover {
+        color: #ed1c24;
         background-color: #eee;
     }
 
-    li[style*="--cur:pointer"]:hover > ul {
+    li[style*="--cur:pointer"]:hover>ul {
         display: block !important;
         height: auto !important;
         animation: fadeIn 0.6s;
@@ -81,8 +73,62 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         0% {
             opacity: 0;
         }
+
         100% {
             opacity: 1;
         }
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    .cell {
+        padding: 30px;
+        background-color: rgb(155, 153, 153);
+    }
+
+    .cell-white {
+        padding: 30px;
+        background-color: white;
+    }
+
+    .image-dir {
+        border: 6px solid white;
+        border-radius: 50%;
+        box-shadow: 0 10px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .line {
+        position: relative;
+        text-align: center;
+    }
+    @media only screen and (min-width:640px) {
+    .line::before,
+    .line::after {
+        content: "*** ";
+        position: absolute;
+        top: 50%;
+        width: 30%;
+        height: 2px;
+        background-color: red;
+    }
+
+    .line::before {
+        left: 0;
+    }
+
+    .line::after {
+        right: 0;
+    }
+    }
+    .title-overlay {
+        position: relative;
+        top: -10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-align: center;
     }
 </style>

@@ -22,7 +22,7 @@
   
 
     <header
-      style="--w-xl: calc(100vw + 1rem); --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 1rem)); --z: 1000">
+      style="--w-xl: calc(100vw + 1rem); --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 0rem)); --z: 1000">
       <a href="#skip" style="--d: none">Skip to main content</a>
       <a class="home-link" style="--d: none" href="/">{{ metadata.title }}</a>
       {% include "./base/nav_en.html" %}
@@ -32,7 +32,7 @@
       {% if title and big_image %}
       <section aria-roledescription="Title Card" style="
           --w-xl: calc(100vw + 1rem);
-          --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 1rem));">
+          --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 0rem));">
         <figure style="--br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
           <img src="{{ big_image }}" alt="sample" />
           <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
@@ -51,7 +51,7 @@
     <!-- Footer -->
     <footer style="
         --w-xl: calc(100vw + 1rem);
-        --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 1rem));
+        --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 0rem));
         --bg: #333;
         --c: white;
         --p: 20px;
@@ -71,8 +71,6 @@
       </p>
       <p href="#contact" style="--m: 10px 0">Contact: Dr.S.D.Dwivedi 514 946-1716</p>
     </footer>
-
-    {% include "../plugins/google_translate.html" %}
   </body>
-
+  {% include "../plugins/google_translate.html" %}
 </html>
