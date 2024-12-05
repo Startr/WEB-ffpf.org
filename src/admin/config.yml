@@ -10,9 +10,9 @@ backend:
   name: github
   repo: Startr/WEB-ffpf.org
   branch: master # Branch to update (optional; defaults to master)
-  #site_domain: https://ffpf.org/ # only Needed when publishing with Cloudflare functions
-  #base_url: https://ffpf.org/    # only Needed when publishing with Cloudflare functions
-  #auth_endpoint: /api/auth       # only Needed when publishing with Cloudflare functions
+  site_domain: https://ffpf.org/ # only Needed when publishing with Cloudflare functions
+  base_url: https://ffpf.org/    # only Needed when publishing with Cloudflare functions
+  auth_endpoint: /api/auth       # only Needed when publishing with Cloudflare functions
 
 local_backend:
   url: http://127.0.0.1:8081/api/v1 # URL to the local backend
