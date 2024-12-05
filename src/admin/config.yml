@@ -7,7 +7,7 @@ logo_url:
 #  local_backend: true # Use the local backend for development
 
 backend:
-  name: git-gateway
+  name: github
   repo: Startr/WEB-ffpf.org
   branch: master # Branch to update (optional; defaults to master)
   #site_domain: https://ffpf.org/ # only Needed when publishing with Cloudflare functions
