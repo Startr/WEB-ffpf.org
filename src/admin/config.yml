@@ -1,0 +1,52 @@
+logo_url:
+  https://startr.style/logo.png
+
+#backend:
+#  name: git-gateway
+#  branch: master # Branch to update (optional; defaults to master)
+#  local_backend: true # Use the local backend for development
+
+backend:
+  name: github
+  repo: Startr/WEB-ffpf.org
+  branch: master # Branch to update (optional; defaults to master)
+  #site_domain: https://ffpf.org/ # only Needed when publishing with Cloudflare functions
+  #base_url: https://ffpf.org/    # only Needed when publishing with Cloudflare functions
+  #auth_endpoint: /api/auth       # only Needed when publishing with Cloudflare functions
+
+local_backend:
+  url: http://127.0.0.1:8081/api/v1 # URL to the local backend
+  allowed_hosts: ["127.0.0.1"] # List of allowed hosts
+
+media_folder: "static/uploads" # Path to where uploaded files will be stored in your repo
+public_folder: "/uploads" # Path users will access the files from on the deployed site
+
+i18n:
+  structure: multiple_folders
+  locales: [en, fr, de, pt]
+
+collections:
+  - name: "pages" # Used in routes, e.g., /admin/collections/pages
+    label: "Pages" # Used in the UI
+    folder: "src/pages" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., title.md
+    i18n: true
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.html" }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Publish Date", name: "date", widget: "datetime", i18n: duplicate }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+  - name: "blog" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "src/posts/blog" # The path to the folder where the documents are stored  
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    i18n: true
+    fields: # The fields for each document, usually in front matter
+      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/blog.njk" }
+      - { label: "Title", name: "title", widget: "string", i18n: true}
+      - { label: "Tags", name: "tags", widget: "list", default: "education" }
+      - { label: "Publish Date", name: "date", widget: "datetime",i18n: duplicate }
+      - { label: "Summary", name: "summary",widget: "markdown", i18n: true }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
