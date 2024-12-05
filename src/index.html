@@ -1,8 +1,8 @@
 ---
 layout: layouts/base.html
 eleventyNavigation:
-key: Home
-order: 1
+  key: Home
+  order: 1
 numberOfLatestPostsToShow: 3
 title: The Freedom from Poverty Foundation
 big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
@@ -30,6 +30,10 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
       various other fields of activity. These passionate and dedicated individuals volunteer their services and use
       their skills to help the foundation reach its objective of “breaking the poverty cycle of the most disadvantaged”.
     </p>
+
+    <videos-block style="--d: flex; --jc: center; --ai: center; --fw:wrap; --m: 1em 0; gap:0.6em">
+      <iframe style="--br:1rem; --shadow:8" width="560" height="315" src="https://www.youtube.com/embed/A27rvYR7Hhw?si=VyCEAu33E9qRuc9I" title="YouTube video player" frameborder="-0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe style="--br:1rem; --shadow:8" width="560" height="315" src="https://www.youtube.com/embed/uJoRZuKY3xE?si=fPFCocJbdhakTUyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </article>
 
@@ -40,25 +44,25 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
     --h: 28rem;
     "></div>
 
-<div style="--d: flex; --jc:space-between; --m:2em 0">
-  <figure style="--bg:grey; --br: 5px; --of: hidden; --grad: 0deg; --pos: relative;     --d: none;
-  --d-sm: block;">
-    <img src="/wp-content/uploads/2018/10/icon-1.webp" alt="sample" />
+<div style="--d: flex; --jc:space-between; --fd:column; --m:2em 0">
+  <figure style="--bg:grey; --br: 5px; --of: hidden; --grad: 0deg; --pos: relative;
+  --d: block;">
+    <img src="/wp-content/uploads/2018/10/icon-1.webp" alt="Please give" style="--ft:right" />
     <figcaption id="target-grad" style="--inset: 0; --pos: absolute;
-      --d:flex; --fd:column; --jc:center; --ai:center;">
+      --d:flex; --fd:column; --jc:center; --ai:center; --ta:center">
       <h2>Donate</h2>
 
       <p>
         <strong>We need your help!</strong><br />
         Let’s help the needy to lead a self-dependent life
-        <button> Donate now</button>
+        <a class="button" href="/donate">Donate now</a>
       </p>
     </figcaption>
   </figure>
 
 
 
-  <section aria-roledescription="News Card" style="--pl:2rem">
+  <!--<section aria-roledescription="News Card" style="--pl:2rem">
     <h2>Latest News</h2>
 
     <div data-columns="">
@@ -74,11 +78,11 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
       </article>
       {% endfor %}
     </div>
-    <a href="/en/article/2024/02/">« Older Entries</a>
+    <a href="/article/2024/02/">« Older Entries</a>
 
     <div data-columns="">
       <article>
-        <h2><a href="/en/article/2024/02/09/feb-9-2024/">Feb 9 2024</a></h2>
+        <h2><a href="/article/2024/02/09/feb-9-2024/">Feb 9 2024</a></h2>
 
         <div>
           <div>
@@ -92,7 +96,7 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
       </article>
 
       <article>
-        <h2><a href="/en/article/2024/02/08/feb-8-2024/">Feb 8 2024</a></h2>
+        <h2><a href="/article/2024/02/08/feb-8-2024/">Feb 8 2024</a></h2>
 
         <div>
           <div>
@@ -105,8 +109,8 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
         </div>
       </article>
     </div>
-    <a href="/en/article/2024/02/">« Older Entries</a>
-  </section>{% # end of news section %}
+    <a href="/article/2024/02/">« Older Entries</a>
+  </section>{% # end of news section %}-->
 </div>
 
 <style>

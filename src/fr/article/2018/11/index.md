@@ -14,9 +14,9 @@ links:
 layout: layouts/base.html
 ---
 [ <img src='/wp-content/uploads/2018/10/logo-ffpf.webp' width='505'
-height='113' alt='FFPF' /> ](/en/sponsorship-tag/surgery/)
+height='113' alt='FFPF' /> ](/sponsorship-tag/surgery/)
 
-  * [ English ]( /en/article/2018/11/)
+  * [ English ]( /article/2018/11/)
 
 [ ]( )
 
@@ -55,13 +55,13 @@ médicale de centaines de personnes...
 
 ####  Archives
 
-  * [ février 2024 ]( /en/article/2024/02/)
-  * [ septembre 2023 ]( /en/article/2023/09/)
-  * [ juin 2023 ]( /en/article/2023/06/)
-  * [ mai 2023 ]( /en/article/2023/05/)
-  * [ septembre 2022 ]( /en/article/2022/09/)
-  * [ novembre 2020 ]( /en/article/2020/11/)
-  * [ septembre 2019 ]( /en/article/2019/09/)
+  * [ février 2024 ]( /article/2024/02/)
+  * [ septembre 2023 ]( /article/2023/09/)
+  * [ juin 2023 ]( /article/2023/06/)
+  * [ mai 2023 ]( /article/2023/05/)
+  * [ septembre 2022 ]( /article/2022/09/)
+  * [ novembre 2020 ]( /article/2020/11/)
+  * [ septembre 2019 ]( /article/2019/09/)
   * [ novembre 2018 ](index.html)
 
   * [ Nous joindre ](/fr/nous-joindre/)
