@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Commentaires sur : FFPF Mission Jour 1 2024  https://www.ffpf.org
 /fr/article/2024/02/04/mission-ffpf-2024-jour-1/  Fondation pour la libération

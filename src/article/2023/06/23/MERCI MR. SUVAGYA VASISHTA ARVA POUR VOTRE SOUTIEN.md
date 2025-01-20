@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Comments on: MERCI MR. SUVAGYA VASISHTA ARVA POUR VOTRE SOUTIEN
 https://www.ffpf.org/2023/06/23/merci-mr-suvagya-vasishta-arva-pour-votre-

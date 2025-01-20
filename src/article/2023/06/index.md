@@ -11,7 +11,7 @@ links:
    hreflangs:
       en: null
       fr: null
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
   * [ Français ]( /fr/article/2023/06/)

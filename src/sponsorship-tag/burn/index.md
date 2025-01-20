@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
 [ Home ](/get-involved) / Products tagged “burn”

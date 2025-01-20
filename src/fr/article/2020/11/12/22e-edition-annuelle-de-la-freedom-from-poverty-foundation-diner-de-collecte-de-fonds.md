@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Commentaires sur : 22e édition annuelle de la « Freedom from Poverty
 Foundation » Dîner de collecte de fonds  https://www.ffpf.org

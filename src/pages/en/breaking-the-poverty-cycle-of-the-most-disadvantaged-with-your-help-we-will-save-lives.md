@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.html
+layout: layouts/base.njk
 pagetitle: Home Page
 title: "Breaking the poverty cycle of the most disadvantaged "
 subtitle: With your help, we will save lives...

@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Commentaires sur : 23e dîner annuel de collecte de fonds de la Freedom from
 Poverty Foundation  https://www.ffpf.org /fr/article/2020/11/12/23e-diner-

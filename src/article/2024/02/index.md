@@ -11,7 +11,7 @@ links:
    hreflangs:
       en: null
       fr: /fr/article/2024/02/
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
 

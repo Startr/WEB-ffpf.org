@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Comments on: Since 2009  https://www.ffpf.org/2023/06/23/since-2009/  Freedom
 from poverty foundation  Fri, 23 Jun 2023 20:09:24 +0000  hourly  1

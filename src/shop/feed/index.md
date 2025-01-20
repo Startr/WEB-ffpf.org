@@ -1,5 +1,5 @@
 ---
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Shop - FFPF  https://www.ffpf.org/shop/  Freedom from poverty foundation  Fri,
 18 Oct 2019 00:04:15 +0000  en-CA  hourly  1  https://wordpress.org/?v=6.4.3

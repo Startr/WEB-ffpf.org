@@ -5,7 +5,7 @@ title:
 og_title: Tohid - FFPF
 og_description: Tohid is a 13 year old boy who endured burns on his right arm, hand, and a portion of his torso when he was 4 years old. He has had three separate surgeries on his right hand. He needs further surgery for the burn contractures on his right hand that connect part of his hand to his arm, further limiting his arm movement.
 og_image: https://www.ffpf.org/wp-content/uploads/2019/10/Capture-d’écran-2019-10-17-à-19.04.41.png
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
 

@@ -11,7 +11,7 @@ links:
    hreflangs:
       en: /?p=1
       fr: /?p=740
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
   * [ Français ](/fr)

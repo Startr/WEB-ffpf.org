@@ -5,7 +5,7 @@ title:
 og_title: Sangita - FFPF
 og_description: Sangita is a 60-year old woman. She has a cyst on her left hand, which continues to increase in size. Surgery will help reduce her discomfort and pain in her hand so she may continue her daily tasks in supporting and caring for her family.
 og_image: https://www.ffpf.org/wp-content/uploads/2019/10/Capture-d’écran-2019-10-17-à-19.42.19.png
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
 

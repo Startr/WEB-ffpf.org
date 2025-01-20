@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Comments on: 22nd Annual Freedom from Poverty Foundation
 https://www.ffpf.org/2020/11/09/22nd-annual-freedom-from-poverty-foundation/

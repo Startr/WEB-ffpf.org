@@ -10,7 +10,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
   * [ Français ](/fr/sponsorship-tag/surgery/)

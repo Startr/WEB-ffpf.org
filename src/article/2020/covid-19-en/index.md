@@ -11,7 +11,7 @@ links:
    hreflangs:
       en: /?p=15432
       fr: null
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
   * [ Français ](/fr/covid-19)

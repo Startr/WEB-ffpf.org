@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{ title | default: metadata.title }}</title>
-<meta name="description" content="{{ description | default: metadata.description }}">
+<title>{{ title | default(metadata.title) }}</title>
+<meta name="description" content="{{ description | default(metadata.description) }}">
 
 <!-- Atom and JSON feeds included by default -->
 <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
@@ -14,10 +14,10 @@
 <meta content="website" property="og:type" />
 
 <meta content="{{ metadata.title }}" property="og:title" />
-<meta content="{{ description | default: metadata.description }}" property="og:description" />
+<meta content="{{ description | default(metadata.description) }}" property="og:description" />
 <meta content="{{ metadata.url }}" property="og:url" />
 <meta content="{{ metadata.name }}" property="og:site_name" />
-<meta content="{{ metadata.big_image | default: 'https://www.ffpf.org/wp-content/uploads/2018/10/logo-ffpf.webp' }}"
+<meta content="{{ metadata.big_image | default('https://www.ffpf.org/wp-content/uploads/2018/10/logo-ffpf.webp') }}"
     property="og:image" />
 <meta content="summary_large_image" name="twitter:card" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" name="viewport" />

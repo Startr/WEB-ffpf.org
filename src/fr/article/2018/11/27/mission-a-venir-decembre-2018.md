@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Commentaires sur : MISSION À VENIR DÉCEMBRE 2018  https://www.ffpf.org
 /fr/article/2018/11/27/mission-a-venir-decembre-2018/  Fondation pour la

@@ -1,6 +1,6 @@
 ---
 title: Canadians.Love/our_test_page 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
 <style>

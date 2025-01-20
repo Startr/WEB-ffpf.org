@@ -3,7 +3,7 @@ title: surgery Archives - FFPF
 og_title: surgery Archives - FFPF
 og_description: surgery Archives - FFPF
 og_image: No Image
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
 

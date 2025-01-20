@@ -5,7 +5,7 @@ title:
 og_title: Parvez - FFPF
 og_description: Parvez suffered from burns when he was 1 years old. This led to a deformity of his fingers. A surgery would help him get the use of all his fingers back.
 og_image: https://www.ffpf.org/wp-content/uploads/2019/10/Capture-d’écran-2019-10-17-à-19.21.47.png
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
 

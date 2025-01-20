@@ -11,7 +11,7 @@ links:
    hreflangs:
       en: /?p=907
       fr: /?p=903
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 [ <img src='/wp-content/uploads/2018/10/logo-ffpf.webp' width='505'
 height='113' alt='FFPF' /> ](/sponsorship-tag/surgery/)

@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Commentaires sur : Mission prévue en février 2024  https://www.ffpf.org
 /fr/article/2023/05/15/mission-prevue-en-fevrier-2024/  Fondation pour la

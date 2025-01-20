@@ -5,7 +5,7 @@ title:
 og_title: Sponsorship - FFPF
 og_description: No Description
 og_image: https://www.ffpf.org/wp-content/uploads/2018/10/Reshma-Salim-Sheikh-650x530-300x245.png
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 [ ](/get-involved)
 

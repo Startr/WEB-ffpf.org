@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Commentaires sur : Le 24e dîner annuel souper annuel de la Fondation Freedom
 from Poverty Samedi, 11 novembre 2023  https://www.ffpf.org

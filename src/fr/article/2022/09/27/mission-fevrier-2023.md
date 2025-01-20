@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Commentaires sur : Mission Suyagya Vasishta Arya 2023 – FFPF Mission février
 2023  https://www.ffpf.org /fr/article/2022/09/27/mission-prevue-en-

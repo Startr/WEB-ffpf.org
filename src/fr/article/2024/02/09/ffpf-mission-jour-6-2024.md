@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Commentaires sur : FFPF Mission Jour 6 2024  https://www.ffpf.org
 /fr/article/2024/02/09/ffpf-mission-jour-6-2024/  Fondation pour la libération

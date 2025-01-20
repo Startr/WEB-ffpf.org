@@ -5,7 +5,7 @@ title:
 og_title: Vikas - FFPF
 og_description: 16-year-old Vikas had an accident resulting in burns to his right hand when he was only 1-year old. He now continues to have burn contractures which further limit the movement of the fingers on his right hand. Surgery will help him regain better mobility in his hand so he can be independent as he builds his life.
 og_image: https://www.ffpf.org/wp-content/uploads/2019/10/Capture-d’écran-2019-10-17-à-19.26.52.png
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
 

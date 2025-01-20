@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Comments on: 23nd Annual Freedom from Poverty Foundation Fundraising Dinner
 https://www.ffpf.org/2020/11/12/23nd-annual-freedom-from-poverty-foundation-

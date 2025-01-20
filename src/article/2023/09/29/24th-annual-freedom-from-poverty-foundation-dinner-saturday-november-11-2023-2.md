@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Comments on: 24th Annual Freedom from Poverty Foundation Dinner – Saturday,
 November 11, 2023  https://www.ffpf.org/2023/09/29/24th-annual-freedom-from-

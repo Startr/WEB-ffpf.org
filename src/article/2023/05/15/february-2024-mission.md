@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Comments on: February 2024 Mission  https://www.ffpf.org/2023/05/15/upcoming-
 february-2024-mission/  Freedom from poverty foundation  Sun, 31 Mar 2024

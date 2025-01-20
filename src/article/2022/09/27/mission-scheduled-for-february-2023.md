@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Comments on: Suyagya Vasishta Arya Mission 2023 – FFPF Mission February 2023
 https://www.ffpf.org/2022/09/27/mission-scheduled-for-february-2023/  Freedom

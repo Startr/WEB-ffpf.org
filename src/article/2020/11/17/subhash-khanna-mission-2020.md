@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Comments on: The Subhash Khanna Mission to the village of Jamkhed in 2020
 https://www.ffpf.org/2020/11/17/subhash-khanna-mission-2020/  Freedom from

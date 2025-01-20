@@ -5,7 +5,7 @@ title:
 og_title: Monu - FFPF
 og_description: Monu is a 13-year-old boy who suffered burns on his right hand when he was 7 months old. He has had surgery completed twice on his hand, but he continues to have worsening burn contractures. Surgery will help him open his hand fully and regain more function in his dominant hand so he can write and perform daily task more easily.
 og_image: https://www.ffpf.org/wp-content/uploads/2019/10/Capture-d’écran-2019-10-17-à-19.38.53.png
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 
 

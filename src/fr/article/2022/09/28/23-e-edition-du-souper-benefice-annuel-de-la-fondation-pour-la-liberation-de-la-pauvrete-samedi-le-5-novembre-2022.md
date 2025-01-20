@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Commentaires sur : 23 e édition du souper bénéfice annuel de la Fondation pour
 la libération de la pauvreté – Samedi le 5 novembre, 2022

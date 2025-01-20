@@ -12,7 +12,7 @@ og_image_height: Unknown Height
 links:
    hreflangs:
 
-layout: layouts/base.html
+layout: layouts/base.njk
 ---
 Comments on: February 2020 Mission February 2020
 https://www.ffpf.org/2019/09/29/up-comming-mission-february-2020/  Freedom
