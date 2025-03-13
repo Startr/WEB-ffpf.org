@@ -7,7 +7,7 @@
 
   <body style="
       --minh: 100vh;
-      --maxw-md: 80rem;
+      --maxw-md: 100rem;
       --m: auto;
       --d: flex;
       --fd: column;
@@ -16,6 +16,7 @@
       --links: var(--primary);
       --typo-size-6: 12px;
       font-size: var(--typo-size-5);
+      0
     ">
 
 <script type="text/javascript">
@@ -70,25 +71,29 @@
     <footer style="
         --w-xl: calc(100vw + 1rem);
         --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 0rem));
-        --bg: #333;
+        --bg: #FF7F7F;
         --c: white;
         --p: 20px;
         --mb:-3rem;
       ">
-      <p style="--m: 10px 0">
-        <a style="--c: white" href="/contact/">Contact</a><br />
+      <p style="--m: 0px 0">
+        <a style="--c: white" href="/contact/">Contact Us</a><br />
         <a href="https://www.facebook.com/freedomfrompoverty/" target="_blank"
           style="--c: white; --td: none; --f: block; --ft: right; --m: 1em">
           Follow us on facebook
           <b style="--bg: white; --c: #333; --p: 0 0.3em; --m: 0.2em">f</b>
         </a>
-      </p>
-
-      <p></p>
-      <p style="--m: 10px 0">
+        <a href="https://www.instagram.com/ffpf_org?igsh=MXF4d2tjZGF6dHRhMw==" target="_blank"
+          style="--c: white; --td: none; --f: block; --ft: right; --m: 1em">
+          Follow us on Instagram 
+          <b style="--bg: white; --c: #333; --p: 0 0.3em; --m: 0.2em">i</b>
+        </a>
+        <a href="/donate" style="--c: white; --td: none; --f: block; --ft: right; --m: 1em"> Donate now
+        </a>
+      <p style="--m: 20px 0">
         Copyright © Freedom From Poverty Foundation<br />
       </p>
-      <p href="#contact" style="--m: 10px 0">Contact: Dr.S.D.Dwivedi 514 946-1716</p>
+  
     </footer>
   </body>
   {% include "../plugins/google_translate.html" %}
