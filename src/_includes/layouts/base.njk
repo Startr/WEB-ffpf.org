@@ -19,65 +19,73 @@
       0
     ">
 
-<script type="text/javascript">
-  var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-  _paq.push(["setCookieDomain", "*.ffpf.org"]);
-  _paq.push(["setDomains", ["*.ffpf.org"]]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//visitas.startr.cloud/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '7']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//visitas.startr.cloud/matomo.php?idsite=7&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-
-
-  
+    <script type="text/javascript">
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push([
+        "setDocumentTitle", document.domain + "/" + document.title
+      ]);
+      _paq.push(["setCookieDomain", "*.ffpf.org"]);
+      _paq.push(["setDomains", ["*.ffpf.org"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function () {
+        var u = "//visitas.startr.cloud/";
+        _paq.push([
+          'setTrackerUrl', u + 'matomo.php'
+        ]);
+        _paq.push(['setSiteId', '7']);
+        var d = document,
+          g = d.createElement('script'),
+          s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.src = u + 'matomo.js';
+        s
+          .parentNode
+          .insertBefore(g, s);
+      })();
+    </script>
+    <noscript>
+      <p><img src="//visitas.startr.cloud/matomo.php?idsite=7&amp;rec=1" style="border:0;" alt=""/></p>
+    </noscript>
 
     <header
-      style="--w-xl: calc(100vw + 1rem); --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 0rem)); --z: 1000">
+      style="--w-xl: 100vw; --z: 1000">
       <a href="#skip" style="--d: none">Skip to main content</a>
       <a class="home-link" style="--d: none" href="/">{{ metadata.title }}</a>
       {% include "./base/nav_en.html" %}
     </header>
 
-    <main style="--z: 10" id="skip">
+    <main style="--w-xl: 100vw; --z: 1000--z: 10" id="skip">
       {% if title and big_image %}
-      <section aria-roledescription="Title Card" style="
-          --w-xl: calc(100vw + 0%);
-          --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 0rem));">
-        <figure style="--br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
-          <img src="{{ big_image }}" alt="sample" style="--minh: 12rem; --objf:cover" />
-          <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
-            <h1
+        <section aria-roledescription="Title Card">
+          <figure style="--br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
+            <img src="{{ big_image }}" alt="sample" style="--minh: 12rem; --objf:cover"/>
+            <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
+              <h1
               style="{% if big_image_offset %}--mt:{{ big_image_offset }};{% endif %} --c: white; --ts: black 1px 0 10px">
-              {{ title }}</h1>
-            <span style="--c: white; --ts: black 1px 0 10px"> {{ subtitle }} </span>
-          </figcaption>
-        </figure>
-      </section>
+                {{ title }}</h1>
+              <span style="--c: white; --ts: black 1px 0 10px">
+                {{ subtitle }}
+              </span>
+            </figcaption>
+          </figure>
+        </section>
       {% endif %}
-      <section aria-roledescription="Main Content" style="
-          --p: 0 1rem;">{{ content |safe }}</section>
+      <section aria-roledescription="Main Content">{{ content |safe }}</section>
     </main>
 
     <!-- Footer -->
     <footer style="
         --w-xl: calc(100vw + 1rem);
-        --t-xl: translate(calc(((100vw - var(--maxw-md)) / -2) + 0rem));
         --bg: #FF7F7F;
         --c: white;
         --p: 20px;
         --mb:-3rem;
       ">
       <p style="--m: 0px 0">
-        <a style="--c: white" href="/contact/">Contact Us</a><br />
+        <a style="--c: white" href="/contact/">Contact Us</a><br/>
         <a href="https://www.facebook.com/freedomfrompoverty/" target="_blank"
           style="--c: white; --td: none; --f: block; --ft: right; --m: 1em">
           Follow us on facebook
@@ -90,11 +98,11 @@
         </a>
         <a href="/donate" style="--c: white; --td: none; --f: block; --ft: right; --m: 1em"> Donate now
         </a>
-      <p style="--m: 20px 0">
-        Copyright © Freedom From Poverty Foundation<br />
-      </p>
-  
-    </footer>
-  </body>
-  {% include "../plugins/google_translate.html" %}
-</html>
+        <p style="--m: 20px 0">
+        Copyright © Freedom From Poverty Foundation<br/>
+        </p>
+
+      </footer>
+    </body>
+    {% include "../plugins/google_translate.html" %}
+  </html>

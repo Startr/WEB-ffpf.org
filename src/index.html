@@ -46,12 +46,15 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
 </article>
 
 <div class="parallax" style="
-    --w-xl: calc(100vw + 1rem);
-    --ml-xl: calc(((100vw - var(--maxw-md)) / -2) - 1rem);
+    --w-xl: calc(100vw);
     --mt: 1em;
     --h: 28rem;
     "></div>
-
+<div class="parallax" style="
+    --w-xl: calc(100vw);
+    --mt: -2em;
+    --h: 28rem;
+    ">
 <div style="--d: flex; --jc:space-between; --fd:column; --m:2em 0">
   <figure style="--bg:grey; --br: 5px; --of: hidden; --grad: 0deg; --pos: relative;
   --d: block;">
@@ -64,10 +67,11 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
     </figcaption>
   </figure>
   </a>
+  </div>
+  </div>
 
-
-
-  <!--<section aria-roledescription="News Card" style="--pl:2rem">
+  <!--
+  <section aria-roledescription="News Card" style="--pl:2rem">
     <h2>Latest News</h2>
 
     <div data-columns="">
@@ -115,8 +119,10 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
       </article>
     </div>
     <a href="/article/2024/02/">« Older Entries</a>
-  </section>{% # end of news section %}-->
-</div>
+  </section>{% # end of news section %}
+  </div>
+  -->
+
 
 <style>
   .parallax {
