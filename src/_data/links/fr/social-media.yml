@@ -1,21 +1,21 @@
-section: "Médias Sociaux"
+section: Médias Sociaux
 order: 1
 links:
-  - title: "Instagram"
-    url: "https://instagram.com/ffpf_org"
-    icon: "fa-brands fa-instagram"
-    description: "Suivez-nous sur Instagram"
-    style: "social"
+  - title: Instagram
+    url: https://instagram.com/ffpf_org
+    icon: fa-brands fa-instagram
+    description: Suivez-nous sur Instagram
+    style: social
     order: 1
-  - title: "Facebook"
-    url: "https://www.facebook.com/freedomfrompoverty"
-    icon: "fa-brands fa-facebook"
-    description: "Aimez-nous sur Facebook"
-    style: "social"
+  - title: Facebook
+    url: https://www.facebook.com/freedomfrompoverty
+    icon: fa-brands fa-facebook
+    description: Aimez-nous sur Facebook
+    style: social
     order: 2
-  - title: "YouTube"
-    url: "https://www.youtube.com/@freedomfrompauvretyfoundat1872"
-    icon: "fa-brands fa-youtube"
-    description: "Abonnez-vous à notre chaîne YouTube"
-    style: "social"
+  - title: YouTube
+    url: https://www.youtube.com/@freedomfrompauvretyfoundat1872
+    icon: fa-brands fa-youtube
+    description: Abonnez-vous à notre chaîne YouTube
+    style: social
     order: 3
