@@ -19,8 +19,3 @@ links:
     description: Subscribe to our YouTube channel
     style: social
     order: 3
-  - style: primary
-    order: 1
-    title: pinterest
-    url: https://ca.pinterest.com/pin/8444318046681622/
-    icon: fa-pinterest
