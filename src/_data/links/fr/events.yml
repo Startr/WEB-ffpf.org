@@ -1,13 +1,13 @@
-section: "Événements"
+section: Événements
 order: 3
 links:
-  - title: "Participation au 26ième Souper Bénéfice"
-    url: "https://forms.gle/xNEruCi56F2KcKPy6"
-    description: "Participez à notre 26ième Souper Bénéfice"
-    style: "secondary"
+  - title: Participation au 26ième Souper Bénéfice
+    url: https://forms.gle/xNEruCi56F2KcKPy6
+    description: Participez à notre 26ième Souper Bénéfice
+    style: secondary
     order: 1
-  - title: "Voudriez-vous faire un différence?"
-    url: "https://forms.gle/tDrLEURdR6ggbaoa6"
-    description: "Rejoignez-nous pour faire une différence"
-    style: "secondary"
+  - title: Voudriez-vous faire un différence?
+    url: https://forms.gle/tDrLEURdR6ggbaoa6
+    description: Rejoignez-nous pour faire une différence
+    style: secondary
     order: 2
