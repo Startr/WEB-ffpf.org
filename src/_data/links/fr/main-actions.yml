@@ -1,13 +1,13 @@
-section: "Actions Principales"
+section: Actions Principales
 order: 2
 links:
-  - title: "La Foundation de la Libération de la Pauvreté"
-    url: "http://ffpf.org/get-involved/"
-    description: "Impliquez-vous avec notre fondation"
-    style: "primary"
+  - title: La Foundation de la Libération de la Pauvreté
+    url: http://ffpf.org/get-involved/
+    description: Impliquez-vous avec notre fondation
+    style: primary
     order: 1
-  - title: "Faire un don ici"
-    url: "https://www.canadahelps.org/en/charities/la-fondation-de-la-liberation-de-la-pauvrete-inc/"
-    description: "Faites un don pour soutenir notre cause"
-    style: "primary"
+  - title: Faire un don ici
+    url: https://www.canadahelps.org/en/charities/la-fondation-de-la-liberation-de-la-pauvrete-inc/
+    description: Faites un don pour soutenir notre cause
+    style: primary
     order: 2
