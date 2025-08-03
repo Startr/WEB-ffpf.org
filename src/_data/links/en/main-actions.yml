@@ -1,0 +1,13 @@
+section: "Main Actions"
+order: 2
+links:
+  - title: "Freedom From Poverty Foundation"
+    url: "http://ffpf.org/get-involved/"
+    description: "Get involved with our foundation"
+    style: "primary"
+    order: 1
+  - title: "Donate Here"
+    url: "https://www.canadahelps.org/en/charities/la-fondation-de-la-liberation-de-la-pauvrete-inc/"
+    description: "Make a donation to support our cause"
+    style: "primary"
+    order: 2

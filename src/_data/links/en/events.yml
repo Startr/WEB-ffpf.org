@@ -1,0 +1,13 @@
+section: "Events"
+order: 3
+links:
+  - title: "26th Annual Gala"
+    url: "https://forms.gle/xNEruCi56F2KcKPy6"
+    description: "Participate in our 26th Annual Gala"
+    style: "secondary"
+    order: 1
+  - title: "Would you like to make a difference?"
+    url: "https://forms.gle/tDrLEURdR6ggbaoa6"
+    description: "Join us in making a difference"
+    style: "secondary"
+    order: 2

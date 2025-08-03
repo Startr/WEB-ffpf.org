@@ -26,6 +26,25 @@ i18n:
   locales: [en, fr, de, pt]
 
 collections:
+  - name: "links" # Used in routes, e.g., /admin/collections/links
+    label: "2025 Links (Linktree Style)" # Used in the UI
+    folder: "src/_data/links" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., social-media.yml
+    extension: "yml" # File extension for data files
+    format: "yml" # Data format
+    i18n: true
+    fields: # The fields for each document, usually in front matter
+      - { label: "Section Name", name: "section", widget: "string", i18n: true, hint: "e.g., 'Social Media', 'Main Actions', 'Events'" }
+      - { label: "Display Order", name: "order", widget: "number", default: 1, hint: "Lower numbers appear first" }
+      - { label: "Links", name: "links", widget: "list", i18n: true, fields: [
+          { label: "Title", name: "title", widget: "string", i18n: true },
+          { label: "URL", name: "url", widget: "string", i18n: duplicate },
+          { label: "Icon", name: "icon", widget: "string", required: false, hint: "FontAwesome class (e.g., 'fa-brands fa-instagram') or emoji" },
+          { label: "Description", name: "description", widget: "text", required: false, i18n: true },
+          { label: "Button Style", name: "style", widget: "select", options: ["primary", "secondary", "social"], default: "primary" },
+          { label: "Order", name: "order", widget: "number", default: 1 }
+        ]}
   - name: "pages" # Used in routes, e.g., /admin/collections/pages
     label: "Pages" # Used in the UI
     folder: "src/pages" # The path to the folder where the documents are stored
