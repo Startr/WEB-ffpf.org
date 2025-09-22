@@ -1,5 +1,9 @@
 # TODO - FFPF.org Development Tasks
 
+## 🔥 This Week (September 22, 2025)
+### High Priority: Redirect Donate Page
+- [x] **Redirect Donate Page**: Update src/donate/index.html to redirect to CanadaHelps donation page
+
 ## 🔥 This Week (August 3, 2025)
 ### 🔥 Documentation & Admin Management: Create Admin-Manageable Links Collection
 - [ ] **Admin Links Collection**: Create Linktree-style admin collection for 2025 page links
