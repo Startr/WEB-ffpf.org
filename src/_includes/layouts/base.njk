@@ -55,19 +55,16 @@
       backdrop-filter: blur(0.1em);
       -webkit-backdrop-filter: blur(0.1em);
       background: rgba(var(--rgb-white), 0.9);
-      position: sticky;
+      --pos: sticky;
       top: 0;
       user-select: none;
-      -ms-user-select: none;
-      -webkit-user-select: none;
-      width: 100%;
-      z-index: 100;">
+      width: 100%;">
       <a href="#skip" style="--d: none">Skip to main content</a>
       <a class="home-link" style="--d: none" href="/">{{ metadata.title }}</a>
       {% include "./base/nav_en.html" %}
     </header>
 
-    <main style="--w-xl: 100vw; --z: 10; --m: 0.8rem" id="skip">
+    <main style="--w-xl: 100vw; --m: 0.8rem" id="skip">
       {% if title and big_image %}
         <section aria-roledescription="Title Card">
           <figure style="--br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">

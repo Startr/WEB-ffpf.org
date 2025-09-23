@@ -65,7 +65,7 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
 <div class="parallax" style="
     --w-xl: calc(100vw);
     --mt: -2em;
-    --h: 28rem;
+    --h: 36rem;
     ">
   <div style="--d: flex; --jc:space-between; --fd:column; --m:2em 0">
     <figure style="--bg:grey; --br: 5px; --of: hidden; --grad: 0deg; --pos: relative;
@@ -82,66 +82,13 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
   </div>
 </div>
 
-<!--
-  <section aria-roledescription="News Card" style="--pl:2rem">
-    <h2>Latest News</h2>
-
-    <div data-columns="">
-      {% for post in collections.posts | reverse | slice(0, numberOfLatestPostsToShow) %}
-      <article>
-        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
-
-        <div>
-          <div>
-            <p>{{ post.data.description }}</p>
-          </div>
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-    <a href="/article/2024/02/">« Older Entries</a>
-
-    <div data-columns="">
-      <article>
-        <h2><a href="/article/2024/02/09/feb-9-2024/">Feb 9 2024</a></h2>
-
-        <div>
-          <div>
-            <p>
-              This last day of surgical and dental camp was filled with kindness, love and hope. All patients who
-              received surgical care were seen in the morning by the medical team to ensure uncompromised post-operation
-              and recovery. A few surgeons got involved and even inflated a...
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article>
-        <h2><a href="/article/2024/02/08/feb-8-2024/">Feb 8 2024</a></h2>
-
-        <div>
-          <div>
-            <p>
-              The routine settles in more easily and the familiarization with the place allows them to be proactive as
-              soon as they enter Julia hospital. The efficiency of the Canadian medical team has made it possible to
-              reduce the list of patients waiting for surgery. The team...
-            </p>
-          </div>
-        </div>
-      </article>
-    </div>
-    <a href="/article/2024/02/">« Older Entries</a>
-  </section>{% # end of news section %}
-  </div>
-  -->
-
 
 <!-- Modal -->
-<div id="modal" class="modal">
+<div id="modal" class="modal" style="--z:20000">
   <div class="modal-content">
     <span class="modal-close">&times;</span>
     <a href="/2025/">
-      <img src="/public/uploads/2025/2025-gala.png" alt="2025 Gala" style="max-height: 85vh; width: 100%; object-fit: contain; display: block;">
+      <img src="/public/uploads/2025/2025-gala.png" alt="2025 Gala" style="max-height: 85vh; width: 100%; --maxw:80vw; object-fit: contain; display: block;">
     </a>
   </div>
 </div>
@@ -151,13 +98,13 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100dvw;
+    height: 100dvh;
     background: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100000;
+    z-index: 1000;
     padding: 10px;
   }
 
