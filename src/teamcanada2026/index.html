@@ -1,0 +1,180 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Team Canada 2026
+  order: 2
+title: Team Canada 2026
+subtitle: A Week of Transformation
+big_image: /wp-content/uploads/2018/10/Volunteers-02-768x512.webp
+---
+
+<article style="--d:flex; --fd:column; --ai:center; --g: 2rem;">
+  
+  <!-- Hero / Introduction -->
+  <section style="--ta:center; --maxw:800px; --m:0 auto;">
+    <h2 style="--c: var(--primary); --fs: 2rem; --fw: 700; --mb: 1rem;">
+      Breaking the poverty cycle, one surgery at a time.
+    </h2>
+    <p style="--ta: justify;">
+      Join us for a finite, high-intensity week where skilled Canadian volunteers provide life-changing surgeries, creating immediate and lasting change for India's most disadvantaged.
+    </p>
+  </section>
+
+  <!-- Fundraising Progress Tracker (Placeholder) -->
+  <section style="--w: 100%; --bg: #f5f5f5; --p: 2rem; --br: 8px;">
+    <h3 style="--c: var(--primary); --ta: center; --mb: 1.5rem;">Fundraising Goal: [INSERT GOAL]</h3>
+    <div style="--w: 100%; --h: 2rem; --bg: #ddd; --br: 1rem; --of: hidden; --pos: relative;">
+      <div style="--w: 35%; --h: 100%; --bg: var(--primary); --br: 1rem 0 0 1rem; --d: flex; --ai: center; --jc: flex-end; --p: 0 1rem; --c: white; --fw: bold; --fs: 0.8rem;">
+        35% Raised
+      </div>
+    </div>
+    <p style="--ta: center; --mt: 1rem; --fs: 0.9rem;">
+      <strong>$35,000</strong> raised of $100,000 goal
+    </p>
+    <div style="--d: flex; --jc: center; --mt: 1.5rem;">
+      <a href="/donate/" style="--bg: var(--primary); --c: white; --p: 0.8rem 2rem; --br: 4px; --td: none; --fw: bold; --tt: uppercase;">
+        Donate to Team Canada
+      </a>
+    </div>
+  </section>
+
+  <!-- Countdown Timer -->
+  <section style="--ta: center; --p: 2rem 0;">
+    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+    <style>.d-none { display: none !important; }</style>
+    
+    <div _="
+      init
+        set start to Date.parse('2026-02-01T07:00:00+05:30')
+        set end to Date.parse('2026-02-07T23:59:59+05:30')
+        
+        repeat forever
+          set now to Date.now()
+          
+          if now < start then
+            set diff to start - now
+            set days to Math.floor(diff / (1000 * 60 * 60 * 24))
+            set hours to Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+            set mins to Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
+            
+            put days into #cd-days
+            put hours into #cd-hours
+            put mins into #cd-mins
+            
+            remove .d-none from #state-pre
+            add .d-none to #state-during
+            add .d-none to #state-post
+          else if now <= end then
+             add .d-none to #state-pre
+             remove .d-none from #state-during
+             add .d-none to #state-post
+          else
+             add .d-none to #state-pre
+             add .d-none to #state-during
+             remove .d-none from #state-post
+          end
+          wait 1s
+        end
+    ">
+      
+      <!-- Pre-Camp: Countdown -->
+      <div id="state-pre">
+        <h3 style="--mb: 1rem;">Camp Begins In</h3>
+        <div style="--d: flex; --jc: center; --g: 1rem; --fw: wrap;">
+          <div style="--bg: #333; --c: white; --p: 1rem; --br: 4px; --minw: 80px;">
+            <span id="cd-days" style="--d: block; --fs: 2rem; --fw: bold; --ta: center">00</span>
+            <span style="--fs: 0.8rem; --tt: uppercase; --d: block; --ta: center">Days</span>
+          </div>
+          <div style="--bg: #333; --c: white; --p: 1rem; --br: 4px; --minw: 80px;">
+            <span id="cd-hours" style="--d: block; --fs: 2rem; --fw: bold; --ta: center">00</span>
+            <span style="--fs: 0.8rem; --tt: uppercase; --d: block; --ta: center">Hours</span>
+          </div>
+          <div style="--bg: #333; --c: white; --p: 1rem; --br: 4px; --minw: 80px;">
+            <span id="cd-mins" style="--d: block; --fs: 2rem; --fw: bold; --ta: center">00</span>
+            <span style="--fs: 0.8rem; --tt: uppercase; --d: block; --ta: center">Mins</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- During Camp -->
+      <div id="state-during" class="d-none">
+        <h3 style="--mb: 1rem; --c: var(--primary);">Camp is LIVE!</h3>
+        <p>Our team is currently performing surgeries in India.</p>
+        <a href="#updates" style="--bg: var(--primary); --c: white; --p: 0.5rem 1rem; --br: 4px; --td: none; --mt: 1rem; --d: inline-block;">See Daily Updates</a>
+      </div>
+
+      <!-- Post Camp -->
+      <div id="state-post" class="d-none">
+        <h3 style="--mb: 1rem;">Mission Complete</h3>
+        <p>The 2026 Team Canada Surgical Camp has concluded.</p>
+        <a href="#impact" style="--td: underline; --c: var(--primary); --fw: bold;">See the Impact Report</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Meet the Team -->
+  <section style="--w: 100%;">
+    <h2 class="line" style="--c: var(--primary); --mb: 2rem;">Meet the Team</h2>
+    <div style="--d: flex; --fw: wrap; --g: 2rem; --jc: center;">
+      <!-- Profile 1 -->
+      <div style="--w: 100%; --maxw-sm: 300px; --bg: white; --shadow: 0 4px 6px rgba(0,0,0,0.1); --br: 8px; --of: hidden;">
+        <div style="--h: 200px; --bg: #eee; --d: flex; --ai: center; --jc: center;">
+          <img src="/wp-content/uploads/2018/10/Volunteer-Student-03-600x400.webp" alt="Dr. Jane Doe" style="--w: 100%; --h: 100%; --objf: cover;">
+        </div>
+        <div style="--p: 1.5rem;">
+          <h4 style="--m: 0 0 0.5rem 0;">Dr. Jane Doe</h4>
+          <span style="--c: #666; --d: block; --mb: 1rem; --fs: 0.9rem;">Lead Surgeon</span>
+          <p style="--fs: 0.9rem; --ta: justify;">Over 15 years specializing in reconstructive surgery. This is her 4th mission with Team Canada.</p>
+        </div>
+      </div>
+       <!-- Profile 2 -->
+      <div style="--w: 100%; --maxw-sm: 300px; --bg: white; --shadow: 0 4px 6px rgba(0,0,0,0.1); --br: 8px; --of: hidden;">
+        <div style="--h: 200px; --bg: #eee; --d: flex; --ai: center; --jc: center;">
+             <img src="/wp-content/uploads/2018/10/Volunteers-02-768x512.webp" alt="John Smith" style="--w: 100%; --h: 100%; --objf: cover;">
+        </div>
+        <div style="--p: 1.5rem;">
+          <h4 style="--m: 0 0 0.5rem 0;">John Smith</h4>
+          <span style="--c: #666; --d: block; --mb: 1rem; --fs: 0.9rem;">Anesthesiologist</span>
+          <p style="--fs: 0.9rem; --ta: justify;">Dedicated to patient safety and pain management in low-resource settings.</p>
+        </div>
+      </div>
+    </div>
+    <div style="--d: flex; --jc: center; --mt: 2rem;">
+        <a href="/get-involved/" style="--td: underline; --c: var(--primary);">Join the team as a volunteer</a>
+    </div>
+  </section>
+
+  <!-- Impact Stories -->
+  <section style="--w: 100%;">
+    <h2 class="line" style="--c: var(--primary); --mb: 2rem;">Stories of Change</h2>
+    <div style="--d: flex; --fd: column; --g: 2rem;">
+      
+      <!-- Story 1 -->
+      <div style="--d: flex; --fd: column; --fd-md: row; --g: 2rem; --ai: center;">
+        <div style="flex: 1;">
+           <img src="/wp-content/uploads/2018/10/Family-04-400x250.webp" alt="Patient Story" style="--w: 100%; --br: 8px;">
+        </div>
+        <div style="flex: 1;">
+          <h3 style="--mb: 0.5rem;">A New Beginning for Aarav</h3>
+          <p style="--ta: justify;">
+            Before surgery, 8-year-old Aarav struggled to walk. Thanks to the 2024 camp, he's now playing soccer with his friends. The procedure wasn't just medical; it restored his childhood.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section style="--ta: center; --p: 3rem 1rem; --bg: var(--primary); --c: white; --br: 8px; --mt: 2rem;">
+    <h2 style="--c: white; --mb: 1rem;">Be Part of the Transformation</h2>
+    <p style="--maxw: 600px; --m: 0 auto 2rem auto;">
+      Your support makes these surgeries possible. 100% of your donation goes directly to medical supplies and patient care.
+    </p>
+    <a href="/donate/" style="--bg: white; --c: var(--primary); --p: 1rem 3rem; --br: 4px; --td: none; --fw: bold; --tt: uppercase; --d: inline-block;">
+      Donate Now
+    </a>
+  </section>
+
+</article>

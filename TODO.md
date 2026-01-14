@@ -6,7 +6,7 @@
   - [x] Verify CRA Registration # with CRA public registry: 892570938RR0001
   - [x] Add footer to all pages: "La Fondation de la Libération de la Pauvreté Inc. | CRA Registration #: 892570938RR0001"
   - [x] Test footer visibility on homepage and key pages
-  - [ ] Commit changes
+  - [x] Commit changes
 
 - [ ] **[MIXED]** Professional Contact Details (Alexander D. Somma)
   - [x] Update Contact Us page with: Freedom From Poverty Foundation, 1333 Stravinski Avenue, Brossard, QC J4X 2C5
@@ -28,12 +28,18 @@
 
 ### 🔶 Team Canada 2026 Campaign - Phase 2: Awareness & Recruitment (Jan 25-31)
 - [ ] **[SITE]** Team Canada Landing Page
-  - [ ] Create landing page at /teamcanada2026 with countdown timer
+  - [x] Create landing page at /teamcanada2026 
+  - [x] Implement Hyperscript active countdown timer (Pre/During/Post states)
   - [ ] Add volunteer profiles with photos
   - [ ] Add past camp impact stories
   - [ ] Implement fundraising progress tracker widget
-  - [ ] Add Newsletter modal popup (30s trigger)
   - [ ] Optimize for mobile
+  - [ ] **Questions for Board/Stakeholders:**
+    - [ ] Verify fundraising goal amount ($100,000?)
+    - [x] Confirm start/end dates and timezones: Feb 1 7am IST start
+    - [ ] Request photos/bios for: Dr. Jane Doe placeholder, John Smith placeholder
+    - [ ] Request "Aarav" story details and photo confirmation
+    - [ ] Get confirmed list of 2026 volunteers
 
 - [ ] **[EXTERNAL]** CanadaHelps Portal Configuration
   - [ ] Upload logo files (PNG, SVG, JPG formats)
