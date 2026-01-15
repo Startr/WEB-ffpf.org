@@ -29,7 +29,8 @@
 ### 🔶 Team Canada 2026 Campaign - Phase 2: Awareness & Recruitment (Jan 25-31)
 - [ ] **[SITE]** Team Canada Landing Page
   - [x] Create landing page at /teamcanada2026 
-  - [x] Implement Hyperscript active countdown timer (Pre/During/Post states)
+  - [x] Implement active countdown timer (Pre/During/Post states)
+    - [ ] Having it work in _hyperscript would be a nice todo
   - [ ] Add volunteer profiles with photos
   - [ ] Add past camp impact stories
   - [ ] Implement fundraising progress tracker widget
@@ -38,6 +39,8 @@
     - [ ] Verify fundraising goal amount ($100,000?)
     - [x] Confirm start/end dates and timezones: Feb 1 7am IST start
     - [ ] Request photos/bios for: Dr. Jane Doe placeholder, John Smith placeholder
+    - [ ] Verify actual number of days/hours for the countdown check
+    - [ ] Get photos of the 2026 location/hospital if available
     - [ ] Request "Aarav" story details and photo confirmation
     - [ ] Get confirmed list of 2026 volunteers
 

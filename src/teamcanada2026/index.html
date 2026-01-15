@@ -40,77 +40,85 @@ big_image: /wp-content/uploads/2018/10/Volunteers-02-768x512.webp
 
   <!-- Countdown Timer -->
   <section style="--ta: center; --p: 2rem 0;">
-    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
-    <style>.d-none { display: none !important; }</style>
+     <section style="--ta: center; --p: 2rem 0; text-align: var(--ta); padding: var(--p);">
     
-    <div _="
-      init
-        set start to Date.parse('2026-02-01T07:00:00+05:30')
-        set end to Date.parse('2026-02-07T23:59:59+05:30')
-        
-        repeat forever
-          set now to Date.now()
-          
-          if now < start then
-            set diff to start - now
-            set days to Math.floor(diff / (1000 * 60 * 60 * 24))
-            set hours to Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-            set mins to Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))
-            
-            put days into #cd-days
-            put hours into #cd-hours
-            put mins into #cd-mins
-            
-            remove .d-none from #state-pre
-            add .d-none to #state-during
-            add .d-none to #state-post
-          else if now <= end then
-             add .d-none to #state-pre
-             remove .d-none from #state-during
-             add .d-none to #state-post
-          else
-             add .d-none to #state-pre
-             add .d-none to #state-during
-             remove .d-none from #state-post
-          end
-          wait 1s
-        end
-    ">
+    <div id="countdown-container">
       
       <!-- Pre-Camp: Countdown -->
       <div id="state-pre">
-        <h3 style="--mb: 1rem;">Camp Begins In</h3>
-        <div style="--d: flex; --jc: center; --g: 1rem; --fw: wrap;">
-          <div style="--bg: #333; --c: white; --p: 1rem; --br: 4px; --minw: 80px;">
-            <span id="cd-days" style="--d: block; --fs: 2rem; --fw: bold; --ta: center">00</span>
-            <span style="--fs: 0.8rem; --tt: uppercase; --d: block; --ta: center">Days</span>
+        <h3 style="--mb: 1rem; margin-bottom: var(--mb);">Camp Begins In</h3>
+        <div style="--d: flex; --jc: center; --g: 1rem; --fw: wrap; display: var(--d); justify-content: var(--jc); gap: var(--g); flex-wrap: var(--fw);">
+          <div style="--bg: #333; --c: white; --p: 1rem; --br: 4px; --minw: 80px; background: var(--bg); color: var(--c); padding: var(--p); border-radius: var(--br); min-width: var(--minw);">
+            <span id="cd-days" style="--d: block; --fs: 2rem; --fw: bold; --ta: center; display: var(--d); font-size: var(--fs); font-weight: var(--fw); text-align: var(--ta);">00</span>
+            <span style="--fs: 0.8rem; --tt: uppercase; --d: block; --ta: center; font-size: var(--fs); text-transform: var(--tt); display: var(--d); text-align: var(--ta);">Days</span>
           </div>
-          <div style="--bg: #333; --c: white; --p: 1rem; --br: 4px; --minw: 80px;">
-            <span id="cd-hours" style="--d: block; --fs: 2rem; --fw: bold; --ta: center">00</span>
-            <span style="--fs: 0.8rem; --tt: uppercase; --d: block; --ta: center">Hours</span>
+          <div style="--bg: #333; --c: white; --p: 1rem; --br: 4px; --minw: 80px; background: var(--bg); color: var(--c); padding: var(--p); border-radius: var(--br); min-width: var(--minw);">
+            <span id="cd-hours" style="--d: block; --fs: 2rem; --fw: bold; --ta: center; display: var(--d); font-size: var(--fs); font-weight: var(--fw); text-align: var(--ta);">00</span>
+            <span style="--fs: 0.8rem; --tt: uppercase; --d: block; --ta: center; font-size: var(--fs); text-transform: var(--tt); display: var(--d); text-align: var(--ta);">Hours</span>
           </div>
-          <div style="--bg: #333; --c: white; --p: 1rem; --br: 4px; --minw: 80px;">
-            <span id="cd-mins" style="--d: block; --fs: 2rem; --fw: bold; --ta: center">00</span>
-            <span style="--fs: 0.8rem; --tt: uppercase; --d: block; --ta: center">Mins</span>
+          <div style="--bg: #333; --c: white; --p: 1rem; --br: 4px; --minw: 80px; background: var(--bg); color: var(--c); padding: var(--p); border-radius: var(--br); min-width: var(--minw);">
+            <span id="cd-mins" style="--d: block; --fs: 2rem; --fw: bold; --ta: center; display: var(--d); font-size: var(--fs); font-weight: var(--fw); text-align: var(--ta);">00</span>
+            <span style="--fs: 0.8rem; --tt: uppercase; --d: block; --ta: center; font-size: var(--fs); text-transform: var(--tt); display: var(--d); text-align: var(--ta);">Mins</span>
           </div>
         </div>
       </div>
 
       <!-- During Camp -->
       <div id="state-during" class="d-none">
-        <h3 style="--mb: 1rem; --c: var(--primary);">Camp is LIVE!</h3>
+        <h3 style="--mb: 1rem; --c: var(--primary); margin-bottom: var(--mb); color: var(--c);">Camp is LIVE!</h3>
         <p>Our team is currently performing surgeries in India.</p>
-        <a href="#updates" style="--bg: var(--primary); --c: white; --p: 0.5rem 1rem; --br: 4px; --td: none; --mt: 1rem; --d: inline-block;">See Daily Updates</a>
+        <a href="#updates" style="--bg: var(--primary); --c: white; --p: 0.5rem 1rem; --br: 4px; --td: none; --mt: 1rem; --d: inline-block; background: var(--bg); color: var(--c); padding: var(--p); border-radius: var(--br); text-decoration: var(--td); margin-top: var(--mt); display: var(--d);">See Daily Updates</a>
       </div>
 
       <!-- Post Camp -->
       <div id="state-post" class="d-none">
-        <h3 style="--mb: 1rem;">Mission Complete</h3>
+        <h3 style="--mb: 1rem; margin-bottom: var(--mb);">Mission Complete</h3>
         <p>The 2026 Team Canada Surgical Camp has concluded.</p>
-        <a href="#impact" style="--td: underline; --c: var(--primary); --fw: bold;">See the Impact Report</a>
+        <a href="#impact" style="--td: underline; --c: var(--primary); --fw: bold; text-decoration: var(--td); color: var(--c); font-weight: var(--fw);">See the Impact Report</a>
       </div>
 
     </div>
+  </section>
+
+  <style>
+    .d-none {
+      display: none;
+    }
+  </style>
+  <script>
+    const startTime = new Date('2026-02-01T07:00:00+05:30').getTime();
+    const endTime = new Date('2026-02-07T23:59:59+05:30').getTime();
+    
+    function updateCountdown() {
+      const now = Date.now();
+      
+      if (now < startTime) {
+        const diff = startTime - now;
+        const days = Math.floor(diff / 86400000);
+        const hours = Math.floor((diff % 86400000) / 3600000);
+        const mins = Math.floor((diff % 3600000) / 60000);
+        
+        document.getElementById('cd-days').textContent = String(days).padStart(2, '0');
+        document.getElementById('cd-hours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('cd-mins').textContent = String(mins).padStart(2, '0');
+        
+        document.getElementById('state-pre').classList.remove('d-none');
+        document.getElementById('state-during').classList.add('d-none');
+        document.getElementById('state-post').classList.add('d-none');
+      } else if (now <= endTime) {
+        document.getElementById('state-pre').classList.add('d-none');
+        document.getElementById('state-during').classList.remove('d-none');
+        document.getElementById('state-post').classList.add('d-none');
+      } else {
+        document.getElementById('state-pre').classList.add('d-none');
+        document.getElementById('state-during').classList.add('d-none');
+        document.getElementById('state-post').classList.remove('d-none');
+      }
+    }
+    
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
   </section>
 
   <!-- Meet the Team -->
