@@ -39,7 +39,7 @@
     - [ ] Verify fundraising goal amount ($100,000?)
     - [x] Confirm start/end dates and timezones: Feb 1 7am IST start
     - [ ] Request photos/bios for: Dr. Jane Doe placeholder, John Smith placeholder
-    - [ ] Verify actual number of days/hours for the countdown check
+    - [x] Verify actual number of days/hours for the countdown check
     - [ ] Get photos of the 2026 location/hospital if available
     - [ ] Request "Aarav" story details and photo confirmation
     - [ ] Get confirmed list of 2026 volunteers
