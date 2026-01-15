@@ -2,7 +2,7 @@
 
 ## 🔥 This Week (January 14-24, 2026)
 ### 🔥 CRITICAL: Team Canada 2026 Campaign - Phase 1: Immediate Corrections
-- [ ] **[SITE]** Legal Footer Implementation (Alexander D. Somma)
+- [x] **[SITE]** Legal Footer Implementation (Alexander D. Somma)
   - [x] Verify CRA Registration # with CRA public registry: 892570938RR0001
   - [x] Add footer to all pages: "La Fondation de la Libération de la Pauvreté Inc. | CRA Registration #: 892570938RR0001"
   - [x] Test footer visibility on homepage and key pages
@@ -15,10 +15,9 @@
   - [ ] Update CanadaHelps and social media profiles
   - [x] Verify consistency across all pages
 
-- [ ] **[EXTERNAL]** DBA Registration Verification (Alexander D. Somma)
-  - [ ] Confirm "Freedom From Poverty Foundation" is registered as DBA/Trade Name in Quebec
-  - [ ] If not registered, initiate registration with Registraire des Entreprises du Québec
-  - [ ] Document registration number (if applicable)
+- [ ] **[EXTERNAL]** DBA Registration Verification (Dr. D)
+  - "Freedom From Poverty Foundation" needs to be added as the english Name in Quebec
+  - [ ] Initiate registration with Registraire des Entreprises du Québec
 
 - [x] **[SITE]** Functional Call-to-Action Buttons
   - [x] Link "Sponsor A Surgical Camp" → ffpf.org/donate with support note
@@ -27,14 +26,14 @@
   - [x] Verify CanadaHelps integration
 
 ### 🔶 Team Canada 2026 Campaign - Phase 2: Awareness & Recruitment (Jan 25-31)
-- [ ] **[SITE]** Team Canada Landing Page
+- [ ] **[SITE]** Team Canada Landing Page (Alexander D. Somma and 
   - [x] Create landing page at /teamcanada2026 
   - [x] Implement active countdown timer (Pre/During/Post states)
     - [ ] Having it work in _hyperscript would be a nice todo
   - [ ] Add volunteer profiles with photos
   - [ ] Add past camp impact stories
   - [ ] Implement fundraising progress tracker widget
-  - [ ] Optimize for mobile
+  - [x] Optimize for mobile
   - [ ] **Questions for Board/Stakeholders:**
     - [ ] Verify fundraising goal amount ($100,000?)
     - [x] Confirm start/end dates and timezones: Feb 1 7am IST start
