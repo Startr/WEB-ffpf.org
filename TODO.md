@@ -80,4 +80,95 @@
   - [x] Test data loading functionality
   - [x] Test admin interface for adding/editing links
   - [x] Document staff process for managing links
-  - [x] Verify functionality and commit changes
+   - [x] Verify functionality and commit changes
+
+## 🔥 Time-Sensitive (January 30 - February 5, 2026)
+### 🔥 CRITICAL: Pre-Launch Team Canada 2026 Tasks (Deadline: Jan 31)
+- [x] **[SITE]** Create Communication Folder and Drafts (Priority: High)
+  - [x] Create communication/ folder in root
+  - [x] Add email campaign draft files (e.g., announcement_email.md, templates.md)
+  - [x] Add social media content drafts (e.g., meet_the_team_posts.md, teaser_videos.md)
+  - [x] Organize drafts by task and stakeholder
+  - [x] Update external tasks to reference drafts
+
+- [ ] **[EXTERNAL]** CanadaHelps Portal Configuration (Stakeholder: Dr. D)
+  - [ ] Upload logo files (PNG, SVG, JPG formats)
+  - [ ] Create donation designations: Greatest Needs, Surgery Camps 2026, Montreal Food Aid 2026
+  - [ ] Draft receipt thank-you message templates
+  - [ ] Test donation flow (small test transaction)
+  - [ ] Configure recurring donation option
+
+- [ ] **[EXTERNAL]** Social Media Campaign Phase 1 (Stakeholder: Board)
+  - [ ] Create "Meet the Team" content (3-4 posts/week, Jan 25-31)
+  - [ ] Develop teaser videos about camp location and need
+  - [ ] Schedule posts across Facebook/Instagram
+  - [ ] Track engagement and adjust strategy
+
+- [ ] **[SITE]** Team Canada Landing Page Finalization (Stakeholder: Alexander D. Somma)
+  - [ ] Add volunteer profiles with photos (request from board if missing)
+  - [ ] Add past camp impact stories (verify Aarav story details)
+  - [ ] Implement fundraising progress tracker widget
+  - [ ] Optimize for mobile and test countdown timer
+  - [ ] **[SITE]** Update Team Members Table with Status Columns and Plan Addition to 2026 Page
+  - [ ] Add check columns to team_members.md (Added to Page, Interviewed, Photographed, Bio Written)
+  - [ ] Plan integration into /teamcanada2026 page (profiles section)
+  - [ ] Assign responsibilities for gathering missing info
+  - [ ] Update TODO with next steps
+
+- [ ] **[EXTERNAL]** Email Campaign Setup (Stakeholder: Dr. D)
+  - [ ] Draft camp announcement email to existing subscribers
+  - [ ] Create email templates for campaign phases
+  - [ ] Set up newsletter modal email capture
+  - [ ] Test double opt-in process
+
+- [ ] **[SITE]** French Translation Correction (Stakeholder: Alexander D. Somma)
+  - [ ] Audit all French pages (/fr/ directories)
+  - [ ] Correct organization name to "La Fondation de la Libération de la Pauvreté Inc."
+  - [ ] Review key term translations for accuracy
+  - [ ] Update donation page in French
+
+- [ ] **[MIXED]** Professional Contact Details Final Verification (Stakeholder: Alexander D. Somma)
+  - [ ] Update CanadaHelps and social media profiles
+  - [ ] Verify consistency across all pages and commit
+
+- [ ] **[EXTERNAL]** DBA Registration Verification (Stakeholder: Dr. D)
+  - [ ] Initiate registration with Registraire des Entreprises du Québec for "Freedom From Poverty Foundation" as english name
+
+## Future Enhancements
+
+### [CSS] startr.style Improvements
+- [ ] **Host startr.style Locally**: Download and host CSS framework locally to eliminate external dependency
+  - [ ] Download https://startr.style/style.css and save as src/_includes/assets/startr.css
+  - [ ] Update head.html to link local file instead of external
+  - [ ] Add Eleventy passthrough for CSS in eleventy.config.js
+  - [ ] Test site functionality and commit changes
+
+- [ ] **Audit and Minify CSS**: Reduce bundle size by removing unused utilities
+  - [ ] Review startr.css for unused utilities (shadows, transforms, etc.)
+  - [ ] Implement PostCSS build script for minification
+  - [ ] Add build:css script to package.json
+  - [ ] Test minified CSS and verify no breakage
+
+- [ ] **Refactor Inline Styles to Classes**: Reduce repetition and improve maintainability
+  - [ ] Extract common inline styles into custom CSS classes
+  - [ ] Create src/_includes/assets/custom.css with reusable classes
+  - [ ] Replace inline styles in layouts/pages with classes
+  - [ ] Test responsive design and accessibility
+
+- [ ] **Implement SCSS for Theming**: Enable better customization and organization
+  - [ ] Add SCSS support to Eleventy via plugin
+  - [ ] Create theme.scss with variables and mixins
+  - [ ] Compile SCSS to CSS during build
+  - [ ] Integrate with existing startr.style overrides
+
+- [ ] **Component-Based Styling Overhaul**: Create reusable styled components
+  - [ ] Identify reusable components (buttons, cards, modals)
+  - [ ] Create dedicated CSS classes for components
+  - [ ] Move modal styles from inline to global CSS
+  - [ ] Use Eleventy shortcodes for styled components
+
+- [ ] **Add CSS Optimization to Build Pipeline**: Improve performance with critical CSS and minification
+  - [ ] Integrate cssnano for autoprefixing and minification
+  - [ ] Add critical CSS extraction for above-the-fold content
+  - [ ] Update netlify.toml for build optimization
+  - [ ] Test load times and performance improvements

@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "f2477b458352b19f",
+    "type": "split",
+    "children": [
+      {
+        "id": "a412b825028bc73b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "261f18360a7195f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "communication/team_members.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "team_members"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "62f4b80be1184616",
+    "type": "split",
+    "children": [
+      {
+        "id": "bea3dc82ffb8dc34",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef97bd3f4b830986",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "adcbdc671d1dd451",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ef4ddaeb3511b903",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "420dae577e8bb2de",
+    "type": "split",
+    "children": [
+      {
+        "id": "b535163a7dcdc56d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae5e57a2bcb0a76f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "communication/team_members.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for team_members"
+            }
+          },
+          {
+            "id": "3b4d7dee17a11c29",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "communication/team_members.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from team_members"
+            }
+          },
+          {
+            "id": "5862e06519cbec17",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "361292262c84e7b6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "3d4881094f8bbfa9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "communication/team_members.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of team_members"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "261f18360a7195f1",
+  "lastOpenFiles": [
+    "dist/admin/config.yml",
+    "dist/src/back-img.jpg",
+    "dist/about-us/Alex_Headshot.jpeg",
+    "dist/about-us/Community-01.jpg",
+    "dist/src/public/plugins/woocommerce/assets/css/photoswipe/default-skin/preloader.gif",
+    "dist/src/public/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.svg",
+    "dist/src/public/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.png",
+    "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards/visa.svg",
+    "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards/mastercard.svg",
+    "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards/maestro.svg",
+    "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards/diners.svg",
+    "dist/src/public/plugins/woocommerce/assets/css/photoswipe/default-skin",
+    "dist/src/public/themes/Divi/includes/builder/styles/images",
+    "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards",
+    "dist/src/public/themes/Divi/includes/builder/styles",
+    "dist/src/public/plugins/woocommerce/assets/images/icons",
+    "dist/src/public/plugins/woocommerce/assets/css/photoswipe",
+    "dist/src/public/themes/Divi/includes/builder",
+    "dist/src/public/uploads/2019/10",
+    "dist/src/public/uploads/2019/09",
+    "dist/src/public/plugins/woocommerce/assets/images",
+    "node_modules/dom-serializer/node_modules/entities/readme.md",
+    "node_modules/htmlparser2/node_modules/entities/readme.md",
+    "node_modules/filelist/node_modules/minimatch/node_modules/brace-expansion/README.md",
+    "node_modules/filelist/node_modules/minimatch/README.md",
+    "node_modules/prebuild-install/node_modules/tar-fs/node_modules/tar-stream/README.md",
+    "node_modules/prebuild-install/node_modules/tar-fs/README.md",
+    "node_modules/flat-cache/node_modules/rimraf/README.md",
+    "node_modules/flat-cache/node_modules/rimraf/CHANGELOG.md",
+    "node_modules/maximatch/node_modules/arrify/readme.md",
+    "node_modules/maximatch/node_modules/array-union/readme.md",
+    "node_modules/maximatch/node_modules/array-differ/readme.md",
+    "node_modules/@sindresorhus/transliterate/node_modules/escape-string-regexp/readme.md",
+    "node_modules/finalhandler/node_modules/debug/node_modules/ms/readme.md",
+    "node_modules/finalhandler/node_modules/debug/node_modules/ms/license.md",
+    "node_modules/finalhandler/node_modules/debug/README.md",
+    "node_modules/finalhandler/node_modules/debug/CHANGELOG.md",
+    "node_modules/nunjucks/node_modules/commander/Readme.md",
+    "node_modules/nunjucks/node_modules/commander/CHANGELOG.md",
+    "node_modules/markdown-it/node_modules/entities/readme.md",
+    "node_modules/gray-matter/node_modules/js-yaml/node_modules/argparse/README.md",
+    "node_modules/gray-matter/node_modules/js-yaml/node_modules/argparse/CHANGELOG.md",
+    "node_modules/gray-matter/node_modules/js-yaml/README.md",
+    "node_modules/gray-matter/node_modules/js-yaml/CHANGELOG.md",
+    "node_modules/luxon/README.md",
+    "node_modules/luxon/LICENSE.md"
+  ]
+}
