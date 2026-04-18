@@ -153,7 +153,7 @@
 - [ ] **[MIXED]** Dinner Logistics & Materials (Stakeholder: Vinod)
   - [ ] Prepare camp sponsorship one-pagers or table cards ($12K/camp ask)
   - [ ] Test A/V setup for Archana documentary preview playback
-  - [ ] Finalize presentation with confirmed content and review with Vinod
+  - [ ] Finalize presentation with confirmed content and review with Vinod (--resume e1910f14-8967-4372-9da2-5054d74f7cf0)
 
 ## Future Enhancements
 
