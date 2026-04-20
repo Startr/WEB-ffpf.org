@@ -6,6 +6,7 @@
       {
         "id": "b6734bf1e94af38d",
         "type": "tabs",
+        "dimension": 35.79335793357934,
         "children": [
           {
             "id": "e3c999d27ee81859",
@@ -14,7 +15,7 @@
               "type": "markdown",
               "state": {
                 "file": "communication/donor-dinner-thankyou-2026.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -24,11 +25,12 @@
         ]
       },
       {
-        "id": "7e392ac180598a37",
+        "id": "0942baa75528de29",
         "type": "tabs",
+        "dimension": 64.20664206642066,
         "children": [
           {
-            "id": "a47a8f2da46e873b",
+            "id": "6df8449383b79ede",
             "type": "leaf",
             "state": {
               "type": "reveal-preview-view",
@@ -94,8 +96,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "420dae577e8bb2de",
@@ -111,7 +112,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "communication/team_members.md",
+                "file": "communication/donor-dinner-thankyou-2026.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +122,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for team_members"
+              "title": "Backlinks for donor-dinner-thankyou-2026"
             }
           },
           {
@@ -201,8 +202,16 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "e3c999d27ee81859",
+  "active": "ef97bd3f4b830986",
   "lastOpenFiles": [
+    "communication/Screenshot 2026-04-20 at 10.56.23 AM.png",
+    "communication/ffpf-reference.pptx",
+    "Pipfile.lock",
+    "Pipfile",
+    "communication/donor-dinner-thankyou-2026.pptx",
+    "donor-dinner-thankyou-2026.pdf",
+    "Screenshot 2026-04-18 at 8.41.24 PM.png",
+    "KANBAN.canvas",
     "communication/team_members.md",
     "communication/social_media_drafts.md",
     "communication/email_campaign_drafts.md",
@@ -217,16 +226,10 @@
     "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards/visa.svg",
     "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards/mastercard.svg",
     "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards/maestro.svg",
-    "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards/diners.svg",
     "dist/src/public/plugins/woocommerce/assets/css/photoswipe/default-skin",
     "dist/src/public/themes/Divi/includes/builder/styles/images",
     "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards",
     "dist/src/public/themes/Divi/includes/builder/styles",
-    "dist/src/public/plugins/woocommerce/assets/images/icons",
-    "dist/src/public/plugins/woocommerce/assets/css/photoswipe",
-    "dist/src/public/themes/Divi/includes/builder",
-    "dist/src/public/uploads/2019/10",
-    "dist/src/public/uploads/2019/09",
     "node_modules/dom-serializer/node_modules/entities/readme.md",
     "node_modules/htmlparser2/node_modules/entities/readme.md",
     "node_modules/filelist/node_modules/minimatch/node_modules/brace-expansion/README.md",
@@ -247,7 +250,6 @@
     "node_modules/nunjucks/node_modules/commander/CHANGELOG.md",
     "node_modules/markdown-it/node_modules/entities/readme.md",
     "node_modules/gray-matter/node_modules/js-yaml/node_modules/argparse/README.md",
-    "node_modules/gray-matter/node_modules/js-yaml/node_modules/argparse/CHANGELOG.md",
-    "node_modules/gray-matter/node_modules/js-yaml/README.md"
+    "node_modules/gray-matter/node_modules/js-yaml/node_modules/argparse/CHANGELOG.md"
   ]
 }
