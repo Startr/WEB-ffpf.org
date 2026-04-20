@@ -119,7 +119,7 @@
     },
     {
       "color": "5",
-      "height": 250,
+      "height": 340,
       "id": "col-in_progress",
       "label": "In Progress",
       "type": "group",
@@ -130,14 +130,28 @@
     {
       "file_path": "TODO.md",
       "height": 80,
-      "id": "814a085ffab5a1e3",
+      "id": "3c602227cdb4b31c",
       "source": "todo_md",
-      "tags": [],
-      "text": "**Donor Appreciation Dinner \u2014 2026 Camp Thank-You Presentation**\n- [ ] Obtain video/testimony of patient with swollen face \u2014 confirm availability, length, quality\n- [ ] Confirm patient's name and permission to use his story publicly\n- [ ] Obtain Archana 2-minute documentary preview \u2014 final cut ready?\n- [ ] Collect confirmed impact numbers from 2026 Jamkhed camps (surgeries, patients screened, procedures, follow-up plans)\n- [ ] Confirm list of volunteers who want individual name recognition at dinner\n- [ ] Confirm November 2026 benefit dinner date for closing slide",
+      "tags": [
+        "#critical"
+      ],
+      "text": "**[EXTERNAL] DBA Registration Verification (Stakeholder: Dr. D)**\n- [ ] \"Freedom From Poverty Foundation\" needs to be added as the english Name in Quebec\n- [ ] Initiate registration with Registraire des Entreprises du Qu\u00e9bec\n- [ ] Update CanadaHelps and social media profiles (Alexander D. Somma)\n`#critical`",
       "type": "text",
       "width": 280,
       "x": 710,
       "y": 60
+    },
+    {
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "814a085ffab5a1e3",
+      "source": "todo_md",
+      "tags": [],
+      "text": "**Donor Appreciation Dinner \u2014 2026 Camp Thank-You Presentation**\n- [ ] [EXTERNAL] Content & Media To Confirm (Stakeholder: Vinod / Dr. D)\n- [ ] Obtain video/testimony of patient with swollen face \u2014 confirm availability, length, quality\n- [ ] Confirm patient's name and permission to use his story publicly\n- [ ] Obtain Archana 2-minute documentary preview \u2014 final cut ready?\n- [ ] Collect confirmed impact numbers from 2026 Jamkhed camps (surgeries, patients screened, procedures, follow-up plans)\n- [ ] Confirm list of volunteers who want individual name recognition at dinner\n- [ ] Confirm November 2026 benefit dinner date for closing slide",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 150
     },
     {
       "file_path": "TODO.md",
@@ -149,7 +163,7 @@
       "type": "text",
       "width": 280,
       "x": 710,
-      "y": 150
+      "y": 240
     },
     {
       "color": "1",
