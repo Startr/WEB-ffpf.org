@@ -6,7 +6,7 @@
       {
         "id": "b6734bf1e94af38d",
         "type": "tabs",
-        "dimension": 35.79335793357934,
+        "dimension": 50,
         "children": [
           {
             "id": "e3c999d27ee81859",
@@ -25,12 +25,12 @@
         ]
       },
       {
-        "id": "0942baa75528de29",
+        "id": "82ce029ad9db8575",
         "type": "tabs",
-        "dimension": 64.20664206642066,
+        "dimension": 50,
         "children": [
           {
-            "id": "6df8449383b79ede",
+            "id": "840524379612b449",
             "type": "leaf",
             "state": {
               "type": "reveal-preview-view",
@@ -202,34 +202,34 @@
       "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "ef97bd3f4b830986",
+  "active": "840524379612b449",
   "lastOpenFiles": [
+    "communication/media/media1.mp4",
+    "communication/media/media3.mp4",
+    "communication/media/media2.mp4",
+    "communication/media/image2.png",
+    "communication/media/image4.png",
+    "communication/media/image3.png",
+    "communication/media/image1.png",
+    "communication/media",
+    "communication/donor-dinner-thankyou-2026.pptx",
+    "communication/donor-dinner-thankyou-2026.pptx.zip",
+    "communication/donor-dinner-thankyou-2026 copy.pptx",
+    "communication/donor-dinner-thankyou-2026.zip",
+    "communication/Archive.zip",
     "communication/Screenshot 2026-04-20 at 10.56.23 AM.png",
     "communication/ffpf-reference.pptx",
     "Pipfile.lock",
-    "Pipfile",
-    "communication/donor-dinner-thankyou-2026.pptx",
-    "donor-dinner-thankyou-2026.pdf",
     "Screenshot 2026-04-18 at 8.41.24 PM.png",
     "KANBAN.canvas",
     "communication/team_members.md",
     "communication/social_media_drafts.md",
     "communication/email_campaign_drafts.md",
     "communication/donor-dinner-thankyou-2026.md",
-    "dist/admin/config.yml",
     "dist/src/back-img.jpg",
     "dist/about-us/Alex_Headshot.jpeg",
     "dist/about-us/Community-01.jpg",
     "dist/src/public/plugins/woocommerce/assets/css/photoswipe/default-skin/preloader.gif",
-    "dist/src/public/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.svg",
-    "dist/src/public/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.png",
-    "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards/visa.svg",
-    "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards/mastercard.svg",
-    "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards/maestro.svg",
-    "dist/src/public/plugins/woocommerce/assets/css/photoswipe/default-skin",
-    "dist/src/public/themes/Divi/includes/builder/styles/images",
-    "dist/src/public/plugins/woocommerce/assets/images/icons/credit-cards",
-    "dist/src/public/themes/Divi/includes/builder/styles",
     "node_modules/dom-serializer/node_modules/entities/readme.md",
     "node_modules/htmlparser2/node_modules/entities/readme.md",
     "node_modules/filelist/node_modules/minimatch/node_modules/brace-expansion/README.md",

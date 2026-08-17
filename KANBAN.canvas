@@ -12,36 +12,123 @@
       "y": 0
     },
     {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 65,
+          "tags": [],
+          "text": "Download https://startr.style/style.css and save as src/_includes/assets/startr.css"
+        },
+        {
+          "checked": false,
+          "line_num": 66,
+          "tags": [],
+          "text": "Update head.html to link local file instead of external"
+        },
+        {
+          "checked": false,
+          "line_num": 67,
+          "tags": [],
+          "text": "Add Eleventy passthrough for CSS in eleventy.config.js"
+        },
+        {
+          "checked": false,
+          "line_num": 68,
+          "tags": [],
+          "text": "Test site functionality and commit changes"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "13851b9c6751214c",
+      "id": "213f571883d71d51",
+      "line_num": 64,
       "source": "todo_md",
       "tags": [],
-      "text": "**Host startr.style Locally: Download and host CSS framework locally to eliminate external dependency**\n- [ ] Download https://startr.style/style.css and save as src/_includes/assets/startr.css\n- [ ] Update head.html to link local file instead of external\n- [ ] Add Eleventy passthrough for CSS in eleventy.config.js\n- [ ] Test site functionality and commit changes",
+      "text": "**Host startr.style Locally: Download and host CSS framework locally to eliminate external dependency**\n- [ ] Download https://startr.style/style.css and save as src/_includes/assets/startr.css\n- [ ] Update head.html to link local file instead of external\n- [ ] Add Eleventy passthrough for CSS in eleventy.config.js\n- [ ] Test site functionality and commit changes\n\n`TODO.md:L64`",
       "type": "text",
       "width": 280,
       "x": 10,
       "y": 60
     },
     {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 71,
+          "tags": [],
+          "text": "Identify reusable components (buttons, cards, modals)"
+        },
+        {
+          "checked": false,
+          "line_num": 72,
+          "tags": [],
+          "text": "Create dedicated CSS classes for components"
+        },
+        {
+          "checked": false,
+          "line_num": 73,
+          "tags": [],
+          "text": "Move modal styles from inline to global CSS"
+        },
+        {
+          "checked": false,
+          "line_num": 74,
+          "tags": [],
+          "text": "Use Eleventy shortcodes for styled components"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "6b74593edd675fab",
+      "id": "807a8254f61082cd",
+      "line_num": 70,
       "source": "todo_md",
       "tags": [],
-      "text": "**Component-Based Styling Overhaul: Create reusable styled components**\n- [ ] Identify reusable components (buttons, cards, modals)\n- [ ] Create dedicated CSS classes for components\n- [ ] Move modal styles from inline to global CSS\n- [ ] Use Eleventy shortcodes for styled components",
+      "text": "**Component-Based Styling Overhaul: Create reusable styled components**\n- [ ] Identify reusable components (buttons, cards, modals)\n- [ ] Create dedicated CSS classes for components\n- [ ] Move modal styles from inline to global CSS\n- [ ] Use Eleventy shortcodes for styled components\n\n`TODO.md:L70`",
       "type": "text",
       "width": 280,
       "x": 10,
       "y": 150
     },
     {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 77,
+          "tags": [],
+          "text": "Improve performance with critical CSS and minification"
+        },
+        {
+          "checked": false,
+          "line_num": 78,
+          "tags": [],
+          "text": "Integrate cssnano for autoprefixing and minification"
+        },
+        {
+          "checked": false,
+          "line_num": 79,
+          "tags": [],
+          "text": "Add critical CSS extraction for above-the-fold content"
+        },
+        {
+          "checked": false,
+          "line_num": 80,
+          "tags": [],
+          "text": "Update netlify.toml for build optimization"
+        },
+        {
+          "checked": false,
+          "line_num": 81,
+          "tags": [],
+          "text": "Test load times and performance improvements"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "93e5f39d0bbc7bd3",
+      "id": "0ef435ccce7d2461",
+      "line_num": 76,
       "source": "todo_md",
       "tags": [],
-      "text": "**Add CSS Optimization to Build Pipeline: Improve performance with critical CSS and minification**\n- [ ] Integrate cssnano for autoprefixing and minification\n- [ ] Add critical CSS extraction for above-the-fold content\n- [ ] Update netlify.toml for build optimization\n- [ ] Test load times and performance improvements",
+      "text": "**Add CSS Optimization to Build Pipeline:**\n- [ ] Improve performance with critical CSS and minification\n- [ ] Integrate cssnano for autoprefixing and minification\n- [ ] Add critical CSS extraction for above-the-fold content\n- [ ] Update netlify.toml for build optimization\n- [ ] Test load times and performance improvements\n\n`TODO.md:L76`",
       "type": "text",
       "width": 280,
       "x": 10,
@@ -57,48 +144,162 @@
       "y": 0
     },
     {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 37,
+          "tags": [],
+          "text": "Upload logo files (PNG, SVG, JPG formats)"
+        },
+        {
+          "checked": false,
+          "line_num": 38,
+          "tags": [],
+          "text": "Create donation designations: Greatest Needs, Surgery Camps 2026, Montreal Food Aid 2026"
+        },
+        {
+          "checked": false,
+          "line_num": 39,
+          "tags": [],
+          "text": "Draft receipt thank-you message templates"
+        },
+        {
+          "checked": true,
+          "line_num": 40,
+          "tags": [],
+          "text": "Test donation flow (small test transaction)"
+        },
+        {
+          "checked": false,
+          "line_num": 41,
+          "tags": [],
+          "text": "Configure recurring donation option"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "f7d6527cd57ec231",
+      "id": "9f03148f5ff42de0",
+      "line_num": 36,
       "source": "todo_md",
       "tags": [],
-      "text": "**[EXTERNAL] CanadaHelps Portal Configuration (Stakeholder: Dr. D)**\n- [ ] Upload logo files (PNG, SVG, JPG formats)\n- [ ] Create donation designations: Greatest Needs, Surgery Camps 2026, Montreal Food Aid 2026\n- [ ] Draft receipt thank-you message templates\n- [x] Test donation flow (small test transaction)\n- [ ] Configure recurring donation option",
+      "text": "**[EXTERNAL] CanadaHelps Portal (Stakeholder: Dr. D)**\n- [ ] Upload logo files (PNG, SVG, JPG formats)\n- [ ] Create donation designations: Greatest Needs, Surgery Camps 2026, Montreal Food Aid 2026\n- [ ] Draft receipt thank-you message templates\n- [x] Test donation flow (small test transaction)\n- [ ] Configure recurring donation option\n\n`TODO.md:L36`",
       "type": "text",
       "width": 280,
       "x": 360,
       "y": 60
     },
     {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 44,
+          "tags": [],
+          "text": "Create \"Meet the Team\" content (3-4 posts/week)"
+        },
+        {
+          "checked": false,
+          "line_num": 45,
+          "tags": [],
+          "text": "Develop teaser videos about camp location and need"
+        },
+        {
+          "checked": false,
+          "line_num": 46,
+          "tags": [],
+          "text": "Schedule posts across Facebook/Instagram"
+        },
+        {
+          "checked": false,
+          "line_num": 47,
+          "tags": [],
+          "text": "Track engagement and adjust strategy"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "432cbb6694a4ad99",
+      "id": "c67abbc6dc0f3fb6",
+      "line_num": 43,
       "source": "todo_md",
       "tags": [],
-      "text": "**[EXTERNAL] Social Media Campaign Phase 1 (Stakeholder: Board)**\n- [ ] Create \"Meet the Team\" content (3-4 posts/week)\n- [ ] Develop teaser videos about camp location and need\n- [ ] Schedule posts across Facebook/Instagram\n- [ ] Track engagement and adjust strategy",
+      "text": "**[EXTERNAL] Social Media Campaign Phase 1 (Stakeholder: Board)**\n- [ ] Create \"Meet the Team\" content (3-4 posts/week)\n- [ ] Develop teaser videos about camp location and need\n- [ ] Schedule posts across Facebook/Instagram\n- [ ] Track engagement and adjust strategy\n\n`TODO.md:L43`",
       "type": "text",
       "width": 280,
       "x": 360,
       "y": 150
     },
     {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 50,
+          "tags": [],
+          "text": "Draft camp announcement email to existing subscribers"
+        },
+        {
+          "checked": false,
+          "line_num": 51,
+          "tags": [],
+          "text": "Create email templates for campaign phases"
+        },
+        {
+          "checked": false,
+          "line_num": 52,
+          "tags": [],
+          "text": "Set up newsletter modal email capture"
+        },
+        {
+          "checked": false,
+          "line_num": 53,
+          "tags": [],
+          "text": "Test double opt-in process"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "01640f40b87619be",
+      "id": "66dcb00c66b401e6",
+      "line_num": 49,
       "source": "todo_md",
       "tags": [],
-      "text": "**[EXTERNAL] Email Campaign Setup (Stakeholder: Dr. D)**\n- [ ] Draft camp announcement email to existing subscribers\n- [ ] Create email templates for campaign phases\n- [ ] Set up newsletter modal email capture\n- [ ] Test double opt-in process",
+      "text": "**[EXTERNAL] Email Campaign Setup (Stakeholder: Dr. D)**\n- [ ] Draft camp announcement email to existing subscribers\n- [ ] Create email templates for campaign phases\n- [ ] Set up newsletter modal email capture\n- [ ] Test double opt-in process\n\n`TODO.md:L49`",
       "type": "text",
       "width": 280,
       "x": 360,
       "y": 240
     },
     {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 56,
+          "tags": [],
+          "text": "Audit all French pages (/fr/ directories)"
+        },
+        {
+          "checked": false,
+          "line_num": 57,
+          "tags": [],
+          "text": "Correct organization name to \"La Fondation de la Lib\u00e9ration de la Pauvret\u00e9 Inc.\""
+        },
+        {
+          "checked": false,
+          "line_num": 58,
+          "tags": [],
+          "text": "Review key term translations for accuracy"
+        },
+        {
+          "checked": false,
+          "line_num": 59,
+          "tags": [],
+          "text": "Update donation page in French"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "75ec148f8359ee51",
+      "id": "e8e77ed8d7b8caa3",
+      "line_num": 55,
       "source": "todo_md",
       "tags": [],
-      "text": "**[SITE] French Translation Correction (Alexander D. Somma)**\n- [ ] Audit all French pages (/fr/ directories)\n- [ ] Correct organization name to \"La Fondation de la Lib\u00e9ration de la Pauvret\u00e9 Inc.\"\n- [ ] Review key term translations for accuracy\n- [ ] Update donation page in French",
+      "text": "**[SITE] French Translation Correction (Alexander D. Somma)**\n- [ ] Audit all French pages (/fr/ directories)\n- [ ] Correct organization name to \"La Fondation de la Lib\u00e9ration de la Pauvret\u00e9 Inc.\"\n- [ ] Review key term translations for accuracy\n- [ ] Update donation page in French\n\n`TODO.md:L55`",
       "type": "text",
       "width": 280,
       "x": 360,
@@ -119,7 +320,7 @@
     },
     {
       "color": "5",
-      "height": 340,
+      "height": 430,
       "id": "col-in_progress",
       "label": "In Progress",
       "type": "group",
@@ -128,42 +329,180 @@
       "y": 0
     },
     {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 12,
+          "tags": [],
+          "text": "\"Freedom From Poverty Foundation\" needs to be added as the english Name in Quebec"
+        },
+        {
+          "checked": false,
+          "line_num": 13,
+          "tags": [],
+          "text": "Initiate registration with Registraire des Entreprises du Qu\u00e9bec"
+        },
+        {
+          "checked": false,
+          "line_num": 14,
+          "tags": [],
+          "text": "Update CanadaHelps and social media profiles (Alexander D. Somma)"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "3c602227cdb4b31c",
+      "id": "ab3fa85d0728189d",
+      "line_num": 11,
       "source": "todo_md",
       "tags": [
         "#critical"
       ],
-      "text": "**[EXTERNAL] DBA Registration Verification (Stakeholder: Dr. D)**\n- [ ] \"Freedom From Poverty Foundation\" needs to be added as the english Name in Quebec\n- [ ] Initiate registration with Registraire des Entreprises du Qu\u00e9bec\n- [ ] Update CanadaHelps and social media profiles (Alexander D. Somma)\n`#critical`",
+      "text": "**[EXTERNAL] DBA Registration Verification (Stakeholder: Dr. D)**\n- [ ] \"Freedom From Poverty Foundation\" needs to be added as the english Name in Quebec\n- [ ] Initiate registration with Registraire des Entreprises du Qu\u00e9bec\n- [ ] Update CanadaHelps and social media profiles (Alexander D. Somma)\n\n`#critical`\n`TODO.md:L11`",
       "type": "text",
       "width": 280,
       "x": 710,
       "y": 60
     },
     {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 6,
+          "tags": [],
+          "text": "Verify fundraising goal amount ($100,000?)"
+        },
+        {
+          "checked": false,
+          "line_num": 7,
+          "tags": [],
+          "text": "Request photos/bios for: Dr. Jane Doe placeholder, John Smith placeholder"
+        },
+        {
+          "checked": false,
+          "line_num": 8,
+          "tags": [],
+          "text": "Get photos of the 2026 location/hospital if available"
+        },
+        {
+          "checked": false,
+          "line_num": 9,
+          "tags": [],
+          "text": "Request \"Aarav\" story details and photo confirmation"
+        },
+        {
+          "checked": false,
+          "line_num": 10,
+          "tags": [],
+          "text": "Get confirmed list of 2026 volunteers"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "814a085ffab5a1e3",
+      "id": "1d8c2e85f0f3d226",
+      "line_num": 5,
       "source": "todo_md",
       "tags": [],
-      "text": "**Donor Appreciation Dinner \u2014 2026 Camp Thank-You Presentation**\n- [ ] [EXTERNAL] Content & Media To Confirm (Stakeholder: Vinod / Dr. D)\n- [ ] Obtain video/testimony of patient with swollen face \u2014 confirm availability, length, quality\n- [ ] Confirm patient's name and permission to use his story publicly\n- [ ] Obtain Archana 2-minute documentary preview \u2014 final cut ready?\n- [ ] Collect confirmed impact numbers from 2026 Jamkhed camps (surgeries, patients screened, procedures, follow-up plans)\n- [ ] Confirm list of volunteers who want individual name recognition at dinner\n- [ ] Confirm November 2026 benefit dinner date for closing slide",
+      "text": "**Questions for Board/Stakeholders:**\n- [ ] Verify fundraising goal amount ($100,000?)\n- [ ] Request photos/bios for: Dr. Jane Doe placeholder, John Smith placeholder\n- [ ] Get photos of the 2026 location/hospital if available\n- [ ] Request \"Aarav\" story details and photo confirmation\n- [ ] Get confirmed list of 2026 volunteers\n\n`TODO.md:L5`",
       "type": "text",
       "width": 280,
       "x": 710,
       "y": 150
     },
     {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 21,
+          "tags": [],
+          "text": "[EXTERNAL] Content & Media To Confirm (Stakeholder: Vinod / Dr. D)"
+        },
+        {
+          "checked": false,
+          "line_num": 22,
+          "tags": [],
+          "text": "Adding logo to"
+        },
+        {
+          "checked": false,
+          "line_num": 23,
+          "tags": [],
+          "text": "Obtain video/testimony of patient with swollen face \u2014 confirm availability, length, quality"
+        },
+        {
+          "checked": false,
+          "line_num": 24,
+          "tags": [],
+          "text": "Confirm patient's name and permission to use his story publicly"
+        },
+        {
+          "checked": false,
+          "line_num": 25,
+          "tags": [],
+          "text": "Obtain Archana 2-minute documentary preview \u2014 final cut ready?"
+        },
+        {
+          "checked": false,
+          "line_num": 26,
+          "tags": [],
+          "text": "Collect confirmed impact numbers from 2026 Jamkhed camps (surgeries, patients screened, procedures, follow-up plans)"
+        },
+        {
+          "checked": false,
+          "line_num": 27,
+          "tags": [],
+          "text": "Confirm list of volunteers who want individual name recognition at dinner"
+        },
+        {
+          "checked": false,
+          "line_num": 28,
+          "tags": [],
+          "text": "Confirm November 2026 benefit dinner date for closing slide"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "73ccdc68b8625d85",
+      "id": "35a503206d8ec462",
+      "line_num": 20,
       "source": "todo_md",
       "tags": [],
-      "text": "**[MIXED] Dinner Logistics & Materials (Stakeholder: Vinod)**\n- [ ] Prepare camp sponsorship one-pagers or table cards ($12K/camp ask)\n- [ ] Test A/V setup for Archana documentary preview playback\n- [ ] Finalize presentation with confirmed content and review with Vinod",
+      "text": "**Donor Appreciation Dinner \u2014 2026 Camp Thank-You Presentation**\n- [ ] [EXTERNAL] Content & Media To Confirm (Stakeholder: Vinod / Dr. D)\n- [ ] Adding logo to\n- [ ] Obtain video/testimony of patient with swollen face \u2014 confirm availability, length, quality\n- [ ] Confirm patient's name and permission to use his story publicly\n- [ ] Obtain Archana 2-minute documentary preview \u2014 final cut ready?\n- [ ] Collect confirmed impact numbers from 2026 Jamkhed camps (surgeries, patients screened, procedures, follow-up plans)\n- [ ] Confirm list of volunteers who want individual name recognition at dinner\n- [ ] Confirm November 2026 benefit dinner date for closing slide\n\n`TODO.md:L20`",
       "type": "text",
       "width": 280,
       "x": 710,
       "y": 240
+    },
+    {
+      "children": [
+        {
+          "checked": false,
+          "line_num": 30,
+          "tags": [],
+          "text": "Prepare camp sponsorship one-pagers or table cards ($12K/camp ask)"
+        },
+        {
+          "checked": false,
+          "line_num": 31,
+          "tags": [],
+          "text": "Test A/V setup for Archana documentary preview playback"
+        },
+        {
+          "checked": false,
+          "line_num": 32,
+          "tags": [],
+          "text": "Finalize presentation with confirmed content and review with Vinod"
+        }
+      ],
+      "file_path": "TODO.md",
+      "height": 80,
+      "id": "aab3fccaf2e55e2b",
+      "line_num": 29,
+      "source": "todo_md",
+      "tags": [],
+      "text": "**[MIXED] Dinner Logistics & Materials (Stakeholder: Vinod)**\n- [ ] Prepare camp sponsorship one-pagers or table cards ($12K/camp ask)\n- [ ] Test A/V setup for Archana documentary preview playback\n- [ ] Finalize presentation with confirmed content and review with Vinod\n\n`TODO.md:L29`",
+      "type": "text",
+      "width": 280,
+      "x": 710,
+      "y": 330
     },
     {
       "color": "1",
@@ -186,84 +525,285 @@
       "y": 0
     },
     {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 16,
+          "tags": [],
+          "text": "Update Contact Us page with: Freedom From Poverty Foundation, 1333 Stravinski Avenue, Brossard, QC J4X 2C5"
+        },
+        {
+          "checked": true,
+          "line_num": 17,
+          "tags": [],
+          "text": "Add business hours and primary contact email/phone"
+        },
+        {
+          "checked": true,
+          "line_num": 18,
+          "tags": [],
+          "text": "Update footer contact info on all pages"
+        },
+        {
+          "checked": true,
+          "line_num": 19,
+          "tags": [],
+          "text": "Verify consistency across all pages"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "d578a9efe4a9e820",
+      "id": "021cf2bfbf10ee2b",
+      "line_num": 15,
       "source": "todo_md",
       "tags": [],
-      "text": "**[MIXED] Professional Contact Details (Alexander D. Somma)**\n- [x] Update Contact Us page with: Freedom From Poverty Foundation, 1333 Stravinski Avenue, Brossard, QC J4X 2C5\n- [x] Add business hours and primary contact email/phone\n- [x] Update footer contact info on all pages\n- [x] Verify consistency across all pages",
+      "text": "**[MIXED] Professional Contact Details (Alexander D. Somma)**\n- [x] Update Contact Us page with: Freedom From Poverty Foundation, 1333 Stravinski Avenue, Brossard, QC J4X 2C5\n- [x] Add business hours and primary contact email/phone\n- [x] Update footer contact info on all pages\n- [x] Verify consistency across all pages\n\n`TODO.md:L15`",
       "type": "text",
       "width": 280,
       "x": 1410,
       "y": 60
     },
     {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 86,
+          "tags": [],
+          "text": "Verify CRA Registration # with CRA public registry: 892570938RR0001"
+        },
+        {
+          "checked": true,
+          "line_num": 87,
+          "tags": [],
+          "text": "Add footer to all pages: \"La Fondation de la Lib\u00e9ration de la Pauvret\u00e9 Inc. | CRA Registration #: 892570938RR0001\""
+        },
+        {
+          "checked": true,
+          "line_num": 88,
+          "tags": [],
+          "text": "Test footer visibility on homepage and key pages"
+        },
+        {
+          "checked": true,
+          "line_num": 89,
+          "tags": [],
+          "text": "Commit changes"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "68276c938a69add5",
+      "id": "7682d8852f036b7a",
+      "line_num": 85,
       "source": "todo_md",
       "tags": [],
-      "text": "**[SITE] Legal Footer Implementation (Alexander D. Somma)**\n- [x] Verify CRA Registration # with CRA public registry: 892570938RR0001\n- [x] Add footer to all pages: \"La Fondation de la Lib\u00e9ration de la Pauvret\u00e9 Inc. | CRA Registration #: 892570938RR0001\"\n- [x] Test footer visibility on homepage and key pages\n- [x] Commit changes",
+      "text": "**[SITE] Legal Footer Implementation (Alexander D. Somma)**\n- [x] Verify CRA Registration # with CRA public registry: 892570938RR0001\n- [x] Add footer to all pages: \"La Fondation de la Lib\u00e9ration de la Pauvret\u00e9 Inc. | CRA Registration #: 892570938RR0001\"\n- [x] Test footer visibility on homepage and key pages\n- [x] Commit changes\n\n`TODO.md:L85`",
       "type": "text",
       "width": 280,
       "x": 1410,
       "y": 150
     },
     {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 92,
+          "tags": [],
+          "text": "Link \"Sponsor A Surgical Camp\" \u2192 ffpf.org/donate with support note"
+        },
+        {
+          "checked": true,
+          "line_num": 93,
+          "tags": [],
+          "text": "Link \"Sponsor A Dental Camp\" \u2192 ffpf.org/donate with support note"
+        },
+        {
+          "checked": true,
+          "line_num": 94,
+          "tags": [],
+          "text": "Test all donation button links end-to-end"
+        },
+        {
+          "checked": true,
+          "line_num": 95,
+          "tags": [],
+          "text": "Verify CanadaHelps integration"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "9c9116f702a9a03c",
+      "id": "b8d88d858bca8391",
+      "line_num": 91,
       "source": "todo_md",
       "tags": [],
-      "text": "**[SITE] Functional Call-to-Action Buttons**\n- [x] Link \"Sponsor A Surgical Camp\" \u2192 ffpf.org/donate with support note\n- [x] Link \"Sponsor A Dental Camp\" \u2192 ffpf.org/donate with support note\n- [x] Test all donation button links end-to-end\n- [x] Verify CanadaHelps integration",
+      "text": "**[SITE] Functional Call-to-Action Buttons**\n- [x] Link \"Sponsor A Surgical Camp\" \u2192 ffpf.org/donate with support note\n- [x] Link \"Sponsor A Dental Camp\" \u2192 ffpf.org/donate with support note\n- [x] Test all donation button links end-to-end\n- [x] Verify CanadaHelps integration\n\n`TODO.md:L91`",
       "type": "text",
       "width": 280,
       "x": 1410,
       "y": 240
     },
     {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 98,
+          "tags": [],
+          "text": "Create communication/ folder in root"
+        },
+        {
+          "checked": true,
+          "line_num": 99,
+          "tags": [],
+          "text": "Add email campaign draft files"
+        },
+        {
+          "checked": true,
+          "line_num": 100,
+          "tags": [],
+          "text": "Add social media content drafts"
+        },
+        {
+          "checked": true,
+          "line_num": 101,
+          "tags": [],
+          "text": "Organize drafts by task and stakeholder"
+        },
+        {
+          "checked": true,
+          "line_num": 102,
+          "tags": [],
+          "text": "Update external tasks to reference drafts"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "98ede04e4684f7f9",
+      "id": "6f183f40fe85a6bc",
+      "line_num": 97,
       "source": "todo_md",
       "tags": [],
-      "text": "**[SITE] Create Communication Folder and Drafts**\n- [x] Create communication/ folder in root\n- [x] Add email campaign draft files\n- [x] Add social media content drafts\n- [x] Organize drafts by task and stakeholder\n- [x] Update external tasks to reference drafts",
+      "text": "**[SITE] Create Communication Folder and Drafts**\n- [x] Create communication/ folder in root\n- [x] Add email campaign draft files\n- [x] Add social media content drafts\n- [x] Organize drafts by task and stakeholder\n- [x] Update external tasks to reference drafts\n\n`TODO.md:L97`",
       "type": "text",
       "width": 280,
       "x": 1410,
       "y": 330
     },
     {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 105,
+          "tags": [],
+          "text": "Create `communication/donor-dinner-thankyou-2026.md`"
+        },
+        {
+          "checked": true,
+          "line_num": 106,
+          "tags": [],
+          "text": "Structure 10-slide arc: patient story \u2192 thank-you \u2192 numbers \u2192 Archana preview \u2192 volunteers \u2192 ask \u2192 November bridge"
+        },
+        {
+          "checked": true,
+          "line_num": 107,
+          "tags": [],
+          "text": "Write detailed speaker notes with timing cues (15 min total)"
+        },
+        {
+          "checked": true,
+          "line_num": 108,
+          "tags": [],
+          "text": "Add suggested visuals table"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "79413ca69f09b784",
+      "id": "5e47d9cf3052f33c",
+      "line_num": 104,
       "source": "todo_md",
       "tags": [],
-      "text": "**[SITE] Draft Donor Dinner Presentation (Alexander D. Somma)**\n- [x] Create `communication/donor-dinner-thankyou-2026.md`\n- [x] Structure 10-slide arc: patient story \u2192 thank-you \u2192 numbers \u2192 Archana preview \u2192 volunteers \u2192 ask \u2192 November bridge\n- [x] Write detailed speaker notes with timing cues (15 min total)\n- [x] Add suggested visuals table",
+      "text": "**[SITE] Draft Donor Dinner Presentation (Alexander D. Somma)**\n- [x] Create `communication/donor-dinner-thankyou-2026.md`\n- [x] Structure 10-slide arc: patient story \u2192 thank-you \u2192 numbers \u2192 Archana preview \u2192 volunteers \u2192 ask \u2192 November bridge\n- [x] Write detailed speaker notes with timing cues (15 min total)\n- [x] Add suggested visuals table\n\n`TODO.md:L104`",
       "type": "text",
       "width": 280,
       "x": 1410,
       "y": 420
     },
     {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 111,
+          "tags": [],
+          "text": "Create Linktree-style admin collection for 2025 page links"
+        },
+        {
+          "checked": true,
+          "line_num": 112,
+          "tags": [],
+          "text": "Design admin collection schema for links management"
+        },
+        {
+          "checked": true,
+          "line_num": 113,
+          "tags": [],
+          "text": "Update admin config.yml with new \"links\" collection"
+        },
+        {
+          "checked": true,
+          "line_num": 114,
+          "tags": [],
+          "text": "Create data structure for links with title, URL, icon, and order"
+        },
+        {
+          "checked": true,
+          "line_num": 115,
+          "tags": [],
+          "text": "Install js-yaml dependency for YAML parsing"
+        },
+        {
+          "checked": true,
+          "line_num": 116,
+          "tags": [],
+          "text": "Test data loading and admin interface"
+        },
+        {
+          "checked": true,
+          "line_num": 117,
+          "tags": [],
+          "text": "Document staff process for managing links"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "0ff83647271fdbfc",
+      "id": "5bf6b7b2299a6ae9",
+      "line_num": 110,
       "source": "todo_md",
       "tags": [],
-      "text": "**Admin Links Collection (August 2025)**\n- [x] Create Linktree-style admin collection for 2025 page links\n- [x] Design admin collection schema for links management\n- [x] Update admin config.yml with new \"links\" collection\n- [x] Create data structure for links with title, URL, icon, and order\n- [x] Install js-yaml dependency for YAML parsing\n- [x] Test data loading and admin interface\n- [x] Document staff process for managing links",
+      "text": "**Admin Links Collection (August 2025)**\n- [x] Create Linktree-style admin collection for 2025 page links\n- [x] Design admin collection schema for links management\n- [x] Update admin config.yml with new \"links\" collection\n- [x] Create data structure for links with title, URL, icon, and order\n- [x] Install js-yaml dependency for YAML parsing\n- [x] Test data loading and admin interface\n- [x] Document staff process for managing links\n\n`TODO.md:L110`",
       "type": "text",
       "width": 280,
       "x": 1410,
       "y": 510
     },
     {
+      "children": [
+        {
+          "checked": true,
+          "line_num": 120,
+          "tags": [],
+          "text": "Confirm start/end dates and timezones: Feb 1 7am IST start"
+        },
+        {
+          "checked": true,
+          "line_num": 121,
+          "tags": [],
+          "text": "Verify actual number of days/hours for the countdown check"
+        }
+      ],
       "file_path": "TODO.md",
       "height": 80,
-      "id": "632f3eee37ce7ede",
+      "id": "7b05c19226becfea",
+      "line_num": 119,
       "source": "todo_md",
       "tags": [],
-      "text": "**Team Canada 2026 \u2014 Completed Subtasks**\n- [x] Confirm start/end dates and timezones: Feb 1 7am IST start\n- [x] Verify actual number of days/hours for the countdown check",
+      "text": "**Team Canada 2026 \u2014 Completed Subtasks**\n- [x] Confirm start/end dates and timezones: Feb 1 7am IST start\n- [x] Verify actual number of days/hours for the countdown check\n\n`TODO.md:L119`",
       "type": "text",
       "width": 280,
       "x": 1410,

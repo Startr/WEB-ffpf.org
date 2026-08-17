@@ -2,14 +2,13 @@
 
 ## High Priority
 
-- **Questions for Board/Stakeholders:**
+- [ ] Questions for Board/Stakeholders:**
   - [ ] Verify fundraising goal amount ($100,000?)
   - [ ] Request photos/bios for: Dr. Jane Doe placeholder, John Smith placeholder
   - [ ] Get photos of the 2026 location/hospital if available
   - [ ] Request "Aarav" story details and photo confirmation
   - [ ] Get confirmed list of 2026 volunteers
-  - [ ] 
-- [ ][EXTERNAL] DBA Registration Verification (Stakeholder: Dr. D) #critical
+- [ ] [EXTERNAL] DBA Registration Verification (Stakeholder: Dr. D) #critical
   - [ ] "Freedom From Poverty Foundation" needs to be added as the english Name in Quebec
   - [ ] Initiate registration with Registraire des Entreprises du Québec
   - [ ] Update CanadaHelps and social media profiles (Alexander D. Somma)
@@ -20,6 +19,7 @@
     - [x] Verify consistency across all pages
 - [ ] Donor Appreciation Dinner — 2026 Camp Thank-You Presentation
   - [ ] [EXTERNAL] Content & Media To Confirm (Stakeholder: Vinod / Dr. D)
+  - [ ] Adding logo to 
   - [ ] Obtain video/testimony of patient with swollen face — confirm availability, length, quality
   - [ ] Confirm patient's name and permission to use his story publicly
   - [ ] Obtain Archana 2-minute documentary preview — final cut ready?
@@ -33,7 +33,7 @@
 
 ## Medium Priority
 
-- [ ] [EXTERNAL] CanadaHelps Portal Configuration (Stakeholder: Dr. D)
+- [ ] [EXTERNAL] CanadaHelps Portal (Stakeholder: Dr. D)
   - [ ] Upload logo files (PNG, SVG, JPG formats)
   - [ ] Create donation designations: Greatest Needs, Surgery Camps 2026, Montreal Food Aid 2026
   - [ ] Draft receipt thank-you message templates
@@ -73,7 +73,8 @@
   - [ ] Move modal styles from inline to global CSS
   - [ ] Use Eleventy shortcodes for styled components
 
-- [ ] **Add CSS Optimization to Build Pipeline**: Improve performance with critical CSS and minification
+- [ ] **Add CSS Optimization to Build Pipeline**: 
+  - [ ] Improve performance with critical CSS and minification
   - [ ] Integrate cssnano for autoprefixing and minification
   - [ ] Add critical CSS extraction for above-the-fold content
   - [ ] Update netlify.toml for build optimization
