@@ -15,7 +15,7 @@ backend:
   #auth_endpoint: /api/auth       # only Needed when publishing with Cloudflare functions
 
 local_backend:
-  url: http://127.0.0.1:8081/api/v1 # URL to the local backend
+  url: http://127.0.0.1:8082/api/v1 # URL to the local backend
   allowed_hosts: ["127.0.0.1"] # List of allowed hosts
 
 media_folder: "src/public/uploads" # Path to where uploaded files will be stored in your repo
@@ -26,15 +26,16 @@ i18n:
   locales: [en, fr, de, pt]
 
 collections:
+  # Sections shown on EVERY year page. Edit once, changes everywhere.
   - name: "links" # Used in routes, e.g., /admin/collections/links
-    label: "2025 Links (Linktree Style)" # Used in the UI
+    label: "Shared Links (all years)" # Used in the UI
     folder: "src/_data/links" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., social-media.yml
     extension: "yml" # File extension for data files
     format: "yml" # Data format
     i18n: true
-    fields: # The fields for each document, usually in front matter
+    fields: &link_section_fields # Reused by every per-year collection below
       - { label: "Section Name", name: "section", widget: "string", i18n: true, hint: "e.g., 'Social Media', 'Main Actions', 'Events'" }
       - { label: "Display Order", name: "order", widget: "number", default: 1, hint: "Lower numbers appear first" }
       - { label: "Links", name: "links", widget: "list", i18n: true, fields: [
@@ -45,6 +46,20 @@ collections:
           { label: "Button Style", name: "style", widget: "select", options: ["primary", "secondary", "social"], default: "primary" },
           { label: "Order", name: "order", widget: "number", default: 1 }
         ]}
+
+  # One file per year, named for the year (2026.yml). Hit "New Year Page" to add
+  # the next one — the site builds /2025/, /2026/, /2027/ ... from whatever is here.
+  - name: "links-years"
+    label: "Year Pages (Events)"
+    label_singular: "Year Page"
+    folder: "src/_data/links/years"
+    create: true
+    slug: "{{slug}}" # Filename is the year, e.g. 2027.yml
+    extension: "yml"
+    format: "yml"
+    i18n: true
+    fields: *link_section_fields
+
   - name: "pages" # Used in routes, e.g., /admin/collections/pages
     label: "Pages" # Used in the UI
     folder: "src/pages" # The path to the folder where the documents are stored

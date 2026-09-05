@@ -2,56 +2,42 @@ const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
-function loadLinksData() {
-  const linksData = {
-    en: [],
-    fr: []
-  };
+const LANGS = ['en', 'fr', 'de', 'pt'];
+const DIR = path.join(__dirname, 'links');
 
-  // Load English links
-  const enLinksDir = path.join(__dirname, 'links', 'en');
-  if (fs.existsSync(enLinksDir)) {
-    const enFiles = fs.readdirSync(enLinksDir).filter(file => file.endsWith('.yml'));
-    enFiles.forEach(file => {
-      const filePath = path.join(enLinksDir, file);
-      const content = fs.readFileSync(filePath, 'utf8');
-      const data = yaml.load(content);
-      linksData.en.push(data);
-    });
-  }
-
-  // Load French links
-  const frLinksDir = path.join(__dirname, 'links', 'fr');
-  if (fs.existsSync(frLinksDir)) {
-    const frFiles = fs.readdirSync(frLinksDir).filter(file => file.endsWith('.yml'));
-    frFiles.forEach(file => {
-      const filePath = path.join(frLinksDir, file);
-      const content = fs.readFileSync(filePath, 'utf8');
-      const data = yaml.load(content);
-      linksData.fr.push(data);
-    });
-  }
-
-  // Sort sections by order
-  linksData.en.sort((a, b) => (a.order || 0) - (b.order || 0));
-  linksData.fr.sort((a, b) => (a.order || 0) - (b.order || 0));
-
-  // Sort links within each section by order
-  linksData.en.forEach(section => {
-    if (section.links) {
-      section.links.sort((a, b) => (a.order || 0) - (b.order || 0));
-    }
-  });
-  
-  linksData.fr.forEach(section => {
-    if (section.links) {
-      section.links.sort((a, b) => (a.order || 0) - (b.order || 0));
-    }
-  });
-
-  return linksData;
+// Every *.yml in a directory, as [{ name, data }], sorted by filename.
+function read(dir) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir).sort()
+    .filter(file => file.endsWith('.yml'))
+    .map(file => ({
+      name: path.basename(file, '.yml'),
+      data: yaml.load(fs.readFileSync(path.join(dir, file), 'utf8'))
+    }));
 }
 
-module.exports = function() {
-  return loadLinksData();
+// Drop the empty `{}` placeholders, then order sections and their links.
+function ordered(sections) {
+  const list = sections.filter(s => s && s.section && s.links)
+    .sort((a, b) => (a.order || 0) - (b.order || 0));
+  list.forEach(s => s.links.sort((a, b) => (a.order || 0) - (b.order || 0)));
+  return list;
+}
+
+// links/<lang>/*.yml       -> sections shown on every year
+// links/years/<lang>/*.yml -> one file per year, appended to the shared ones
+module.exports = function () {
+  const data = { years: {} };
+
+  for (const lang of LANGS) {
+    const shared = read(path.join(DIR, lang)).map(entry => entry.data);
+    data[lang] = ordered([...shared]);
+
+    for (const { name: year, data: yearSection } of read(path.join(DIR, 'years', lang))) {
+      data.years[year] ??= {};
+      data.years[year][lang] = ordered([...shared, yearSection]);
+    }
+  }
+
+  return data;
 };

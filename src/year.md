@@ -1,5 +1,11 @@
 ---
 layout: layouts/base.njk
+lang: en
+pagination:
+  data: links.years
+  size: 1
+  alias: year
+permalink: "/{{ year }}/"
 ---
 
 {style="--ta:center;" --fx: 100%; --m: auto; --w:40%;"}
@@ -14,8 +20,7 @@ layout: layouts/base.njk
 
 Creating pathways to a brighter future! ✨
 
-{% assign currentLang = "en" %}
-{% assign linksData = links[currentLang] %}
+{% assign linksData = links.years[year][lang] %}
 
 {% for section in linksData %}
   {% if section.section and section.links %}
