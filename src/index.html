@@ -82,15 +82,21 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
 </div>
 
 
-<!-- Modal - COMMENTED OUT
-<div id="modal" class="modal" style="--z:20000">
+<!-- Gala modal: rotating 27th Annual Gala posters, linking to /2026/.
+     Shows on page load; closing reveals a floating pill so visitors can reopen it. -->
+<div id="gala-modal" class="modal" role="dialog" aria-modal="true" aria-label="27th Annual Gala announcement">
   <div class="modal-content">
-    <span class="modal-close">&times;</span>
-    <a href="/2025/">
-      <img src="/public/uploads/2025/2025-gala.png" alt="2025 Gala" style="max-height: 85vh; width: 100%; --maxw:80vw; object-fit: contain; display: block;">
+    <span class="modal-close" role="button" tabindex="0" aria-label="Close announcement">&times;</span>
+    <a href="/2026/" id="gala-modal-link">
+      <img id="gala-modal-img" src="/public/uploads/2026/gala-01.jpg" alt="27th Annual Gala — 14 November 2026, La Châteaubriand. Open the 2026 page." style="max-height: 70vh; width: 100%; --maxw:80vw; object-fit: contain; display: block;">
     </a>
+    <button class="gala-modal-prev" type="button" aria-label="Previous poster">&#10094;</button>
+    <button class="gala-modal-next" type="button" aria-label="Next poster">&#10095;</button>
+    <div class="gala-modal-dots" role="tablist" aria-label="Choose poster"></div>
   </div>
 </div>
+
+<button id="gala-reopen" type="button" class="hidden">27th Annual Gala — 14 Nov</button>
 
 <style>
   .modal {
@@ -117,13 +123,27 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
     border-radius: 8px;
     max-width: 95%;
     max-height: 95%;
+    overflow-y: auto;
     position: relative;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
   }
 
   .modal-close {
     position: absolute;
-
+    top: 0.35rem;
+    right: 0.6rem;
+    z-index: 2;
+    font-size: 2rem;
+    line-height: 1;
+    color: #fff;
+    background: rgba(0,0,0,0.55);
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
 
   .modal-close:hover {
@@ -131,6 +151,61 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
     background: white;
     transform: scale(1.1);
   }
+
+  .gala-modal-prev, .gala-modal-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.55);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .gala-modal-prev { left: 0.6rem; }
+  .gala-modal-next { right: 0.6rem; }
+  .gala-modal-prev:hover, .gala-modal-next:hover { background: rgba(0,0,0,0.85); }
+
+  .gala-modal-dots {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    padding: 0.5rem 0 0.25rem;
+    background: white;
+  }
+  .gala-modal-dots button {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 50%;
+    border: none;
+    background: #ccc;
+    cursor: pointer;
+    padding: 0;
+  }
+  .gala-modal-dots button[aria-selected="true"] { background: var(--primary, #b00); }
+
+  #gala-reopen {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 999;
+    background: #7a0c0c;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+  }
+  #gala-reopen.hidden { display: none; }
+  #gala-reopen:hover { background: #5d0909; }
 
   .parallax {
     background-image: url("/public/uploads/2024/08/homepage-img.webp");
@@ -142,27 +217,78 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
 </style>
 
 <script>
-  // Simple modal functionality
-  const modal = document.getElementById('modal');
-  const closeBtn = document.querySelector('.modal-close');
-
-  // Close modal when X is clicked
-  closeBtn.addEventListener('click', () => {
-    modal.classList.add('hidden');
-  });
-
-  // Close modal when clicking outside content
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.add('hidden');
+  // Rotating gala modal: cycles the 12 posters, links to /2026/.
+  (function () {
+    var posters = [];
+    for (var i = 1; i <= 12; i++) {
+      var n = ('0' + i).slice(-2);
+      posters.push('/public/uploads/2026/gala-' + n + '.jpg');
     }
-  });
+    var modal = document.getElementById('gala-modal');
+    var img = document.getElementById('gala-modal-img');
+    var closeBtn = modal.querySelector('.modal-close');
+    var prevBtn = modal.querySelector('.gala-modal-prev');
+    var nextBtn = modal.querySelector('.gala-modal-next');
+    var dotsBox = modal.querySelector('.gala-modal-dots');
+    var reopenBtn = document.getElementById('gala-reopen');
+    var index = 0;
+    var timer = null;
 
-  // Close modal with Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-      modal.classList.add('hidden');
+    posters.forEach(function (_, i) {
+      var dot = document.createElement('button');
+      dot.type = 'button';
+      dot.setAttribute('role', 'tab');
+      dot.setAttribute('aria-label', 'Show poster ' + (i + 1) + ' of ' + posters.length);
+      dot.addEventListener('click', function (e) { e.stopPropagation(); show(i); restart(); });
+      dotsBox.appendChild(dot);
+      // Warm the cache so rotation is instant.
+      if (i > 0) { var pre = new Image(); pre.src = posters[i]; }
+    });
+    var dots = Array.prototype.slice.call(dotsBox.children);
+
+    function show(i) {
+      index = (i + posters.length) % posters.length;
+      img.src = posters[index];
+      img.alt = '27th Annual Gala poster ' + (index + 1) + ' of ' + posters.length + ' — 14 November 2026, La Châteaubriand. Open the 2026 page.';
+      dots.forEach(function (d, j) { d.setAttribute('aria-selected', j === index ? 'true' : 'false'); });
     }
-  });
+    function restart() {
+      if (timer) clearInterval(timer);
+      timer = setInterval(function () { show(index + 1); }, 4000);
+    }
+    function open() {
+      modal.classList.remove('hidden');
+      reopenBtn.classList.add('hidden');
+      document.body.style.overflow = 'hidden';
+      restart();
+    }
+    function close() {
+      modal.classList.add('hidden');
+      reopenBtn.classList.remove('hidden');
+      document.body.style.overflow = '';
+      if (timer) clearInterval(timer);
+    }
+
+    prevBtn.addEventListener('click', function (e) { e.stopPropagation(); show(index - 1); restart(); });
+    nextBtn.addEventListener('click', function (e) { e.stopPropagation(); show(index + 1); restart(); });
+    closeBtn.addEventListener('click', close);
+    closeBtn.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') close(); });
+    reopenBtn.addEventListener('click', open);
+
+    // Close when clicking outside content
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) close();
+    });
+
+    // Close with Escape key; pause rotation while hovering the poster
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) close();
+    });
+    modal.querySelector('.modal-content').addEventListener('mouseenter', function () { if (timer) clearInterval(timer); });
+    modal.querySelector('.modal-content').addEventListener('mouseleave', function () { if (!modal.classList.contains('hidden')) restart(); });
+
+    // Visible on landing, like last year's gala modal.
+    show(0);
+    open();
+  })();
 </script>
-END MODAL COMMENT -->
