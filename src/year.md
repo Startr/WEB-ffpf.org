@@ -26,18 +26,18 @@ Creating pathways to a brighter future! ✨
      below progressively enhances it into an auto-rotating slideshow. -->
 <div class="gala-carousel" id="gala-carousel">
   <div class="gala-slides">
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-01.jpg" alt="27th Annual Gala poster 1 of 12 — 14 November 2026, La Châteaubriand" loading="eager"></figure>
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-02.jpg" alt="27th Annual Gala poster 2 of 12 — 14 November 2026, La Châteaubriand" loading="lazy"></figure>
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-03.jpg" alt="27th Annual Gala poster 3 of 12 — 14 November 2026, La Châteaubriand" loading="lazy"></figure>
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-04.jpg" alt="27th Annual Gala poster 4 of 12 — 14 November 2026, La Châteaubriand" loading="lazy"></figure>
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-05.jpg" alt="27th Annual Gala poster 5 of 12 — 14 November 2026, La Châteaubriand" loading="lazy"></figure>
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-06.jpg" alt="27th Annual Gala poster 6 of 12 — 14 November 2026, La Châteaubriand" loading="lazy"></figure>
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-07.jpg" alt="27th Annual Gala poster 7 of 12 — 14 November 2026, La Châteaubriand" loading="lazy"></figure>
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-08.jpg" alt="27th Annual Gala poster 8 of 12 — 14 November 2026, La Châteaubriand" loading="lazy"></figure>
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-09.jpg" alt="27th Annual Gala poster 9 of 12 — 14 November 2026, La Châteaubriand" loading="lazy"></figure>
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-10.jpg" alt="27th Annual Gala poster 10 of 12 — 14 November 2026, La Châteaubriand" loading="lazy"></figure>
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-11.jpg" alt="27th Annual Gala poster 11 of 12 — 14 November 2026, La Châteaubriand" loading="lazy"></figure>
-    <figure class="gala-slide"><img src="/public/uploads/2026/gala-12.jpg" alt="27th Annual Gala poster 12 of 12 — 14 November 2026, La Châteaubriand" loading="lazy"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-01.jpg" alt="27th Annual Gala poster 1 of 12 — 14 November 2026, Le Châteaubriand" loading="eager"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-02.jpg" alt="27th Annual Gala poster 2 of 12 — 14 November 2026, Le Châteaubriand" loading="lazy"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-03.jpg" alt="27th Annual Gala poster 3 of 12 — 14 November 2026, Le Châteaubriand" loading="lazy"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-04.jpg" alt="27th Annual Gala poster 4 of 12 — 14 November 2026, Le Châteaubriand" loading="lazy"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-05.jpg" alt="27th Annual Gala poster 5 of 12 — 14 November 2026, Le Châteaubriand" loading="lazy"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-06.jpg" alt="27th Annual Gala poster 6 of 12 — 14 November 2026, Le Châteaubriand" loading="lazy"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-07.jpg" alt="27th Annual Gala poster 7 of 12 — 14 November 2026, Le Châteaubriand" loading="lazy"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-08.jpg" alt="27th Annual Gala poster 8 of 12 — 14 November 2026, Le Châteaubriand" loading="lazy"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-09.jpg" alt="27th Annual Gala poster 9 of 12 — 14 November 2026, Le Châteaubriand" loading="lazy"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-10.jpg" alt="27th Annual Gala poster 10 of 12 — 14 November 2026, Le Châteaubriand" loading="lazy"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-11.jpg" alt="27th Annual Gala poster 11 of 12 — 14 November 2026, Le Châteaubriand" loading="lazy"></figure>
+    <figure class="gala-slide"><img src="/public/uploads/2026/gala-12.jpg" alt="27th Annual Gala poster 12 of 12 — 14 November 2026, Le Châteaubriand" loading="lazy"></figure>
   </div>
   <button class="gala-prev" type="button" aria-label="Previous poster">&#10094;</button>
   <button class="gala-next" type="button" aria-label="Next poster">&#10095;</button>

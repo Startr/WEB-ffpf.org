@@ -88,7 +88,7 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
   <div class="modal-content">
     <span class="modal-close" role="button" tabindex="0" aria-label="Close announcement">&times;</span>
     <a href="/2026/" id="gala-modal-link">
-      <img id="gala-modal-img" src="/public/uploads/2026/gala-01.jpg" alt="27th Annual Gala — 14 November 2026, La Châteaubriand. Open the 2026 page." style="max-height: 70vh; width: 100%; --maxw:80vw; object-fit: contain; display: block;">
+      <img id="gala-modal-img" src="/public/uploads/2026/gala-01.jpg" alt="27th Annual Gala — 14 November 2026, Le Châteaubriand. Open the 2026 page." style="max-height: 70vh; width: 100%; --maxw:80vw; object-fit: contain; display: block;">
     </a>
     <button class="gala-modal-prev" type="button" aria-label="Previous poster">&#10094;</button>
     <button class="gala-modal-next" type="button" aria-label="Next poster">&#10095;</button>
@@ -249,7 +249,7 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
     function show(i) {
       index = (i + posters.length) % posters.length;
       img.src = posters[index];
-      img.alt = '27th Annual Gala poster ' + (index + 1) + ' of ' + posters.length + ' — 14 November 2026, La Châteaubriand. Open the 2026 page.';
+      img.alt = '27th Annual Gala poster ' + (index + 1) + ' of ' + posters.length + ' — 14 November 2026, Le Châteaubriand. Open the 2026 page.';
       dots.forEach(function (d, j) { d.setAttribute('aria-selected', j === index ? 'true' : 'false'); });
     }
     function restart() {
