@@ -1,0 +1,36 @@
+<body style="--bg:var(--background); --c:var(--text-main)">
+<header style="--pos:relative; --pos-md:sticky; --top:0; --z:1000; --bg:color-mix(in srgb, var(--background) 86%, transparent); --bdf-md:blur(14px); --bb:1px solid var(--border)">
+  <a href="#main" style="--pos:absolute; --t:translateY(-200%); --t-focus:none; --z:1001; --bg:var(--background); --p:.5rem 1rem">Skip to main content</a>
+  <nav aria-label="Main" style="--maxw:80rem; --m:0 auto; --p:.5rem 1rem; --d:flex; --fd:column; --fd-md:row; --ai:center; --jc-md:space-between; --g:.5rem">
+    <a href="/">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="/wp-content/uploads/2018/10/logo-ffpf.webp" width="505" height="113">
+        <img alt="Freedom From Poverty Foundation" src="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-192x192.webp" width="192" height="192" style="--d:block; --h:3.25rem; --h-xl:3.75rem; --w:auto">
+      </picture>
+    </a>
+    <ul style="--list:none; --m:0; --p:0; --d:flex; --fw:wrap; --jc:center; --ai:center; --g:.25rem .5rem">
+      <li data-submenu style="--pos:relative"><a href="/about-us/" style="{{ui.navLink}}"{{cur:about}}>About Us</a>
+        <ul style="{{ui.sub}}">
+          <li><a href="/about-us/#humble" style="{{ui.subLink}}">Humble Beginning</a></li>
+          <li><a href="/about-us/#values" style="{{ui.subLink}}">Our Values</a></li>
+          <li><a href="/about-us/#board" style="{{ui.subLink}}">Board of Directors</a></li>
+        </ul></li>
+      <li data-submenu style="--pos:relative"><a href="/mission/" style="{{ui.navLink}}"{{cur:mission}}>Past Camps</a>
+        <ul style="{{ui.sub}}">
+          <li><a href="/mission/#camps-2025" style="{{ui.subLink}}">2025 Camps</a></li>
+          <li><a href="/mission/#camps-2024" style="{{ui.subLink}}">2024 Camps</a></li>
+          <li><a href="/mission/#camps-2023" style="{{ui.subLink}}">2023 Camp</a></li>
+        </ul></li>
+      <li data-submenu style="--pos:relative"><a href="/get-involved/" style="{{ui.navLink}}"{{cur:involved}}>Get Involved</a>
+        <ul style="{{ui.sub}}">
+          <li><a href="/get-involved/#apply" style="{{ui.subLink}}">How to Apply</a></li>
+          <li><a href="/get-involved/#fundraising" style="{{ui.subLink}}">Fundraising</a></li>
+          <li><a href="/get-involved/#sponsorship" style="{{ui.subLink}}">Sponsorship</a></li>
+        </ul></li>
+      <li><a href="/get-involved/#volunteer" style="{{ui.chip}}">Volunteer</a></li>
+      <li><a href="/donate" data-swap-off style="{{ui.pill}}; {{ui.glow}}">Donate</a></li>
+      <li><a href="/fr/home-fr/" lang="fr" data-swap-off style="{{ui.navLink}}">Français</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="main" data-swap style="--d:block; --p:1.25rem 0 0">

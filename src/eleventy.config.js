@@ -10,8 +10,13 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addTemplateFormats("md");
 	// Video passthrough
 	eleventyConfig.addPassthroughCopy("**/*.{mp4,webm}");
-	// Netlify redirects
+	// Netlify redirects and headers
 	eleventyConfig.addPassthroughCopy("_redirects");
+	eleventyConfig.addPassthroughCopy("_headers");
+	// Design drafts for internal review, unlisted (noindex; see _headers).
+	// Built by docs/design-drafts/build.mjs; copied as is, never templated.
+	eleventyConfig.addPassthroughCopy("drafts");
+	eleventyConfig.ignores.add("drafts/**");
 	// yml passthrough
 	eleventyConfig.addPassthroughCopy("**/*.yml");
 	// Admin index.html passthrough
@@ -19,4 +24,14 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("admin/index.html");
 	// Exclude the admin folder from processing
 	eleventyConfig.ignores.add("admin/index.html");
+	// Hidden pending consent (officer review, 2026-10-20): the patient
+	// sponsorship and shop pages, and src/, the 2024 copy of the old
+	// WordPress site that repeats them. _redirects sends their URLs on.
+	for (const dir of [
+		"sponsorship", "shop", "sponsorship-category", "sponsorship-tag",
+		"fr/parrainage", "fr/sponsorship-category", "fr/sponsorship-tag",
+		"src",
+	]) {
+		eleventyConfig.ignores.add(`${dir}/**`);
+	}
 };

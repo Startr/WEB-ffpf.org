@@ -1,0 +1,64 @@
+<!-- title: Freedom From Poverty Foundation | lang: en | section: home | path: / | order: 1 -->
+<!-- notes: The home page as a stack of paper. The hero photo lies on the desk with a lifted shadow, its caption on a dark gradient so white text stays readable. Three stat tiles are small sheets, with figures the site already states. The gala is the top sheet of a stack, two sheets peeking out beneath, with Tony's red wash and a faint heart. The What we do cards lift on hover and on keyboard focus, and the donate desk is a toned panel holding two sheets. Donate is the only button with a glow. Links to drafted pages open that draft; the others are inert. -->
+<div style="{{ui.section}}">
+  <figure style="{{ui.hero}}; {{ui.fade}}">
+    <img src="/wp-content/uploads/2019/09/slider-ffpf_optimized.webp" alt="" style="{{ui.heroImg}}">
+    <figcaption style="{{ui.heroCaption}}">
+      <p style="{{ui.eyebrow}}; --c:var(--button-text)">Freedom From Poverty Foundation</p>
+      <h1 style="{{ui.title}}; --c:var(--button-text); --maxw:40rem; --mb:.75rem">Breaking the poverty cycle of the most disadvantaged</h1>
+      <p style="--m:0 0 1.25rem; --maxw:36rem">Medical, educational and community-based missions, so families can build lasting independence.</p>
+      <p style="--d:flex; --fw:wrap; --g:.75rem; --m:0">
+        <a href="/donate" data-swap-off style="{{ui.pill}}; {{ui.glow}}">Donate</a>
+        <a href="/get-involved/#volunteer" style="{{ui.chip}}">Volunteer</a>
+      </p>
+    </figcaption>
+  </figure>
+  <ul style="--list:none; --p:0; --m:0; --d:grid; --g:.75rem; --gtc:repeat(auto-fit, minmax(9rem, 1fr))">
+    <li style="{{ui.stat}}; --i:1; {{ui.rise}}"><p style="{{ui.statLabel}}">Annual gala</p><p style="{{ui.statNum}}">27th</p></li>
+    <li style="{{ui.stat}}; --i:2; {{ui.rise}}"><p style="{{ui.statLabel}}">Camps in 2024</p><p style="{{ui.statNum}}">5</p></li>
+    <li style="{{ui.stat}}; --i:3; {{ui.rise}}"><p style="{{ui.statLabel}}">Camps, January 2025</p><p style="{{ui.statNum}}">2</p></li>
+  </ul>
+</div>
+
+<section style="{{ui.section}}" aria-labelledby="gala">
+  <div style="{{ui.stack}}; {{ui.wash}}; {{ui.rise}}">
+    {{mark:heart}}
+    <p style="{{ui.eyebrow}}">Next · 14 November 2026</p>
+    <h2 id="gala" style="{{ui.h2}}">27th Annual Gala</h2>
+    <p style="{{ui.lead}}; --mb:1.25rem">An evening at Le Châteaubriand that funds next year's camps.</p>
+    <a href="/2026/" style="{{ui.pill}}">Gala details {{icon:arrow-right}}</a>
+  </div>
+</section>
+
+<section style="{{ui.section}}" aria-labelledby="what">
+  <h2 id="what" style="{{ui.rule}}">What we do · 3<span aria-hidden="true" style="{{ui.ruleLine}}"></span></h2>
+  <ul style="--list:none; --p:0; --m:0; {{ui.grid}}">
+    <li style="--i:1; {{ui.rise}}"><a href="/mission/" style="{{ui.card}}">
+      <span style="{{ui.iconBox}}">{{icon:stethoscope}}</span>
+      <h3 style="--size:1.1rem; --weight:800; --m:0 0 .35rem">Surgical and dental camps</h3>
+      <p style="{{ui.muted}}; --m:0">Volunteer doctors, nurses and therapists bring care to families who could not afford it.</p></a></li>
+    <li style="--i:2; {{ui.rise}}"><a href="/about-us/" style="{{ui.card}}">
+      <span style="{{ui.iconBox}}">{{icon:heart-handshake}}</span>
+      <h3 style="--size:1.1rem; --weight:800; --m:0 0 .35rem">Community and education</h3>
+      <p style="{{ui.muted}}; --m:0">Every dollar improves quality of life and builds long-term resilience.</p></a></li>
+    <li style="--i:3; {{ui.rise}}"><a href="/get-involved/" style="{{ui.card}}">
+      <span style="{{ui.iconBox}}">{{icon:users}}</span>
+      <h3 style="--size:1.1rem; --weight:800; --m:0 0 .35rem">A network of volunteers</h3>
+      <p style="{{ui.muted}}; --m:0">Doctors, nurses, accountants and students give their time and skills.</p></a></li>
+  </ul>
+</section>
+
+<section style="{{ui.section}}" aria-labelledby="give">
+  <div style="{{ui.desk}}; --d:grid; --g:1rem; --gtc-md:2fr 1fr">
+    <div style="{{ui.sheet}}">
+      <h2 id="give" style="{{ui.h2}}">Every dollar directly impacts communities</h2>
+      <p style="{{ui.muted}}; --m:0 0 1rem">Donations are made securely through CanadaHelps.</p>
+      <a href="/donate" data-swap-off style="{{ui.pill}}">Donate through CanadaHelps</a>
+    </div>
+    <div style="{{ui.sheet}}">
+      <p style="{{ui.eyebrow}}">Volunteer</p>
+      <p style="--m:0 0 1rem; --weight:700">Join a camp team or help in Montreal.</p>
+      <a href="/get-involved/#volunteer" style="{{ui.chip}}">How to apply</a>
+    </div>
+  </div>
+</section>

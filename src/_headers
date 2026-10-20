@@ -1,0 +1,3 @@
+# Design drafts are for internal review: shareable by link, kept out of search.
+/drafts/*
+  X-Robots-Tag: noindex, nofollow
