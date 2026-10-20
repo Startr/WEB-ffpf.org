@@ -2,7 +2,16 @@
 
 ## High Priority
 
-- [ ] Questions for Board/Stakeholders:**
+- [ ] [EXTERNAL] **Credit Startr and Sage.is on the site** (Stakeholder: Board; planned, Alexander, 2026-10-20): the board decides, not Alexander's sign-off, because Alexander has an interest
+- [ ] [MANUALLY] **Public-repo exposure** (found 2026-10-20): `Startr/WEB-ffpf.org` is public, and git history keeps every committed version unless it is rewritten
+  - [ ] `communication/team_members.md` lists volunteers with arrival dates
+  - [ ] `communication/donor-dinner-thankyou-2026.md` holds a placeholder for the patient's name: fill it outside git
+  - [ ] [MANUALLY] Pick one: trim `team_members.md` to what the site shows and stay public, or make the repo private (Netlify and the CMS's GitHub backend work with a private repo; CMS editors then need repo access)
+  - [ ] [MANUALLY] Decide whether the old versions in history need a rewrite
+- [ ] [SITE] **Fix site-wide metadata** (found 2026-10-20)
+  - [ ] `src/_data/metadata.js`: the title reads "Freedom Frome Poverty Foundation"; the author is an `example.com` placeholder
+  - [ ] `src/_includes/layouts/base/head.html`: every page sets canonical `get-involved`; give each page its own absolute URL
+- [ ] **Questions for Board/Stakeholders**
   - [ ] Verify fundraising goal amount ($100,000?)
   - [ ] Request photos/bios for: Dr. Jane Doe placeholder, John Smith placeholder
   - [ ] Get photos of the 2026 location/hospital if available
@@ -12,16 +21,11 @@
   - [ ] "Freedom From Poverty Foundation" needs to be added as the english Name in Quebec
   - [ ] Initiate registration with Registraire des Entreprises du Québec
   - [ ] Update CanadaHelps and social media profiles (Alexander D. Somma)
-- [x] [MIXED] Professional Contact Details (Alexander D. Somma)
-    - [x] Update Contact Us page with: Freedom From Poverty Foundation, 1333 Stravinski Avenue, Brossard, QC J4X 2C5
-    - [x] Add business hours and primary contact email/phone
-    - [x] Update footer contact info on all pages
-    - [x] Verify consistency across all pages
 - [ ] Donor Appreciation Dinner — 2026 Camp Thank-You Presentation
   - [ ] [EXTERNAL] Content & Media To Confirm (Stakeholder: Vinod / Dr. D)
   - [ ] Adding logo to 
-  - [ ] Obtain video/testimony of patient with swollen face — confirm availability, length, quality
-  - [ ] Confirm patient's name and permission to use his story publicly
+  - [ ] Obtain the patient's video testimony — confirm availability, length, quality
+  - [ ] Confirm patient's name and permission to use his story publicly (record both outside git)
   - [ ] Obtain Archana 2-minute documentary preview — final cut ready?
   - [ ] Collect confirmed impact numbers from 2026 Jamkhed camps (surgeries, patients screened, procedures, follow-up plans)
   - [ ] Confirm list of volunteers who want individual name recognition at dinner
@@ -67,11 +71,10 @@
   - [ ] Add Eleventy passthrough for CSS in eleventy.config.js
   - [ ] Test site functionality and commit changes
 
-- [ ] **Component-Based Styling Overhaul**: Create reusable styled components
+- [ ] **Reusable components**: Eleventy shortcodes for buttons, cards and modals that emit startr.style inline props, no classes (AGENTS.md, 2026-10-20)
   - [ ] Identify reusable components (buttons, cards, modals)
-  - [ ] Create dedicated CSS classes for components
-  - [ ] Move modal styles from inline to global CSS
-  - [ ] Use Eleventy shortcodes for styled components
+  - [ ] Move modal styles from `<style>` blocks into inline props
+  - [ ] Use Eleventy shortcodes for the components
 
 - [ ] **Add CSS Optimization to Build Pipeline**: 
   - [ ] Improve performance with critical CSS and minification
@@ -81,6 +84,14 @@
   - [ ] Test load times and performance improvements
 
 ## Completed
+
+- [x] [SITE] **Agent rules** (Alexander, 2026-10-20): `AGENTS.md`, loaded by `CLAUDE.md`: who approves what, the public-repo rules, names and numbers, and how agents and Sage.is team members work here
+
+- [x] [MIXED] Professional Contact Details (Alexander D. Somma)
+    - [x] Update Contact Us page with: Freedom From Poverty Foundation, 1333 Stravinski Avenue, Brossard, QC J4X 2C5
+    - [x] Add business hours and primary contact email/phone
+    - [x] Update footer contact info on all pages
+    - [x] Verify consistency across all pages
 
 - [x] [SITE] Legal Footer Implementation (Alexander D. Somma)
     - [x] Verify CRA Registration # with CRA public registry: 892570938RR0001
