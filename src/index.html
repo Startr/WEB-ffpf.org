@@ -57,12 +57,10 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
 </article>
 
 <div class="parallax" style="
-    --w-xl: calc(100vw);
     --mt: 1em;
     --h: 28rem;
     "></div>
 <div class="parallax" style="
-    --w-xl: calc(100vw);
     --mt: -2em;
     --h: 36rem;
     ">
@@ -84,7 +82,7 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
 
 <!-- Gala modal: rotating 27th Annual Gala posters, linking to /2026/.
      Shows on page load; closing reveals a floating pill so visitors can reopen it. -->
-<div id="gala-modal" class="modal" role="dialog" aria-modal="true" aria-label="27th Annual Gala announcement">
+<div id="gala-modal" class="modal hidden" role="dialog" aria-modal="true" aria-label="27th Annual Gala announcement">
   <div class="modal-content">
     <span class="modal-close" role="button" tabindex="0" aria-label="Close announcement">&times;</span>
     <a href="/2026/" id="gala-modal-link">
@@ -233,6 +231,8 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
     var reopenBtn = document.getElementById('gala-reopen');
     var index = 0;
     var timer = null;
+    // No auto-rotation for visitors who ask for reduced motion.
+    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     posters.forEach(function (_, i) {
       var dot = document.createElement('button');
@@ -254,6 +254,7 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
     }
     function restart() {
       if (timer) clearInterval(timer);
+      if (still) return;
       timer = setInterval(function () { show(index + 1); }, 4000);
     }
     function open() {
@@ -261,12 +262,14 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
       reopenBtn.classList.add('hidden');
       document.body.style.overflow = 'hidden';
       restart();
+      closeBtn.focus({ preventScroll: true });
     }
     function close() {
       modal.classList.add('hidden');
       reopenBtn.classList.remove('hidden');
       document.body.style.overflow = '';
       if (timer) clearInterval(timer);
+      reopenBtn.focus({ preventScroll: true });
     }
 
     prevBtn.addEventListener('click', function (e) { e.stopPropagation(); show(index - 1); restart(); });
@@ -286,6 +289,9 @@ big_image: /wp-content/uploads/2019/09/slider-ffpf_optimized.webp
     });
     modal.querySelector('.modal-content').addEventListener('mouseenter', function () { if (timer) clearInterval(timer); });
     modal.querySelector('.modal-content').addEventListener('mouseleave', function () { if (!modal.classList.contains('hidden')) restart(); });
+    // Keyboard users get the same pause while focus is inside the poster.
+    modal.addEventListener('focusin', function () { if (timer) clearInterval(timer); });
+    modal.addEventListener('focusout', function (e) { if (!modal.contains(e.relatedTarget) && !modal.classList.contains('hidden')) restart(); });
 
     // Visible on landing, like last year's gala modal.
     show(0);

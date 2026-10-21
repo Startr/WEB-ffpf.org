@@ -50,25 +50,24 @@
       <p><img src="//visitas.startr.cloud/matomo.php?idsite=7&amp;rec=1" style="border:0;" alt=""/></p>
     </noscript>
 
+    <!-- Sticky only from md up: on a phone the wrapped nav would cover a fifth of the screen. -->
     <header
-      style="--w-xl: 100vw; --z: 1000;     
-      backdrop-filter: blur(0.1em);
-      -webkit-backdrop-filter: blur(0.1em);
-      background: rgba(var(--rgb-white), 0.9);
-      --pos: sticky;
-      top: 0;
-      user-select: none;
-      width: 100%;">
-      <a href="#skip" style="--d: none">Skip to main content</a>
+      style="--z: 1000;
+      --bg: var(--white);
+      --pos-md: sticky;
+      --top: 0;
+      --w: 100%;
+      user-select: none;">
+      <a href="#skip" style="--pos: absolute; --t: translateY(-200%); --t-focus: none; --z: 1001; --bg: var(--white); --p: 0.5em 1em">Skip to main content</a>
       <a class="home-link" style="--d: none" href="/">{{ metadata.title }}</a>
       {% include "./base/nav_en.html" %}
     </header>
 
-    <main style="--w-xl: 100vw; --m: 0.8rem" id="skip">
+    <main style="--m: 0.8rem" id="skip">
       {% if title and big_image %}
         <section aria-roledescription="Title Card">
           <figure style="--br: 5px; --of: hidden; --grad: 0deg; --pos: relative; --w:100%">
-            <img src="{{ big_image }}" alt="sample" style="--minh: 12rem; --objf:cover"/>
+            <img src="{{ big_image }}" alt="" style="--minh: 12rem; --objf:cover"/>
             <figcaption style="--d: flex; --fd:column; --jc: center; --ai: center; --inset: 0; --pos: absolute">
               <h1
               style="{% if big_image_offset %}--mt:{{ big_image_offset }};{% endif %} --c: white; --ts: black 1px 0 10px">
@@ -84,39 +83,31 @@
     </main>
 
     <!-- Footer -->
+    <!-- The brand red, darkened, so white text passes contrast (6.7:1).
+         Browsers without color-mix() keep the plain brand red. -->
     <footer style="
-        --w-xl: calc(100vw + 1rem);
-        --bg: #FF7F7F;
+        background: var(--primary);
+        background: color-mix(in srgb, var(--primary) 78%, black);
         --c: white;
         --p: 20px;
-        --mb:-3rem;
       ">
-      <p style="--m: 0px 0">
-        <a style="--c: white" href="/contact/">Contact Us</a><br/>
-        <a href="https://www.facebook.com/freedomfrompoverty/" target="_blank"
-          style="--c: white; --td: none; --f: block; --ft: right; --m: 1em">
-          Follow us on facebook
-          <b style="--bg: white; --c: #333; --p: 0 0.3em; --m: 0.2em">f</b>
-        </a>
-        <a href="https://www.instagram.com/ffpf_org?igsh=MXF4d2tjZGF6dHRhMw==" target="_blank"
-          style="--c: white; --td: none; --f: block; --ft: right; --m: 1em">
-          Follow us on Instagram 
-          <b style="--bg: white; --c: #333; --p: 0 0.3em; --m: 0.2em">i</b>
-        </a>
-        <a href="/donate" style="--c: white; --td: none; --f: block; --ft: right; --m: 1em"> Donate now
-        </a>
-        <p style="--m: 20px 0; font-size: 0.9em; text-align: left;">
-          Freedom From Poverty Foundation<br>
-          1333 Stravinski Avenue, Brossard, QC J4X 2C5
-        </p>
-        <p style="--m: 20px 0; font-size: 0.8em; text-align: right;">
-          La Fondation de la Libération de la Pauvreté Inc. | CRA Registration #: 892570938RR0001
-        </p>
-        <p style="--m: 20px 0">
-        Copyright © Freedom From Poverty Foundation<br/>
-        </p>
-
-      </footer>
+      <nav aria-label="Footer" style="--d: flex; --fw: wrap; --g: 0.5em 1.5em">
+        <a style="--c: white" href="/contact/">Contact Us</a>
+        <a href="https://www.facebook.com/freedomfrompoverty/" target="_blank" rel="noopener" style="--c: white">Follow us on Facebook</a>
+        <a href="https://www.instagram.com/ffpf_org?igsh=MXF4d2tjZGF6dHRhMw==" target="_blank" rel="noopener" style="--c: white">Follow us on Instagram</a>
+        <a href="/donate" style="--c: white">Donate</a>
+      </nav>
+      <p style="--m: 20px 0">
+        Freedom From Poverty Foundation<br>
+        1333 Stravinski Avenue, Brossard, QC J4X 2C5
+      </p>
+      <p style="--m: 20px 0">
+        La Fondation de la Libération de la Pauvreté Inc. | CRA Registration #: 892570938RR0001
+      </p>
+      <p style="--m: 20px 0">
+        Copyright © Freedom From Poverty Foundation
+      </p>
+    </footer>
     </body>
     {% include "../plugins/google_translate.html" %}
   </html>

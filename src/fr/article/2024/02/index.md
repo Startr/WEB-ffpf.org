@@ -97,6 +97,6 @@ Jamkhed. Ils se sont dégourdis et ont pu...
 
   * [ Facebook  ](https://www.facebook.com/freedomfrompoverty/)
 
-Copyright © Freedom From Poverty Foundation / BN/Registration#89257 0938 RR001  
+Copyright © Freedom From Poverty Foundation / La Fondation de la Libération de la Pauvreté Inc. / BN/Registration#892570938RR0001  
 Contact: Dr.S.D.Dwivedi 514 946-1756
 

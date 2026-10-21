@@ -1,5 +1,5 @@
 module.exports = {
-	title: "Freedom Frome Poverty Foundation",
+	title: "Freedom From Poverty Foundation",
 	url: "https://ffpf.org/",
 	language: "en",
 	name: "FFPF",

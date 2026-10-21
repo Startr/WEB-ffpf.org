@@ -21,6 +21,7 @@ Keep patient names, photos, videos and medical details out of git, even as place
 Keep donor details out; CanadaHelps holds them.
 Name volunteers only as the site already does, never with travel dates or contact details; officers on `/about-us/` may be named.
 Patient media and large files go on the shared drive; the pre-commit hook blocks files over 20 MB.
+Hidden pending consent (officer review, 2026-10-20): the sponsorship, shop and `/src/` pages. Ignores in `src/eleventy.config.js`, redirects in `src/_redirects`, photos in `withheld/`.
 
 ## The site
 
@@ -29,13 +30,14 @@ Netlify site `ffpf` serves `dist/` behind Cloudflare; the live site matches `mas
 
 Decap CMS at `/admin` commits straight to `master`, so pull before editing; `develop` has not moved since 2025-06-28.
 English sits at the root, French under `/fr/`.
-Keep the `/wp-content/` and `src/src/` URLs from the WordPress import: old links and `og:image` use them.
-`/donate` redirects to CanadaHelps (`src/_redirects`); Matomo on `visitas.startr.cloud` (site 7) counts visits.
+`/drafts/` holds design drafts for internal review: unlisted (noindex meta and `src/_headers`), generated from `docs/design-drafts/` by `node docs/design-drafts/build.mjs`; never link to it, and keep it to content already public.
+Keep the `/wp-content/` URLs from the WordPress import: old links and `og:image` use them. `src/src/`, a 2024 copy of the old WordPress site, is out of the build.
+`/donate` reaches CanadaHelps through a Cloudflare 302 on `/donate/`; `src/donate/index.html` (a meta refresh) shadows `src/_redirects`. Matomo on `visitas.startr.cloud` (site 7) counts visits.
 
 ## Names and numbers
 Legal name: La Fondation de la Libération de la Pauvreté Inc.
 English name: Freedom From Poverty Foundation, not yet registered in Quebec (the DBA card).
-CRA registration: 892570938RR0001; the footer in `src/_includes/layouts/base.njk` carries it and the legal name on every page.
+CRA registration: 892570938RR0001; the footer in `src/_includes/layouts/base.njk` carries it and the legal name. French WordPress-layout pages skip that layout, so their own footers repeat both; change all of them together.
 Contact details live in `src/contact/index.html` and the footer; change both together.
 Publish a fundraising figure, impact number or date only once its owner confirms it; the $100,000 goal is unconfirmed.
 
@@ -55,9 +57,9 @@ Git writes are [MANUALLY].
 Questions for FFPF go on the "Questions for Board/Stakeholders" card; questions for Alexander close your handoff, heaviest first.
 
 ## Footguns
-`src/_data/metadata.js` spells the title "Freedom Frome Poverty Foundation"; never copy it.
-`head.html` gives every page the canonical `get-involved`; never copy it.
 startr.style loads unpinned from the CDN, so an upstream release can change the site.
+A `--w-xl: 100vw` inside `<main>` (which has a margin) scrolls the page sideways; let blocks take the column's width.
+Netlify's `_redirects` loses to a real file at the same path unless the rule ends in `!`.
 
 ## Before handoff
 Run `bun run build`, open changed pages at 390px and 1280px in English and French, check the footer line and `/donate`, and read `git diff --cached` for personal details.

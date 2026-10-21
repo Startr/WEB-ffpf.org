@@ -9,7 +9,7 @@ We're thrilled to announce the launch of our Team Canada 2026 campaign! This ini
 
 [Details about the camp, goals, etc.]
 
-Donate now: [Link]
+Donate: [Link]
 
 Thank you for your support!
 

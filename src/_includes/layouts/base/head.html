@@ -3,28 +3,25 @@
 <title>{{ title | default(metadata.title) }}</title>
 <meta name="description" content="{{ description | default(metadata.description) }}">
 
-<!-- Atom and JSON feeds included by default -->
-<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
-
-<link href="get-involved" rel="canonical" />
+{% set pageUrl = (metadata.url | replace(r/\/$/, "")) + page.url %}
+<link href="{{ pageUrl }}" rel="canonical" />
 
 <meta content="en_US" property="og:locale" />
 <meta content="fr_CA" property="og:locale:alternate" />
 <meta content="website" property="og:type" />
 
-<meta content="{{ metadata.title }}" property="og:title" />
+<meta content="{{ title | default(metadata.title) }}" property="og:title" />
 <meta content="{{ description | default(metadata.description) }}" property="og:description" />
-<meta content="{{ metadata.url }}" property="og:url" />
+<meta content="{{ pageUrl }}" property="og:url" />
 <meta content="{{ metadata.name }}" property="og:site_name" />
 <meta content="{{ metadata.big_image | default('https://www.ffpf.org/wp-content/uploads/2018/10/logo-ffpf.webp') }}"
     property="og:image" />
 <meta content="summary_large_image" name="twitter:card" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" name="viewport" />
 
-<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-32x32.png" rel="icon" sizes="32x32" />
-<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-192x192.png" rel="icon" sizes="192x192" />
-<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-180x180.png" rel="apple-touch-icon" />
+<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-32x32.webp" rel="icon" sizes="32x32" />
+<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-192x192.webp" rel="icon" sizes="192x192" />
+<link href="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-180x180.webp" rel="apple-touch-icon" />
 <meta content="https://www.ffpf.org/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-270x270.png"
     name="msapplication-TileImage" />
 
@@ -51,19 +48,20 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
     nav a {
-        color: #888;
+        color: var(--black);
     }
 
     nav li li {
         padding: 0.5em 1em;
     }
 
-    nav li li:hover {
-        color: #ed1c24;
+    nav li li:is(:hover, :focus-within) {
+        color: var(--primary);
         background-color: #eee;
     }
 
-    li[style*="--cur:pointer"]:hover>ul {
+    /* Submenus open on hover and on keyboard focus. */
+    li[style*="--cur:pointer"]:is(:hover, :focus-within)>ul {
         display: block !important;
         height: auto !important;
         animation: fadeIn 0.6s;

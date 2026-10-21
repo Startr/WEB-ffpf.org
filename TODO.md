@@ -2,6 +2,14 @@
 
 ## High Priority
 
+- [ ] [MIXED] **Officer review preview** (Alexander, 2026-10-20): one Netlify Deploy Preview with the review's layout fixes and the changes Dr. D or Vinod must approve; sign-off through DocuSeal (`seal.startr.cloud`)
+  - [x] [WE] Layout (Alexander signs off): phone nav, sideways scroll, header and footer contrast, contact map, skip link, keyboard submenus, gala popup without JavaScript; checked at 390px and 1280px on a local build (2026-10-20)
+  - [x] [WE] For officers: French "Donner" links, CRA number, French legal footer, "Frome", the president's name, patient pages and `/src/` hidden pending consent (2026-10-20)
+  - [ ] [EXTERNAL] Ask the officers whether their own phone and email stay on the 2018–2019 dinner pages
+  - [ ] [MANUALLY] Decide `/teamcanada2026/`: redirect to `/mission/` with a confirmed 2026 entry (recommended), or strip its placeholders
+  - [ ] [MANUALLY] Commit on `feature/officer-review`, push, open a PR against `master`; Netlify posts the preview URL
+  - [ ] [MANUALLY] A DocuSeal API token in the vault's Agents collection, or build the sign-off form in DocuSeal's UI
+  - [ ] [EXTERNAL] Dr. D or Vinod signs, with a second board member (Stakeholder: Dr. D / Vinod)
 - [ ] [EXTERNAL] **Credit Startr and Sage.is on the site** (Stakeholder: Board; planned, Alexander, 2026-10-20): the board decides, not Alexander's sign-off, because Alexander has an interest
 - [ ] [MANUALLY] **Public-repo exposure** (found 2026-10-20): `Startr/WEB-ffpf.org` is public, and git history keeps every committed version unless it is rewritten
   - [ ] `communication/team_members.md` lists volunteers with arrival dates
@@ -9,8 +17,9 @@
   - [ ] [MANUALLY] Pick one: trim `team_members.md` to what the site shows and stay public, or make the repo private (Netlify and the CMS's GitHub backend work with a private repo; CMS editors then need repo access)
   - [ ] [MANUALLY] Decide whether the old versions in history need a rewrite
 - [ ] [SITE] **Fix site-wide metadata** (found 2026-10-20)
-  - [ ] `src/_data/metadata.js`: the title reads "Freedom Frome Poverty Foundation"; the author is an `example.com` placeholder
-  - [ ] `src/_includes/layouts/base/head.html`: every page sets canonical `get-involved`; give each page its own absolute URL
+  - [x] `src/_data/metadata.js`: the title reads "Freedom Frome Poverty Foundation" (fixed on `feature/officer-review`)
+  - [ ] `src/_data/metadata.js`: the author is an `example.com` placeholder
+  - [x] `src/_includes/layouts/base/head.html`: each page now sets its own absolute canonical and og:url (on `feature/officer-review`)
 - [ ] **Questions for Board/Stakeholders**
   - [ ] Verify fundraising goal amount ($100,000?)
   - [ ] Request photos/bios for: Dr. Jane Doe placeholder, John Smith placeholder
@@ -65,16 +74,12 @@
 ## Backlog
 
 ### [CSS] startr.style Improvements
-- [ ] **Host startr.style Locally**: Download and host CSS framework locally to eliminate external dependency
-  - [ ] Download https://startr.style/style.css and save as src/_includes/assets/startr.css
-  - [ ] Update head.html to link local file instead of external
-  - [ ] Add Eleventy passthrough for CSS in eleventy.config.js
-  - [ ] Test site functionality and commit changes
-
-- [ ] **Reusable components**: Eleventy shortcodes for buttons, cards and modals that emit startr.style inline props, no classes (AGENTS.md, 2026-10-20)
-  - [ ] Identify reusable components (buttons, cards, modals)
-  - [ ] Move modal styles from `<style>` blocks into inline props
-  - [ ] Use Eleventy shortcodes for the components
+- [ ] **The new look** (Alexander, 2026-10-20): ffpf on startr.style 1.5.0 like Trellis, with Tony's header wash, glass, glow and motion, plus Startr Swap; FFPF red, grey and logos kept; branch `feature/restyle`, stacked on the officer review
+  - [x] [WE] Drafts in Tony's draft format, on paper (2026-10-20): source in `docs/design-drafts/`, published unlisted at `/drafts/` (noindex); home, about-us, mission, get-involved, French home, article
+  - [ ] [MANUALLY] Alexander picks; Tony refines on a branch and opens a PR
+  - [ ] [WE] Copy the kit, fonts and Swap 1.1 into `src/assets/` with sha256 pins and a `kit:check` gate; theme tokens in `src/assets/theme/ffpf.css`
+  - [ ] [WE] Components in `src/_includes/ui.njk`; retire the `<style>` blocks, classes, WOW.js, animate.css and Font Awesome
+  - [ ] [WE] Before/after sheet; [EXTERNAL] Dr. D or Vinod sign "the new look", with a second board member
 
 - [ ] **Add CSS Optimization to Build Pipeline**: 
   - [ ] Improve performance with critical CSS and minification

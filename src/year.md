@@ -8,12 +8,12 @@ pagination:
 permalink: "/{{ year }}/"
 ---
 
-{style="--ta:center;" --fx: 100%; --m: auto; --w:40%;"}
+{style="--ta:center; --fx: 100%; --m: auto; --w-md:40%;"}
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfMifUY94SFYhPoAj7lclgyAV8GKyMhyLhwlKXITGw5hjDnv8RkzRH4uEqGClZWrlGpbolys6ActlB6DSTD3W1wiRHNWzvDlrIRbv71QyA7LCFIdQP1dNutBi0bv57wewZrvR0WBg?key=eoHe1ZHreIyKj-2w9LPwhw){style="--w:4rem"}
 ===
 
-{style="--ta:center;" --fx: 100%; --m: auto; --w:40%;"}
+{style="--ta:center; --fx: 100%; --m: auto; --w-md:40%;"}
 
 🌍 Freedom From Poverty Foundation: 
 ===================================
@@ -130,11 +130,14 @@ Creating pathways to a brighter future! ✨
 
     function go(i) {
       index = (i + slides.length) % slides.length;
-      track.scrollTo({ left: slides[index].offsetLeft - track.offsetLeft, behavior: 'smooth' });
+      track.scrollTo({ left: slides[index].offsetLeft - track.offsetLeft, behavior: still ? 'auto' : 'smooth' });
       dots.forEach(function (d, j) { d.setAttribute('aria-selected', j === index ? 'true' : 'false'); });
     }
+    // No auto-rotation or smooth scrolling for visitors who ask for reduced motion.
+    var still = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     function restart() {
       if (timer) clearInterval(timer);
+      if (still) return;
       timer = setInterval(function () { go(index + 1); }, 5000);
     }
 
@@ -150,6 +153,9 @@ Creating pathways to a brighter future! ✨
     }, { passive: true });
     root.addEventListener('mouseenter', function () { if (timer) clearInterval(timer); });
     root.addEventListener('mouseleave', restart);
+    // Keyboard users get the same pause while focus is inside the carousel.
+    root.addEventListener('focusin', function () { if (timer) clearInterval(timer); });
+    root.addEventListener('focusout', function (e) { if (!root.contains(e.relatedTarget)) restart(); });
     var touchX = null;
     track.addEventListener('touchstart', function (e) { touchX = e.touches[0].clientX; }, { passive: true });
     track.addEventListener('touchend', function (e) {
@@ -171,7 +177,7 @@ Creating pathways to a brighter future! ✨
   {% if section.section and section.links %}
     
     {% if section.section == "Social Media" or section.section == "2 - Social Media" or section.section == "Médias Sociaux" %}
-{style="--ta:center;" --fx: 100%; --m: auto; --w:40%;"}
+{style="--ta:center; --fx: 100%; --m: auto; --w-md:40%;"}
 # {% for link in section.links %}[<i class="{{ link.icon }}"></i>]({{ link.url }}){style="--m:2rem"} {% endfor %}
     {% else %}
 

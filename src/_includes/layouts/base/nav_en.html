@@ -1,17 +1,24 @@
 <nav style="
-        --size: 0.6rem;
-        --size-sm: 1.0rem;
-        --bg:var(--oklch-lch-4); 
+        --size: 1rem;
         --d:flex; 
         --ai:center; 
         --fd: column;
-        --fd-md: row">
-    <a
-            href="/">
-        <img alt="FFPF" src="
-            /wp-content/uploads/2018/10/logo-ffpf.webp" style="
-            --p:0;
-            --pr:0.3rem">
+        --fd-md: row;
+        --jc-md: space-between">
+    <!-- The square mark on phones and tablets; the full lockup with the
+         name from xl (1280px), where it fits beside the menu on one row. -->
+    <a href="/">
+        <picture>
+            <source media="(min-width: 1280px)" srcset="/wp-content/uploads/2018/10/logo-ffpf.webp" width="505" height="113">
+            <img alt="Freedom From Poverty Foundation" src="/wp-content/uploads/2018/10/cropped-logo-ffpf-icon-192x192.webp"
+                width="192" height="192" style="
+                --d:block;
+                --h:3.5rem;
+                --h-xl:4rem;
+                --w:auto;
+                --p:0;
+                --pr:0.3rem">
+        </picture>
     </a>
 
     <ul style="
@@ -20,25 +27,22 @@
             --jc:center; 
             --ai:center; 
             --list:none; 
-            --ml-lg: 8em; 
             --p:0;">
         <li style="
-        --d:none;
-        --d-md:block;
                 --cur:pointer; 
                 --pos:relative; 
-                --fx:1.5;">
+               ">
             <a style="
-                    --p:1em; 
-                    --td: none; 
+                    --p:1em; --ws:nowrap; 
+                    text-decoration: none; 
                     --d: block; 
                     --c: black; 
                     --translatey-hvr:-8px;" href="
                     /about-us/">About Us</a>
                     <ul style=" 
-            --d:none; --list:none; --p:1em; --pt:0.8em;
+            --d:none; --list:none; --p:1em; --pt:0.8em; --ws:nowrap; --z:10;
                     --m:0; --bgc:white; --pos:absolute; 
-                    --bt:4px solid #ed1c24">
+                    --bt:4px solid var(--primary)">
                 <li style="--translatey-hvr:-8px;"><a href="/about-us#humble">Humble Beginning</a></li>
                 <li style="--translatey-hvr:-8px;"><a href="/about-us#vision">Our Vision</a></li>
                 <li style="--translatey-hvr:-8px;"><a href="/about-us#values">Our Values</a></li>
@@ -49,40 +53,45 @@
         </li>
 
         <li style=" 
-        --d:none;
-        --d-md:block;
-        --cur:pointer; --pos: relative; --fx:1.5;">
+        --cur:pointer; --pos: relative;">
             <a style=" 
-                    --p:1em; 
+                    --p:1em; --ws:nowrap; 
                     --d: block; 
                     --c: black; 
-                    --td: none; 
+                    text-decoration: none; 
                     --translatey-hvr:-8px;" href="
                     /mission">Past Camps</a>
+            <ul style="
+            --d:none; --list:none; --p:1em; --pt:0.8em; --ws:nowrap; --z:10;
+                    --m:0; --bgc:white; --pos:absolute;
+                    --bt:4px solid var(--primary)">
+                <li style="--translatey-hvr:-8px;"><a href="/mission#camps-2025">2025 Camps</a></li>
+                <li style="--translatey-hvr:-8px;"><a href="/mission#camps-2024">2024 Camps</a></li>
+                <li style="--translatey-hvr:-8px;"><a href="/mission#camps-2023">2023 Camp</a></li>
+                <li style="--translatey-hvr:-8px;"><a href="/mission#camps-2020">2020 Camp</a></li>
+            </ul>
         </li>
 
         <li style="
-        --d:none;
-        --d-md:block;
-         --cur:pointer; --pos: relative; --fx:1.5;">
-            <a style=" --p:1em; --d: block; --c: black;  --td: none; --translatey-hvr:-8px;" href="/get-involved">Get
+         --cur:pointer; --pos: relative;">
+            <a style=" --p:1em; --ws:nowrap; --d: block; --c: black;  text-decoration: none; --translatey-hvr:-8px;" href="/get-involved">Get
                 Involved</a>
             <ul style=" 
-            --d:none; --list:none; --p:1em; --pt:0.8em;
+            --d:none; --list:none; --p:1em; --pt:0.8em; --ws:nowrap; --z:10;
                     --m:0; --bgc:white; --pos:absolute; 
-                    --bt:4px solid #ed1c24">
+                    --bt:4px solid var(--primary)">
                 <li style="--translatey-hvr:-8px;"><a href="/get-involved#apply">How to Apply?</a></li>
                 <li style="--translatey-hvr:-8px;"><a href="/get-involved#fundraising">Fundraising</a></li>
-                <li style="--translatey-hvr:-8px;"><a href="/get-involved#xDifference">Make a Donation</a></li>
+                <li style="--translatey-hvr:-8px;"><a href="/donate">Make a Donation</a></li>
                  <li style="--translatey-hvr:-8px;"><a href="/get-involved#sponsorship">Sponsorship</a></li>
             </ul>
         </li>
-        <li> <a class="button" href="/get-involved#volunteer" > Be A Volunteer</a></li>
-<li> <a class="button" href="/donate" > Donate now</a></li>
+        <li> <a class="button" href="/get-involved#volunteer" > Volunteer</a></li>
+<li> <a class="button" href="/donate" > Donate</a></li>
         <li><div style="--mt:1em; zoom:0.6" id="google_translate_element"></div></li>
         
-        <!--<li style="--cur:pointer; --pos: relative; --fx:1;">
-            <a style=" --p:1em; --d: block; --c: black;  --td: none;" href="/fr/">Français</a>
-        </li>-->
+        <li style="--pos: relative;">
+            <a style=" --p:1em; --ws:nowrap; --d: block; --c: black;  text-decoration: none;" href="/fr/home-fr/" lang="fr">Français</a>
+        </li>
     </ul>
 </nav>
