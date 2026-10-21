@@ -1,17 +1,6 @@
 /donate     https://www.canadahelps.org/charities/la-fondation-de-la-liberation-de-la-pauvrete-inc/
 
-# Hidden pending consent (officer review, 2026-10-20). 302 because the
-# pages come back if FFPF confirms consent is on record.
-/sponsorship                /get-involved/   302!
-/sponsorship/*              /get-involved/   302!
-/shop                       /get-involved/   302!
-/shop/*                     /get-involved/   302!
-/sponsorship-category/*     /get-involved/   302!
-/sponsorship-tag/*          /get-involved/   302!
-/fr/parrainage              /fr/simpliquer/  302!
-/fr/parrainage/*            /fr/simpliquer/  302!
-/fr/sponsorship-category/*  /fr/simpliquer/  302!
-/fr/sponsorship-tag/*       /fr/simpliquer/  302!
+# The 2024 copy of the old WordPress site is out of the build (eleventy.config.js).
 /src                        /                302!
 /src/*                      /                302!
 

@@ -17,11 +17,10 @@ Ignore the pytest and Django parts of `docs/DEVELOPMENT_WORKFLOW.md`.
 
 ## The repo is public
 `Startr/WEB-ffpf.org` is public, so every tracked file is published.
-Keep patient names, photos, videos and medical details out of git, even as placeholders.
+Publish a patient's name, photo or story only where FFPF holds signed consent (a guardian's for a minor); the forms are on file and available on request (Alexander, 2026-10-21). Keep patient details out of drafts, decks, notes and the board.
 Keep donor details out; CanadaHelps holds them.
 Name volunteers only as the site already does, never with travel dates or contact details; officers on `/about-us/` may be named.
 Patient media and large files go on the shared drive; the pre-commit hook blocks files over 20 MB.
-Hidden pending consent (officer review, 2026-10-20): the sponsorship, shop and `/src/` pages. Ignores in `src/eleventy.config.js`, redirects in `src/_redirects`, photos in `withheld/`.
 
 ## The site
 

@@ -2,14 +2,15 @@
 
 ## High Priority
 
-- [ ] [MIXED] **Officer review preview** (Alexander, 2026-10-20): one Netlify Deploy Preview with the review's layout fixes and the changes Dr. D or Vinod must approve; sign-off through DocuSeal (`seal.startr.cloud`)
+- [ ] [MIXED] **Officer review** (Alexander, 2026-10-20): the review's fixes went live with `6ef10aa` (2026-10-21) without a PR, so Dr. D or Vinod confirm them after the fact; sign-off through DocuSeal (`seal.startr.cloud`), links in Alexander's own email
   - [x] [WE] Layout (Alexander signs off): phone nav, sideways scroll, header and footer contrast, contact map, skip link, keyboard submenus, gala popup without JavaScript; checked at 390px and 1280px on a local build (2026-10-20)
-  - [x] [WE] For officers: French "Donner" links, CRA number, French legal footer, "Frome", the president's name, patient pages and `/src/` hidden pending consent (2026-10-20)
+  - [x] [WE] For officers: French "Donner" links, CRA number, French legal footer, "Frome", the president's name; `/src/` out of the build (2026-10-20)
+  - [x] [WE] Patient pages restored: every patient shown has signed consent, a guardian's for minors, on file and available on request (Alexander, 2026-10-21)
   - [ ] [EXTERNAL] Ask the officers whether their own phone and email stay on the 2018–2019 dinner pages
   - [ ] [MANUALLY] Decide `/teamcanada2026/`: redirect to `/mission/` with a confirmed 2026 entry (recommended), or strip its placeholders
-  - [ ] [MANUALLY] Commit on `feature/officer-review`, push, open a PR against `master`; Netlify posts the preview URL
-  - [ ] [MANUALLY] A DocuSeal API token in the vault's Agents collection, or build the sign-off form in DocuSeal's UI
-  - [ ] [EXTERNAL] Dr. D or Vinod signs, with a second board member (Stakeholder: Dr. D / Vinod)
+  - [ ] [MANUALLY] DocuSeal API token in the vault's Agents collection; DocuSeal mail relayed through Resend, never from the cluster's IP
+  - [ ] [WE] Sign-off form (officer first, Alexander second), links without DocuSeal's own email; a test send to Alexander proves DocuSeal mail works
+  - [ ] [EXTERNAL] Dr. D or Vinod signs, then Alexander as the second board member (Stakeholder: Dr. D / Vinod)
 - [ ] [EXTERNAL] **Credit Startr and Sage.is on the site** (Stakeholder: Board; planned, Alexander, 2026-10-20): the board decides, not Alexander's sign-off, because Alexander has an interest
 - [ ] [MANUALLY] **Public-repo exposure** (found 2026-10-20): `Startr/WEB-ffpf.org` is public, and git history keeps every committed version unless it is rewritten
   - [ ] `communication/team_members.md` lists volunteers with arrival dates
