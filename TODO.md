@@ -21,11 +21,13 @@
   - [x] [MANUALLY] Store: FFPF's own PocketBase at `pb.ffpf.org` takes the sign-ups; sponsor assets (logos, stage files) and the sponsor and ticket lists are collected into next.startr.cloud, account `ffpf`, folder `Gala 2026/`; Square for payment (Alexander, 2026-10-25/26)
   - [x] [WE] `pb/` (migrations, hooks; image pinned by digest), tested locally: guards, deadline, protected files, CORS (2026-10-25)
   - [x] [WE] `/sponsors/` and `/fr/commanditaires/` from `src/_data/dinner2026.js`; upload tested against a local PocketBase; linked from `/2026/` and Get Involved (2026-10-25)
-  - [ ] [MANUALLY] DNS `pb` in the ffpf.org zone (proxied); Nextcloud user `ffpf` with app password `nextcloud-ffpf-app-password` in Agents
+  - [ ] [MANUALLY] DNS `pb` in the ffpf.org zone (proxied)
+  - [x] [WE] Nextcloud agent accounts `ffpf` and `lamarr` on next.startr.cloud, group `agent` only; app passwords `nextcloud-ffpf-app-password` and `nextcloud-lamarr-app-password` in Agents-edit, CalDAV 207 by name; calendar "FFPF" (admin's) shared to `ffpf` with edit (2026-10-28)
   - [ ] [WE] Deploy `ffpf-pb` (OPS-Sage `deploy/ffpf-pb.yaml`), then the page goes live with the push
   - [ ] [WE] `ffpf-sync` worker into Nextcloud `Gala 2026/`; read-only share links for the officers
   - [ ] [MIXED] Square: Dr. D passes the single seat to Alexander (asked 2026-10-25, Resend `01a17235…`; Dr. D's answer 2026-10-27)
-    - [ ] [MANUALLY] Dr. D sets the login email to Alexander's; Alexander changes the password and moves 2FA to his phone the same day; the login stays in Alexander's own vault, never in Agents
+    - [x] [EXTERNAL] Alexander holds the password and the authenticator from Dr. D (2026-10-28)
+    - [ ] [MANUALLY] Two-step login with Dr. D on hand, later today 2026-10-28: Dr. D relays the code; Alexander then changes the password and moves 2FA to his own phone in the same sitting; the login stays in Alexander's own vault, never in Agents
     - [ ] [MANUALLY] Alexander checks Account & Settings: owner identity, FFPF bank account, receipts' sender name and address
     - [ ] [MANUALLY] Payment links in the Square dashboard: Gold $1,000, Silver $500, Presenting $5,000 (held off the page); CAD, tax off, "Sponsor: organisation" as the note field
     - [ ] [WE] Links into `dinner2026.js`, each one opened once from a build; then the page goes live with the push
