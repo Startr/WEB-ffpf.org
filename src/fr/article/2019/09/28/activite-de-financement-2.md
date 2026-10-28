@@ -51,9 +51,7 @@ sont confinées depuis trop longtemps.
 
 ####  Pour vous procurer les billets contacter:
 
-Vinod Dargan: [ [email protected]  ](/cdn-cgi/l/email-
-protection#2c5a484d5e4b4d426c5a45484943585e4342024f4d)  
-Dominic Talarico: 514 794-7800
+Communiquez avec nous par notre [page de contact](/fr/nous-joindre/).
 
 **Coût du billet:**  
 **125 $ pour une personne**  

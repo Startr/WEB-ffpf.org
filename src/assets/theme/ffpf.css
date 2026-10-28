@@ -1,0 +1,38 @@
+/* FFPF theme: tokens only, loaded after the kit. The one sheet the site keeps
+   (plan "The new look", 2026-10-20). Hex lives here and nowhere else. */
+:root {
+  --primary: #ed1d24;               /* logo red: bars, borders, icons, focus (4.37:1, never body text) */
+  --secondary: #6d6f71;             /* logo grey, 5.05:1 on white */
+  --primary-deep: var(--primary);   /* fallback where color-mix is missing */
+  --button-hover: var(--primary);
+  --text-muted: var(--secondary);   /* the kit's default is 2.38:1 */
+  --links: var(--primary-deep);
+  --element-bg: var(--primary-deep); /* the kit's button fill hook */
+
+  /* Paper, as in the startr.style docs: a hairline edge and a soft layered lift.
+     A stack shows two more sheets peeking out underneath. Kit colours only. */
+  --sheet-edge: color-mix(in srgb, var(--text-main) 13%, transparent);
+  --sheet-under: color-mix(in srgb, var(--text-main) 3%, var(--background));
+  --paper: 0 0 0 1px color-mix(in srgb, var(--text-main) 7%, transparent),
+           0 1px 2px color-mix(in srgb, var(--text-main) 9%, transparent),
+           0 8px 18px -10px color-mix(in srgb, var(--text-main) 28%, transparent);
+  --paper-lift: 0 0 0 1px color-mix(in srgb, var(--text-main) 8%, transparent),
+                0 2px 4px color-mix(in srgb, var(--text-main) 10%, transparent),
+                0 18px 32px -14px color-mix(in srgb, var(--text-main) 34%, transparent);
+  --paper-stack: var(--paper),
+                 0 7px 0 -4px var(--sheet-under), 0 7px 0 -3px var(--sheet-edge),
+                 0 14px 0 -8px var(--sheet-under), 0 14px 0 -7px var(--sheet-edge);
+}
+:root, [data-theme] { --primary-tint: var(--bad-bg); }
+@supports (color: color-mix(in oklch, red 10%, white)) {
+  :root {
+    --primary-deep: color-mix(in srgb, var(--primary) 80%, black);  /* about #be171d: white on it 6.31:1 */
+    --button-hover: color-mix(in srgb, var(--primary) 66%, black);  /* 8.33:1 */
+  }
+  :root, [data-theme] { --primary-tint: color-mix(in oklch, var(--primary) 8%, var(--background)); }
+}
+
+/* Kit gaps. Upstream proposals for Alexander; Startr/Style is not edited. */
+[hidden] { display: none !important; }  /* the kit's display rules beat [hidden] */
+[data-submenu] > ul { display: none; }  /* the kit has no parent :focus-within state */
+[data-submenu]:is(:hover, :focus-within) > ul { display: block; }

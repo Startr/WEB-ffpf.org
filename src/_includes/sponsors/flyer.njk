@@ -1,0 +1,27 @@
+{#- The sponsor flyer to download, on its own language's page, with a link to
+    the other language's when that one is published too. Nothing shows until
+    `dinner2026.flyers[lang]` exists (see src/_data/dinner2026.js). Expects
+    `t`, `lang`, `dinner2026`, `ui`. -#}
+{%- set f = dinner2026.flyers[lang] -%}
+{%- set otherLang = "fr" if lang == "en" else "en" -%}
+{%- set other = dinner2026.flyers[otherLang] -%}
+{%- if f -%}
+<section aria-labelledby="flyer" style="--mb:2.5rem">
+  <h2 id="flyer" style="{{ ui.rule }}">{{ t.flyerTitle }}</h2>
+  <div style="--d:grid; --gtc-md:16rem 1fr; --g:1.25rem; --ai:center">
+    <a href="{{ f.png }}" style="--d:block; --maxw:16rem">
+      <img src="{{ f.preview }}" alt="{{ t.flyerAlt }}" width="683" height="1024" loading="lazy" style="--w:100%; --h:auto; --radius:.5rem; --boxs:var(--paper)">
+    </a>
+    <div>
+      <p style="--m:0 0 1rem">{{ t.flyerText }}</p>
+      <p style="--d:flex; --fw:wrap; --g:.75rem; --m:0 0 .75rem">
+        <a href="{{ f.png }}" download style="{{ ui.chip }}">{{ t.flyerImage }}</a>
+        <a href="{{ f.pdf }}" download style="{{ ui.chip }}">{{ t.flyerPdf }}</a>
+      </p>
+      {%- if other %}
+      <p style="--m:0"><a href="{{ other.pdf }}" lang="{{ otherLang }}" download>{{ t.flyerOther }}</a></p>
+      {%- endif %}
+    </div>
+  </div>
+</section>
+{%- endif %}

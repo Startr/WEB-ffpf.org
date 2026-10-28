@@ -13,6 +13,8 @@ module.exports = function (eleventyConfig) {
 	// Netlify redirects and headers
 	eleventyConfig.addPassthroughCopy("_redirects");
 	eleventyConfig.addPassthroughCopy("_headers");
+	// Site assets: the theme sheet and behaviour scripts (src/assets/).
+	eleventyConfig.addPassthroughCopy("assets");
 	// Design drafts for internal review, unlisted (noindex; see _headers).
 	// Built by docs/design-drafts/build.mjs; copied as is, never templated.
 	eleventyConfig.addPassthroughCopy("drafts");

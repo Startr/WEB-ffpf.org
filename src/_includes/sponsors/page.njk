@@ -1,0 +1,14 @@
+{#- The sponsor page, English and French: src/sponsors/index.njk and
+    src/fr/commanditaires/index.njk set `lang` and the strings `t`. -#}
+{%- set d = dinner2026 -%}
+<div style="{{ ui.section }}; --pt:1.5rem">
+  {% include "sponsors/levels.njk" %}
+  {% include "sponsors/form.njk" %}
+  {% include "sponsors/recognition.njk" %}
+  {% include "sponsors/flyer.njk" %}
+  <section style="{{ ui.desk }}; --mb:1rem">
+    <p style="--m:0 0 .5rem">{{ t.ticketsNote }} <a href="{{ d.ticketForm }}" rel="noopener">{{ t.ticketsLink }}</a></p>
+    <p style="--m:0">{{ t.questions }} {% for c in d.contacts %}{{ c.name }}, <a href="tel:+1{{ c.phone | replace('-', '') }}" style="--ws:nowrap">{{ c.phone }}</a>{% if not loop.last %} {{ t.or }} {% endif %}{% endfor %}.</p>
+  </section>
+</div>
+<script src="/assets/js/sponsor-form.js" defer></script>

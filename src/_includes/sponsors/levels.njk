@@ -1,0 +1,53 @@
+{#- The page head, the facts and the levels table. Expects `t` (the page's
+    strings), `lang`, `dinner2026` and `ui`. -#}
+{%- set d = dinner2026 -%}
+<header style="{{ ui.pageHead }}">
+  <span style="{{ ui.tile }}" aria-hidden="true"><svg viewBox="0 0 24 24" width="60%" height="60%" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/><path d="m18 15-2-2"/><path d="m15 18-2-2"/></svg></span>
+  <div><p style="{{ ui.eyebrow }}">{{ t.eyebrow }}</p><h1 style="{{ ui.title }}">{{ t.title }}</h1></div>
+</header>
+<p style="{{ ui.lead }}; --mb:1.25rem">{{ t.lead }}</p>
+
+<dl style="--d:grid; --gtc:repeat(auto-fit, minmax(min(100%, 11rem), 1fr)); --g:.75rem; --m:0 0 1rem">
+  <div style="{{ ui.sheet }}; --p:.75rem 1rem"><dt style="{{ ui.eyebrow }}">{{ t.factDate }}</dt><dd style="--m:0; --weight:700">{{ t.date }}</dd><dd style="--m:0">{{ d.time[lang] }}</dd></div>
+  <div style="{{ ui.sheet }}; --p:.75rem 1rem"><dt style="{{ ui.eyebrow }}">{{ t.factVenue }}</dt><dd style="--m:0; --weight:700">{{ d.venue }}</dd><dd style="--m:0">{{ d.city[lang] }}</dd></div>
+  <div style="{{ ui.sheet }}; --p:.75rem 1rem"><dt style="{{ ui.eyebrow }}">{{ t.factGuests }}</dt><dd style="--m:0; --weight:700">{{ d.guests }}</dd><dd style="--m:0">{{ t.factGuestsNote }}</dd></div>
+</dl>
+<p style="{{ ui.entry }}; --m:0 0 2.5rem"><strong>{{ t.deadlineNote }}</strong></p>
+
+<section aria-labelledby="levels" style="--mb:2.5rem">
+  <h2 id="levels" style="{{ ui.rule }}">{{ t.levelsTitle }}</h2>
+  <div style="{{ ui.stack }}; --p:0; --p-md:0; --of:auto">
+    <table style="--w:100%; --m:0">
+      <thead><tr>
+        <th scope="col" style="--ta:left; --p:.75rem 1rem">{{ t.benefit }}</th>
+        {%- for tier in d.tiers %}{% if tier.open %}
+        <th scope="col" style="--p:.75rem .5rem; --ta:center">{{ tier.name[lang] }}<br><span style="--size:1.4rem; --weight:800">{{ tier.label[lang] }}</span></th>
+        {%- endif %}{% endfor %}
+      </tr></thead>
+      <tbody>
+        {%- for b in d.benefits %}
+        {#- A row shows when an open tier has it; Nunjucks loops keep their own
+            scope, so the flag is a list that grows. -#}
+        {%- set shown = [] %}{% for tier in d.tiers %}{% if tier.open and b[tier.id] %}{% set _n = shown.push(1) %}{% endif %}{% endfor %}
+        {%- if shown.length %}
+        <tr>
+          <th scope="row" style="--ta:left; --weight:600; --p:.6rem 1rem">{{ b[lang] }}</th>
+          {%- for tier in d.tiers %}{% if tier.open %}
+          <td style="--ta:center; --p:.6rem .5rem">{% if b[tier.id] === true %}<span role="img" aria-label="{{ t.yes }}" style="--c:var(--primary-deep); --weight:800">✓</span>{% elif b[tier.id] %}<strong>{{ b[tier.id] }}</strong>{% else %}<span role="img" aria-label="{{ t.no }}" style="--c:var(--text-muted)">–</span>{% endif %}</td>
+          {%- endif %}{% endfor %}
+        </tr>
+        {%- endif %}
+        {%- endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section aria-labelledby="why" style="--mb:2.5rem">
+  <h2 id="why" style="{{ ui.rule }}">{{ t.whyTitle }}</h2>
+  <ul style="--d:grid; --gtc:repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); --g:.75rem; --p:0; --m:0; list-style:none">
+    {%- for w in t.why %}
+    <li style="{{ ui.entry }}">{{ w }}</li>
+    {%- endfor %}
+  </ul>
+</section>

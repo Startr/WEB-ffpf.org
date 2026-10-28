@@ -19,6 +19,7 @@ Ignore the pytest and Django parts of `docs/DEVELOPMENT_WORKFLOW.md`.
 `Startr/WEB-ffpf.org` is public, so every tracked file is published.
 Publish a patient's name, photo or story only where FFPF holds signed consent (a guardian's for a minor); the forms are on file and available on request (Alexander, 2026-10-21). Keep patient details out of drafts, decks, notes and the board.
 Keep donor details out; CanadaHelps holds them.
+Sponsor sign-ups and ticket requests live only in FFPF's PocketBase (`pb.ffpf.org`, source `pb/`) and in the `ffpf` account on next.startr.cloud (folder `Gala 2026/`), where sponsor assets (logos, stage files) are collected; only `scripts/sponsors-pull.mjs` writes sponsor data into the repo: the public name, tier, website and logo of approved sponsors who agreed to be shown.
 Name volunteers only as the site already does, never with travel dates or contact details; officers on `/about-us/` may be named.
 Patient media and large files go on the shared drive; the pre-commit hook blocks files over 20 MB.
 
@@ -43,6 +44,7 @@ Publish a fundraising figure, impact number or date only once its owner confirms
 ## Styling
 startr.style inline props in `style` attributes, mobile-first; no new classes or colours (the brand red is `--primary` on `<body>`).
 No new third-party script, font or tracker without Alexander's yes.
+Pages with `theme: true` load `/assets/theme/ffpf.css` (tokens and the paper shadows) and take prop strings from `src/_data/ui.js`, as `/sponsors/` does; the restyle (`docs/plans/2026-10-20-restyle.md`) extends both.
 
 ## Speaking for FFPF
 Draft emails, posts and decks in `communication/`; nothing goes out until its named owner approves.
@@ -59,6 +61,8 @@ Questions for FFPF go on the "Questions for Board/Stakeholders" card; questions 
 startr.style loads unpinned from the CDN, so an upstream release can change the site.
 A `--w-xl: 100vw` inside `<main>` (which has a margin) scrolls the page sideways; let blocks take the column's width.
 Netlify's `_redirects` loses to a real file at the same path unless the rule ends in `!`.
+`bun.lockb` is stale against `package.json` (2026-10-25), so `bun install --frozen-lockfile` fails; `npm ci` installs from `package-lock.json` without touching tracked files.
+The dinner's deadline is in two places: `src/_data/dinner2026.js` and the create rule in `pb/pb_migrations/001_sponsors.js`; change both together.
 
 ## Before handoff
 Run `bun run build`, open changed pages at 390px and 1280px in English and French, check the footer line and `/donate`, and read `git diff --cached` for personal details.

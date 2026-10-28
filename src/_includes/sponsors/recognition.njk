@@ -1,0 +1,30 @@
+{#- "Our 2026 sponsors" (officer item 13). src/_data/sponsors2026.json is written
+    only by scripts/sponsors-pull.mjs: approved sponsors who agreed to be shown,
+    public fields only. Presenting and Gold show a logo; Silver shows a name.
+    Hidden until the first sponsor is approved. Expects `t`, `ui`, `sponsors2026`. -#}
+{%- if sponsors2026 and sponsors2026.length -%}
+<section aria-labelledby="sponsors" style="--mb:2.5rem">
+  <h2 id="sponsors" style="{{ ui.rule }}">{{ t.recognitionTitle }}</h2>
+  {#- Split by hand: Nunjucks loops keep their own scope, so the lists grow. -#}
+  {%- set withLogo = [] %}{% set byName = [] %}
+  {%- for s in sponsors2026 %}{% if s.logo %}{% set _n = withLogo.push(s) %}{% else %}{% set _n = byName.push(s) %}{% endif %}{% endfor %}
+  {%- if withLogo.length %}
+  <ul style="--d:grid; --gtc:repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); --g:.75rem; --p:0; --m:0 0 1rem; list-style:none">
+    {%- for s in withLogo %}
+    <li style="{{ ui.sheet }}; --d:grid; --ai:center; --ji:center; --minh:7rem">
+      {%- if s.website %}<a href="{{ s.website }}" rel="noopener" target="_blank">{% endif -%}
+      <img src="{{ s.logo }}" alt="{{ s.name }}" loading="lazy" style="--maxh:4.5rem; --maxw:100%; --objf:contain">
+      {%- if s.website %}</a>{% endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+  {%- if byName.length %}
+  <p style="--m:0">
+    {%- for s in byName %}
+    {%- if s.website %}<a href="{{ s.website }}" rel="noopener" target="_blank">{{ s.name }}</a>{% else %}{{ s.name }}{% endif %}{% if not loop.last %} · {% endif %}
+    {%- endfor %}
+  </p>
+  {%- endif %}
+</section>
+{%- endif %}

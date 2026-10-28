@@ -6,11 +6,38 @@
   - [x] [WE] Layout (Alexander signs off): phone nav, sideways scroll, header and footer contrast, contact map, skip link, keyboard submenus, gala popup without JavaScript; checked at 390px and 1280px on a local build (2026-10-20)
   - [x] [WE] For officers: French "Donner" links, CRA number, French legal footer, "Frome", the president's name; `/src/` out of the build (2026-10-20)
   - [x] [WE] Patient pages restored: every patient shown has signed consent, a guardian's for minors, on file and available on request (Alexander, 2026-10-21)
-  - [ ] [EXTERNAL] Ask the officers whether their own phone and email stay on the 2018–2019 dinner pages
+  - [x] [EXTERNAL] Officers' ticket contacts on the 2018–2019 dinner pages: Remove (Vinod, 2026-10-23); removed from the four dinner articles, `/fr/feed/` and the same block on `/fr/simpliquer/` (2026-10-25); Dr. D's FFPF number stays, as on `/contact/`
   - [ ] [MANUALLY] Decide `/teamcanada2026/`: redirect to `/mission/` with a confirmed 2026 entry (recommended), or strip its placeholders
   - [ ] [MANUALLY] DocuSeal API token in the vault's Agents collection; DocuSeal mail relayed through Resend, never from the cluster's IP
   - [ ] [WE] Sign-off form (officer first, Alexander second), links without DocuSeal's own email; a test send to Alexander proves DocuSeal mail works
-  - [ ] [EXTERNAL] Dr. D or Vinod signs, then Alexander as the second board member (Stakeholder: Dr. D / Vinod)
+    - [x] [WE] Template 11 "FFPF officer confirmation 2026-10" (folder FFPF), 22 fields placed by API; test submission 28 to Alexander in both roles (2026-10-21)
+    - [x] [WE] 2026-10-22: checked test submission 28 (`GET /api/submissions/28`): both links opened (Officer 2026-10-22 02:16 UTC, Second board member 2026-10-21 14:39 UTC), neither signed
+    - [ ] [MANUALLY] Alexander signs step 2 of test 28 (step 1 signed 2026-10-24); whether DocuSeal holds step 2 until step 1 is still unproven, since step 2 was opened first
+  - [x] [WE] Template 12 "FFPF officer confirmation 2026-10: fixes and dinner flyer" (2 pages, 34 fields: site fixes 1–8, flyer and sponsor items 9–14); submission 29 created, links only, nothing emailed (2026-10-22)
+  - [x] [WE] Sent Vinod his private link on Alexander's word, through Resend as "Alexander Somma via Sage.is AI", cc and reply-to `asomma@sage.is` (message `01a164d5-977d-77f4-811a-cf3f6c3ba5c0`, 2026-10-22)
+  - [x] [EXTERNAL] Vinod signed as Officer (2026-10-23 17:34 UTC) and Alexander as second board member (2026-10-25 06:44 UTC): items 1–7 approved, 8 Remove, 9 Le Châteaubriand, 10–14 approved, note on 14 "As discussed" (Vinod with Alexander, 2026-10-23)
+- [ ] [SITE] **Sponsor page and sign-ups for the 27th Annual Dinner** (Alexander, 2026-10-22): a landing page with the Gold and Silver tiers and a sign-up form (name, organisation, contact, tier, logo); approved sponsors feed the "Website recognition" the flyer promises
+  - [x] [EXTERNAL] Vinod approved it as items 13 and 14 (2026-10-23); deadline 7 Nov in Alexander's reply
+  - [x] [MANUALLY] Store: FFPF's own PocketBase at `pb.ffpf.org` takes the sign-ups; sponsor assets (logos, stage files) and the sponsor and ticket lists are collected into next.startr.cloud, account `ffpf`, folder `Gala 2026/`; Square for payment (Alexander, 2026-10-25/26)
+  - [x] [WE] `pb/` (migrations, hooks; image pinned by digest), tested locally: guards, deadline, protected files, CORS (2026-10-25)
+  - [x] [WE] `/sponsors/` and `/fr/commanditaires/` from `src/_data/dinner2026.js`; upload tested against a local PocketBase; linked from `/2026/` and Get Involved (2026-10-25)
+  - [ ] [MANUALLY] DNS `pb` in the ffpf.org zone (proxied); Nextcloud user `ffpf` with app password `nextcloud-ffpf-app-password` in Agents
+  - [ ] [WE] Deploy `ffpf-pb` (OPS-Sage `deploy/ffpf-pb.yaml`), then the page goes live with the push
+  - [ ] [WE] `ffpf-sync` worker into Nextcloud `Gala 2026/`; read-only share links for the officers
+  - [ ] [MIXED] Square: Dr. D passes the single seat to Alexander (asked 2026-10-25, Resend `01a17235…`; Dr. D's answer 2026-10-27)
+    - [ ] [MANUALLY] Dr. D sets the login email to Alexander's; Alexander changes the password and moves 2FA to his phone the same day; the login stays in Alexander's own vault, never in Agents
+    - [ ] [MANUALLY] Alexander checks Account & Settings: owner identity, FFPF bank account, receipts' sender name and address
+    - [ ] [MANUALLY] Payment links in the Square dashboard: Gold $1,000, Silver $500, Presenting $5,000 (held off the page); CAD, tax off, "Sponsor: organisation" as the note field
+    - [ ] [WE] Links into `dinner2026.js`, each one opened once from a build; then the page goes live with the push
+    - [ ] Later, only with webhooks: developer app `ffpf-sponsors`, token and signature key as `square-ffpf` in Agents, used through `sage-secret run`
+  - [ ] [MANUALLY] Ticket form: Alexander installs `pb/apps-script/tickets.gs` and runs the backfill, only after Vinod approves item 8 of sign-off #2
+  - [x] [WE] Flyers in English and French (`docs/flyers/dinner-2026/`, `bun docs/flyers/dinner-2026/build.ts`): PNG and Letter PDF, QR codes decode to the pages (2026-10-25)
+  - [x] [WE] Sign-off #2 (wording approved by Alexander, 2026-10-26): DocuSeal template 14, phone format (5 pages, 0.5 MB), items 1–11; French reviewer proposed: Isabelle Plante; "Why sponsor" proposed as "India and Canada"; the unsent v1 (template 13, submission 30) archived, not deleted
+  - [ ] [MANUALLY] Alexander picks the officer (Vinod or Dr. D); then [WE] create the submission, links only
+  - [ ] [MANUALLY] Alexander's yes to send the link, only once `/sponsors/` is verified live
+  - [ ] [EXTERNAL] Vinod signs sign-off #2, then Alexander (Stakeholder: Vinod)
+  - [ ] [WE] Flyers on `/sponsors/` (block built, off until files exist): `PUBLISH=en bun docs/flyers/dinner-2026/build.ts` after items 1, 3, 4; `fr` after item 2 and the fluent review
+  - [ ] [WE] Recognition: `scripts/sponsors-pull.mjs` as sponsors are approved; the last run after 7 Nov
 - [ ] [EXTERNAL] **Credit Startr and Sage.is on the site** (Stakeholder: Board; planned, Alexander, 2026-10-20): the board decides, not Alexander's sign-off, because Alexander has an interest
 - [ ] [MANUALLY] **Public-repo exposure** (found 2026-10-20): `Startr/WEB-ffpf.org` is public, and git history keeps every committed version unless it is rewritten
   - [ ] `communication/team_members.md` lists volunteers with arrival dates

@@ -47,9 +47,7 @@ break the cycle of poverty in which they have been too long confined.
 
 ####  To purchase tickets:
 
-Vinod Dargan: [ [email protected]  ](/cdn-cgi/l/email-
-protection#1a6c7e7b687d7b745a6c737e7f756e68757434797b)  
-Dominic Talarico: 514 794-7800
+Contact us through our [contact page](/contact/).
 
 **Cost:**  
 **$125 per person**  

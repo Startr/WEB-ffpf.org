@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "dockerfileLines": [
+    "FROM ghcr.io/sage-is/db-sage-pb:latest@sha256:6f7a6864e23e7721c9bf5e61cdc93b202ae3c4ed2d911c93d9bfe4e4d2511a70",
+    "COPY pb_hooks/ /app/pb_hooks/",
+    "COPY pb_migrations/ /app/pb_migrations/",
+    "CMD [\"pocketbase\", \"serve\", \"--http=0.0.0.0:8090\", \"--dir=/app/pb_data\", \"--hooksDir=/app/pb_hooks\", \"--migrationsDir=/app/pb_migrations\", \"--origins=https://ffpf.org,https://www.ffpf.org\"]"
+  ]
+}

@@ -1,0 +1,52 @@
+{#- The sign-up form. Field names are PocketBase's (pb/pb_migrations/001_sponsors.js);
+    /assets/js/sponsor-form.js sends it. Expects `t`, `lang`, `dinner2026`, `ui`. -#}
+{%- set d = dinner2026 -%}
+{%- set field = "--d:grid; --g:.35rem; --m:0 0 1rem" -%}
+{%- set hint = "--size:.85rem; --c:var(--text-muted)" -%}
+<section aria-labelledby="signup" style="--mb:2.5rem">
+  <h2 id="signup" style="{{ ui.rule }}">{{ t.formTitle }}</h2>
+  <div style="{{ ui.stack }}">
+    <p data-closed {% if not d.closed %}hidden{% endif %} style="--m:0"><strong>{{ t.closedTitle }}.</strong> {{ t.closedText }}</p>
+    <noscript><p style="--m:0 0 1rem">{{ t.noJs }} {% for c in d.contacts %}{{ c.name }}, <a href="tel:+1{{ c.phone | replace('-', '') }}" style="--ws:nowrap">{{ c.phone }}</a>{% if not loop.last %}; {% endif %}{% endfor %}.</p></noscript>
+    <form data-sponsor-form {% if d.closed %}hidden{% endif %} novalidate
+      data-pb="{{ d.pb }}" data-closes="{{ d.closesAt }}"
+      {%- for tier in d.tiers %}{% if tier.open and tier.square %} data-square-{{ tier.id }}="{{ tier.square }}"{% endif %}{% endfor %}
+      data-msg-error="{{ t.errorGeneric }}" data-msg-type="{{ t.errorFileType }}" data-msg-size="{{ t.errorFileSize }}"
+      data-msg-total="{{ t.errorTotal }}" data-msg-count="{{ t.errorCount }}" data-msg-required="{{ t.errorRequired }}" data-msg-sending="{{ t.sending }}">
+      <input type="hidden" name="lang" value="{{ lang }}">
+      <fieldset style="border:0; --p:0; --m:0 0 1rem">
+        <legend style="--weight:700; --mb:.5rem">{{ t.level }} *</legend>
+        <div style="--d:flex; --fw:wrap; --g:.75rem">
+          {%- for tier in d.tiers %}{% if tier.open %}
+          <label style="{{ ui.sheet }}; --d:flex; --ai:center; --g:.5rem; --p:.6rem 1rem"><input type="radio" name="tier" value="{{ tier.id }}" required> <strong>{{ tier.name[lang] }}</strong> {{ tier.label[lang] }}</label>
+          {%- endif %}{% endfor %}
+        </div>
+      </fieldset>
+      <div style="--d:grid; --gtc-md:1fr 1fr; --g:0 1.25rem">
+        <label style="{{ field }}">{{ t.organisation }} *<input name="organisation" required maxlength="200" autocomplete="organization"></label>
+        <label style="{{ field }}">{{ t.announceAs }}<input name="announce_as" maxlength="200"></label>
+        <label style="{{ field }}">{{ t.contactName }} *<input name="contact_name" required maxlength="200" autocomplete="name"></label>
+        <label style="{{ field }}">{{ t.email }} *<input name="email" type="email" required autocomplete="email"></label>
+        <label style="{{ field }}">{{ t.phone }}<input name="phone" type="tel" maxlength="50" autocomplete="tel"></label>
+        <label style="{{ field }}">{{ t.website }}<input name="website" type="url" placeholder="https://" autocomplete="url"></label>
+      </div>
+      <label style="{{ field }}">{{ t.logo }}<input name="logo" type="file" accept=".png,.jpg,.jpeg,.svg,.webp,.pdf" data-max-mb="10" data-types="png jpg jpeg svg webp pdf"><span style="{{ hint }}">{{ t.logoHint }}</span></label>
+      <label style="{{ field }}">{{ t.media }}<input name="stage_media" type="file" multiple data-max-files="4" accept=".pdf,.ppt,.pptx,.png,.jpg,.jpeg,.webp,.svg,.mp4,.mov" data-max-mb="20" data-types="pdf ppt pptx png jpg jpeg webp svg mp4 mov"><span style="{{ hint }}">{{ t.mediaHint }}</span></label>
+      <label style="{{ field }}">{{ t.videoUrl }}<input name="video_url" type="url" placeholder="https://"><span style="{{ hint }}">{{ t.videoHint }}</span></label>
+      <label style="{{ field }}">{{ t.guests }}<input name="guest_names" maxlength="500"></label>
+      <label style="{{ field }}">{{ t.notes }}<textarea name="notes" rows="3" maxlength="2000"></textarea></label>
+      <label aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden">Fax<input name="company_fax" tabindex="-1" autocomplete="off"></label>
+      <label style="--d:flex; --g:.6rem; --ai:start; --m:0 0 .75rem"><input type="checkbox" name="consent_display" value="true" required style="--mt:.3rem"> <span>{{ t.consent }} *</span></label>
+      <p style="{{ hint }}; --m:0 0 1.25rem">{{ t.privacy }}</p>
+      <p data-error role="alert" hidden style="--c:var(--primary-deep); --weight:700"></p>
+      <progress data-progress max="100" value="0" hidden style="--w:100%"></progress>
+      <button type="submit" style="{{ ui.pill }}; {{ ui.glow }}; border:0; cursor:pointer">{{ t.submit }}</button>
+    </form>
+    <div data-done hidden tabindex="-1">
+      <p style="--size:1.4rem; --weight:800; --m:0 0 .5rem">{{ t.doneTitle }}</p>
+      <p style="--m:0 0 1rem">{{ t.doneText }}</p>
+      <p data-pay hidden style="--m:0"><a data-pay-link href="#" style="{{ ui.pill }}">{{ t.payNow }}</a></p>
+      <p data-pay-later style="--m:0">{{ t.payLater }}</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,63 @@
+/* The 27th Annual Dinner sponsor flyer: a 1365 x 2048 canvas, after the
+   original (original-en.jpg). A print piece with its own palette, not the
+   site's: build.ts renders it to PNG and PDF. Fonts are local (fonts/, OFL). */
+@font-face { font-family: "Playfair Display"; font-weight: 400; src: url(fonts/playfair-display-v40-latin-regular.woff2) format("woff2"); }
+@font-face { font-family: "Playfair Display"; font-weight: 700; src: url(fonts/playfair-display-v40-latin-700.woff2) format("woff2"); }
+@font-face { font-family: "Nunito Sans"; font-weight: 200 1000; src: url(fonts/Nunito-Sans-normal-200-1000-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Nunito Sans"; font-weight: 200 1000; src: url(fonts/Nunito-Sans-normal-200-1000-latin-ext.woff2) format("woff2"); unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+:root { --cream: #fbf6ef; --ink: #2a1215; --maroon: #7b1a22; --night: #2b1316; --gold: #a57c2c;
+        --silver: #5d646d; --line: #eadfce; --muted: #4d4446; --serif: "Playfair Display", Georgia, serif;
+        --sans: "Nunito Sans", system-ui, sans-serif; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--cream); }
+/* --pw: 1365px for the PNG (the original's shape), 1583px for the Letter PDF (8.5 x 11). */
+.page { position: relative; width: var(--pw, 1365px); height: 2048px; overflow: hidden; background: var(--cream);
+        color: var(--ink); font-family: var(--sans); }
+
+.photo { position: absolute; top: 0; right: 0; width: 530px; height: 748px; object-fit: cover;
+         border-bottom-left-radius: 190px; }
+/* Covers the badge baked into the photo (page x 1072-1328, y 597-710). */
+.badge { position: absolute; top: 582px; right: 30px; width: 272px; height: 136px; padding: 0 26px; background: var(--maroon);
+         border: 2px solid var(--gold); color: #fff; display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+.badge b { display: block; font: 700 50px/1 var(--serif); }
+.badge span { font: 700 17px/1.3 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+
+.intro { position: absolute; top: 40px; left: 62px; width: 735px; }
+.lockup { display: flex; align-items: center; gap: 18px; height: 80px; }
+.lockup img { height: 80px; }
+.lockup .name { font: 800 30px/1.05 var(--sans); color: #6d6f71; text-transform: uppercase; letter-spacing: .01em; }
+.tagline { margin: 26px 0 0; font: italic 400 38px/1.2 var(--serif); color: var(--gold); }
+h1 { margin: 6px 0 0; font: 700 74px/1.04 var(--serif); letter-spacing: -.01em; }
+h1 em { display: block; font-style: normal; color: var(--maroon); }
+.pill { display: inline-block; margin: 24px 0 0; padding: 12px 22px; border: 2px solid #d7c39a; border-radius: 10px;
+        font: 800 19px/1 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--maroon); }
+.pill i { font-style: normal; color: var(--gold); padding: 0 .55em; }
+.lead { margin: 26px 0 0; font: 400 22px/1.5 var(--sans); color: var(--muted); }
+.lead strong { color: var(--maroon); font-weight: 700; }
+.facts { display: grid; grid-template-columns: 1.2fr 1.15fr .9fr; margin: 30px 0 0; width: 735px; background: #fff;
+         border: 1px solid var(--line); border-radius: 16px; }
+.facts div { padding: 22px 24px; }
+.facts div + div { border-left: 1px solid var(--line); }
+.facts small { display: block; font: 800 14px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+.facts b { display: block; margin-top: 10px; font: 800 23px/1.2 var(--sans); }
+.facts span { display: block; margin-top: 6px; font: 400 18px/1.3 var(--sans); }
+
+.band-title { position: absolute; top: 770px; left: 50%; transform: translateX(-50%); padding: 14px 38px;
+              border-radius: 999px; background: var(--night); color: #fff; white-space: nowrap;
+              font: 800 21px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; }
+table { position: absolute; top: 845px; left: 43px; width: calc(var(--pw, 1365px) - 86px); border-collapse: separate; border-spacing: 0;
+        border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: #fff; }
+th, td { height: var(--row, 96px); border-bottom: 1px solid var(--line); text-align: center; }
+tr:last-child th, tr:last-child td { border-bottom: 0; }
+tbody th { width: 555px; padding: 0 26px; text-align: left; background: var(--night); color: #fff;
+           font: 800 20px/1.35 var(--sans); letter-spacing: .07em; text-transform: uppercase; border-bottom-color: #4a2a2e; }
+thead th { height: 170px; color: #fff; font-weight: 400; }
+thead th:first-child { background: var(--cream); }
+thead small { display: block; font: 800 22px/1 var(--sans); letter-spacing: .16em; text-transform: uppercase; }
+thead b { display: block; margin-top: 12px; font: 700 60px/1 var(--serif); }
+thead em { display: block; margin-top: 10px; font: 800 13px/1 var(--sans); letter-spacing: .14em; text-transform: uppercase; font-style: normal; }
+.gold { background: var(--gold); } .silver { background: var(--silver); } .presenting { background: var(--maroon); }
+td { font: 800 40px/1 var(--sans); color: var(--ink); }
+td.alt { background: #f6f6f7; }
+.yes { color: #2e7d32; font-size: 52px; } .no { color: #b3261e; font-size: 46px; font-weight: 400; }

@@ -1,6 +1,11 @@
 section: Événements
 order: 3
 links:
+  - title: Commanditez le 27e Souper-bénéfice
+    url: /fr/commanditaires/
+    description: Commandites Or et Argent, inscription d'ici le 7 nov.
+    style: primary
+    order: 0
   - title: Participation au 27ième Souper Bénéfice – 14 nov
     url: https://forms.gle/G2iZExNBZcAuQGTM7
     description: Participez à notre 27ième Souper Bénéfice

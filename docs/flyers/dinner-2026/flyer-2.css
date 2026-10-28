@@ -1,0 +1,24 @@
+/* The flyer's lower half: why sponsor, the footer band and the legal line. */
+.why { position: absolute; left: 43px; width: calc(var(--pw, 1365px) - 86px); padding: 22px 26px 24px; background: #fff;
+       border: 1px solid var(--line); border-radius: 18px; }
+.why h2 { margin: 0 0 16px; text-align: center; font: 800 19px/1 var(--sans); letter-spacing: .16em;
+          text-transform: uppercase; color: var(--maroon); }
+.why ul { display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; margin: 0; padding: 0; list-style: none; }
+.why li { padding-left: 14px; border-left: 4px solid #d7c39a; font: 400 18px/1.4 var(--sans); color: var(--muted); }
+
+.band { position: absolute; left: 0; right: 0; height: 236px; padding: 30px 62px; background: var(--maroon); color: #fff;
+        display: grid; grid-template-columns: 158px 330px 1fr 1fr; gap: 0 32px; align-items: center; }
+.qr { width: 158px; height: 158px; padding: 10px; background: #fff; border-radius: 12px; }
+.qr svg { display: block; width: 100%; height: 100%; }
+.join small { display: block; font: 800 19px/1.2 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: #e8c98a; }
+.join b { display: block; margin-top: 10px; font: 700 44px/1.05 var(--serif); }
+.join span { display: block; margin-top: 12px; font: 800 22px/1 var(--sans); }
+.contacts { padding-left: 30px; border-left: 2px solid rgba(255,255,255,.35); }
+.contacts p { margin: 0 0 12px; font: 800 22px/1.2 var(--sans); }
+.contacts p span { display: block; color: #e8c98a; font-weight: 700; }
+.contacts p:last-child { margin: 0; }
+.together { text-align: right; }
+.together b { display: block; font: italic 700 36px/1.15 var(--serif); color: #f0d9a8; }
+.together p { margin: 14px 0 0; font: 700 18px/1.5 var(--sans); }
+.legal { position: absolute; left: 0; right: 0; bottom: 0; height: 44px; display: flex; align-items: center;
+         justify-content: center; background: var(--night); color: #e9dfd6; font: 600 16px/1 var(--sans); letter-spacing: .03em; }

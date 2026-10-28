@@ -1,6 +1,11 @@
 section: 3 - Events
 order: 3
 links:
+  - title: Become a sponsor of the 27th Annual Dinner
+    url: /sponsors/
+    description: Gold and Silver sponsorships, sign up by 7 Nov
+    style: primary
+    order: 0
   - title: Come 14 Nov for the 27th Annual Gala
     url: https://forms.gle/G2iZExNBZcAuQGTM7
     description: Participate in our 27th Annual Gala
