@@ -14,14 +14,24 @@ const dinner = {
   closesAt: "2026-11-08T04:59:59Z", // 7 Nov 23:59 in Montreal (EST)
   pb: "https://pb.ffpf.org",
   ticketForm: "https://forms.gle/G2iZExNBZcAuQGTM7",
+  // Pixels for PNG and JPG uploads, checked in the browser only; SVG has none.
+  // Stage images sit either side of the presentation, so square is recommended
+  // (Alexander, 2026-11-01). File types: form.njk and
+  // pb/pb_migrations/003_upload_rules.js.
+  uploads: { logoWidth: 1000, stageMin: 1080, stageMax: 2160 },
   // `open: false` keeps a tier off the page and out of PocketBase's TIERS_OPEN.
-  // `square` is the tier's Square payment link, shown after sign-up.
+  // `pay` is the tier's stable pay page, which the thank-you step links to.
+  // While `square` is empty it says payment is being tested; set `square` to the
+  // tier's Square payment link and the page redirects there, in both languages.
   tiers: [
     { id: "presenting", price: 5000, open: false, square: "",
+      pay: { en: "/sponsors/pay/presenting/", fr: "/fr/commanditaires/paiement/presentateur/" },
       name: { en: "Presenting", fr: "Présentateur" }, label: { en: "$5,000", fr: "5 000 $" } },
     { id: "gold", price: 1000, open: true, square: "",
+      pay: { en: "/sponsors/pay/gold/", fr: "/fr/commanditaires/paiement/or/" },
       name: { en: "Gold", fr: "Or" }, label: { en: "$1,000", fr: "1 000 $" } },
     { id: "silver", price: 500, open: true, square: "",
+      pay: { en: "/sponsors/pay/silver/", fr: "/fr/commanditaires/paiement/argent/" },
       name: { en: "Silver", fr: "Argent" }, label: { en: "$500", fr: "500 $" } },
   ],
   // The flyer's table. true / false, or a count. Presenting is a proposal
@@ -51,6 +61,9 @@ const dinner = {
 
 // Decided at build time; the form's script decides again in the browser.
 dinner.closed = Date.now() > Date.parse(dinner.closesAt);
+
+// Pay pages exist only for open tiers: a closed tier stays off the site.
+dinner.openTiers = dinner.tiers.filter((tier) => tier.open);
 
 // The flyer a language shows on its sponsor page: only once its files are in
 // src/assets/flyers/, which happens only through

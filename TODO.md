@@ -21,17 +21,31 @@
   - [x] [MANUALLY] Store: FFPF's own PocketBase at `pb.ffpf.org` takes the sign-ups; sponsor assets (logos, stage files) and the sponsor and ticket lists are collected into next.startr.cloud, account `ffpf`, folder `Gala 2026/`; Square for payment (Alexander, 2026-10-25/26)
   - [x] [WE] `pb/` (migrations, hooks; image pinned by digest), tested locally: guards, deadline, protected files, CORS (2026-10-25)
   - [x] [WE] `/sponsors/` and `/fr/commanditaires/` from `src/_data/dinner2026.js`; upload tested against a local PocketBase; linked from `/2026/` and Get Involved (2026-10-25)
-  - [ ] [MANUALLY] DNS `pb` in the ffpf.org zone (proxied)
+  - [x] [MANUALLY] Cloudflare token limited to the ffpf.org zone in the stub `cloudflare-ffpf-dns` (Agents-edit; scope in its notes), so agents manage FFPF DNS (Alexander, 2026-11-01); token active and reaches the zone (checked 2026-11-01)
+  - [x] [WE] DNS `pb` in the ffpf.org zone (proxied), set by `cr-deploy ensure` with that token (2026-11-01)
+  - [ ] [MIXED] Pay pages, so everything can go live before Square is ready (Alexander, 2026-11-01): `/sponsors/pay/<tier>/` and `/fr/commanditaires/paiement/<tier>/`; setting a tier's `square` turns its page into a redirect
+    - [x] [WE] Pages built for open tiers in English and French, thank-you step points at them; redirect tested locally with a fake link; checked at 390px and desktop (2026-11-01, uncommitted)
+    - [ ] [EXTERNAL] Dr. D or Vinod backs the stub copy, and a fluent reviewer checks the French
+    - [ ] [MANUALLY] Commit and push
+  - [ ] [MIXED] Upload rules (Alexander, 2026-11-01): still images PNG, JPEG or SVG only, at a set resolution; video as a direct YouTube link or a small uploaded file; say plainly that video plays without sound
+    - [x] [WE] Form, copy in both languages, PocketBase migration and hook; 18 server cases pass on a throwaway local PocketBase, and the browser checks pass in both languages, with no overflow at 390px (2026-11-01, uncommitted)
+    - [x] [MANUALLY] Sizes (Alexander, 2026-11-01): stage images sit either side of the presentation, so square is recommended, from 1080 × 1080 to 2160 × 2160; logos at least 1000 px wide; uploaded video up to 20 MB (`uploads` in `src/_data/dinner2026.js`)
+    - [ ] [EXTERNAL] Dr. D or Vinod backs the live hints after the push, and a fluent reviewer checks the French (Alexander, 2026-11-01: live first, then the text to Dr. D)
+    - [ ] [WE] Deploy `ffpf-pb` with the new rules, right after the push
   - [x] [WE] Nextcloud agent accounts `ffpf` and `lamarr` on next.startr.cloud, group `agent` only; app passwords `nextcloud-ffpf-app-password` and `nextcloud-lamarr-app-password` in Agents-edit, CalDAV 207 by name; calendar "FFPF" (admin's) shared to `ffpf` with edit (2026-10-28)
-  - [ ] [WE] Deploy `ffpf-pb` (OPS-Sage `deploy/ffpf-pb.yaml`), then the page goes live with the push
+  - [x] [WE] Deploy `ffpf-pb` (OPS-Sage `deploy/ffpf-pb.yaml`): version 1 on openco2, `/api/health` 200 through Cloudflare, CORS allows ffpf.org, public reads refused (2026-11-01, on Alexander's command)
+    - [x] [WE] Found 2026-11-01: `/sponsors/` already answers 200 and its form posts to `pb.ffpf.org`, which had no DNS record until this deploy
+    - [x] [MANUALLY] The captain's token had expired: password in the stub `caprover-captain-01` (Agents-edit); logged in through it, all three nodes ready (2026-11-01)
+    - [ ] [WE] Then check `/api/health` and send one test sign-up through the live form; the row stays with status `test`, which `ffpf-sync` skips
   - [ ] [WE] `ffpf-sync` worker into Nextcloud `Gala 2026/`; read-only share links for the officers
   - [ ] [MIXED] Square: Dr. D passes the single seat to Alexander (asked 2026-10-25, Resend `01a17235…`; Dr. D's answer 2026-10-27)
     - [x] [EXTERNAL] Alexander holds the password and the authenticator from Dr. D (2026-10-28)
-    - [ ] [MANUALLY] Two-step login with Dr. D on hand, later today 2026-10-28: Dr. D relays the code; Alexander then changes the password and moves 2FA to his own phone in the same sitting; the login stays in Alexander's own vault, never in Agents
+    - [ ] [MANUALLY] Two-step login with Dr. D on hand, moved to 2026-11-01 at 13:00 Azores, 09:00 Montreal (daily backlog and FFPF calendar): Dr. D relays the code; Alexander then changes the password and moves 2FA to his own phone in the same sitting; the login goes in the stub `square-ffpf` in Agents-edit (Alexander, 2026-11-01, replacing "own vault only"); agents never sign in with it
     - [ ] [MANUALLY] Alexander checks Account & Settings: owner identity, FFPF bank account, receipts' sender name and address
     - [ ] [MANUALLY] Payment links in the Square dashboard: Gold $1,000, Silver $500, Presenting $5,000 (held off the page); CAD, tax off, "Sponsor: organisation" as the note field
-    - [ ] [WE] Links into `dinner2026.js`, each one opened once from a build; then the page goes live with the push
-    - [ ] Later, only with webhooks: developer app `ffpf-sponsors`, token and signature key as `square-ffpf` in Agents, used through `sage-secret run`
+    - [ ] [MANUALLY] Paste the three URLs into the stub `square-ffpf-links` (Agents-edit, custom fields `gold`, `silver`, `presenting`; 2026-11-01)
+    - [ ] [WE] Links into `dinner2026.js`, each one opened once from a build; then the page goes live with the push; then delete the stub
+    - [ ] Later, only with webhooks: developer app `ffpf-sponsors`, token and signature key in the `square-ffpf` stub (fields `application-id`, `access-token`, `signature-key`), used through `sage-secret run`
   - [ ] [MANUALLY] Ticket form: Alexander installs `pb/apps-script/tickets.gs` and runs the backfill, only after Vinod approves item 8 of sign-off #2
   - [x] [WE] Flyers in English and French (`docs/flyers/dinner-2026/`, `bun docs/flyers/dinner-2026/build.ts`): PNG and Letter PDF, QR codes decode to the pages (2026-10-25)
   - [x] [WE] Sign-off #2 (wording approved by Alexander, 2026-10-26): DocuSeal template 14, phone format (5 pages, 0.5 MB), items 1–11; French reviewer proposed: Isabelle Plante; "Why sponsor" proposed as "India and Canada"; the unsent v1 (template 13, submission 30) archived, not deleted

@@ -18,6 +18,14 @@ onRecordCreateRequest(function (e) {
     throw new BadRequestError("This sponsorship level is not open.");
   }
 
+  // A video comes as an uploaded file or a direct YouTube link, as in the
+  // site's assets/js/sponsor-form.js.
+  var video = String(e.record.get("video_url") || "");
+  var youtube = /^https?:\/\/((www\.|m\.)?youtube\.com\/(watch\?(.*&)?v=|shorts\/|live\/)|youtu\.be\/)[\w-]/i;
+  if (video && !youtube.test(video)) {
+    throw new BadRequestError("Please use a direct YouTube link.");
+  }
+
   var email = String(e.record.get("email") || "").trim().toLowerCase();
   e.record.set("email", email);
 

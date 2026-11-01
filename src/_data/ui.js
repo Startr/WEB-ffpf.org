@@ -18,6 +18,6 @@ module.exports = {
   wash: "--pos:relative; --of:hidden; --bgi:linear-gradient(135deg, var(--primary-tint), var(--background) 65%)",
   tile: "--d:grid; --ai:center; --ji:center; --fx:none; --w:2.9rem; --h:2.9rem; --w-md:3.6rem; --h-md:3.6rem; --radius:.8rem; --bgi:linear-gradient(135deg, var(--primary), var(--primary-deep)); --c:var(--button-text); --glow:4; --glow-c:var(--primary)",
   rule: "--d:flex; --ai:center; --g:.75rem; --ff:var(--font-mono); --size:.72rem; --tt:uppercase; --ls:.12em; --c:var(--primary-deep); --m:0 0 1rem",
-  entry: "--bl:3px solid var(--primary); --radius:.5rem; --p:1rem 1.25rem; --bg:var(--background); --boxs:var(--paper)",
+  entry: "--b:1px solid var(--primary); --radius:.5rem; --p:1rem 1.25rem; --bg:var(--background); --boxs:var(--paper)",
   card: "--d:block; --h:100%; --p:1.25rem; --radius:.5rem; --bg:var(--background); --c:var(--text-main); --boxs:var(--paper); --boxs-hover:var(--paper-lift); --boxs-focus:var(--paper-lift); --t-hover:translateY(-2px); --tn:transform var(--dur-1) var(--ease-out); --oe-focus:2px solid var(--primary); text-decoration:none",
 };

@@ -14,6 +14,8 @@
   var button = form.querySelector("button[type=submit]");
   var shownAt = Date.now();
   var MB = 1024 * 1024;
+  // A direct video link, as in pb/pb_hooks/sponsors.pb.js.
+  var YOUTUBE = /^https?:\/\/((www\.|m\.)?youtube\.com\/(watch\?(.*&)?v=|shorts\/|live\/)|youtu\.be\/)[\w-]/i;
 
   if (Date.now() > Date.parse(form.dataset.closes)) {
     form.hidden = true;
@@ -66,12 +68,47 @@
     }
     return total > 95 * MB ? msg("total") : "";
   }
+  // Each PNG and JPG against its input's data-min-width, data-min-height and
+  // data-max-side, one at a time; SVG has no pixels to count. Calls back with an
+  // error or "".
+  function checkPixels(callback) {
+    var queue = [];
+    var inputs = form.querySelectorAll("input[data-min-width]");
+    for (var i = 0; i < inputs.length; i++) {
+      for (var j = 0; j < inputs[i].files.length; j++) {
+        var file = inputs[i].files[j];
+        if (/\.(png|jpe?g)$/i.test(file.name)) queue.push({ file: file, input: inputs[i] });
+      }
+    }
+    (function next() {
+      var item = queue.shift();
+      if (!item) return callback("");
+      var url = URL.createObjectURL(item.file);
+      var image = new Image();
+      image.onerror = function () {
+        URL.revokeObjectURL(url);
+        callback(msg("type", { name: item.file.name }));
+      };
+      image.onload = function () {
+        URL.revokeObjectURL(url);
+        var wide = image.naturalWidth >= Number(item.input.dataset.minWidth);
+        var tall = image.naturalHeight >= Number(item.input.dataset.minHeight || 0);
+        var longest = Math.max(image.naturalWidth, image.naturalHeight);
+        var fits = !item.input.dataset.maxSide || longest <= Number(item.input.dataset.maxSide);
+        if (wide && tall && fits) return next();
+        callback(msg("pixels", { name: item.file.name }));
+      };
+      image.src = url;
+    })();
+  }
 
   button.dataset.label = button.textContent;
   form.addEventListener("submit", function (event) {
     event.preventDefault();
     error.hidden = true;
     if (!form.checkValidity()) return fail(msg("required"));
+    var video = form.elements.video_url.value.trim();
+    if (video && !YOUTUBE.test(video)) return fail(msg("youtube"));
     var fileError = checkFiles();
     if (fileError) return fail(fileError);
 
@@ -79,6 +116,13 @@
     // A filled hidden field or a two-second form is a bot: thank it and stop.
     if (form.elements.company_fax.value || Date.now() - shownAt < 2000) return finish(tier);
 
+    checkPixels(function (pixelError) {
+      if (pixelError) return fail(pixelError);
+      send(tier);
+    });
+  });
+
+  function send(tier) {
     var data = new FormData(form);
     data.delete("company_fax");
     ["logo", "stage_media"].forEach(function (name) {
@@ -103,5 +147,5 @@
     };
     xhr.onerror = function () { fail(msg("error")); };
     xhr.send(data);
-  });
+  }
 })();

@@ -27,7 +27,7 @@
   "grid": "--d:grid; --g:1rem; --gtc:repeat(auto-fill, minmax(min(100%, 15rem), 1fr))",
   "iconBox": "--d:inline-flex; --ai:center; --jc:center; --w:2.5rem; --h:2.5rem; --radius:.6rem; --c:var(--primary-deep); --bg:var(--primary-tint); --m:0 0 .75rem",
   "avatar": "--d:block; --w:6.5rem; --h:6.5rem; --radius:50%; --objf:cover; --boxs:var(--paper); --m:0 auto .75rem",
-  "entry": "--bl:3px solid var(--primary); --radius:.5rem; --p:1rem 1.25rem; --bg:var(--background); --boxs:var(--paper)",
+  "entry": "--b:1px solid var(--primary); --radius:.5rem; --p:1rem 1.25rem; --bg:var(--background); --boxs:var(--paper)",
   "rise": "--anim:st-rise var(--dur-3) var(--ease-out) calc(var(--i, 0)*60ms) both",
   "fade": "--anim:st-fade var(--dur-3) var(--ease-out) both",
   "hero": "--d:grid; --of:hidden; --radius:.6rem; --boxs:var(--paper-lift); --m:0 0 2rem",

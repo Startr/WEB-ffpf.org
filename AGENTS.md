@@ -43,6 +43,7 @@ Publish a fundraising figure, impact number or date only once its owner confirms
 
 ## Styling
 startr.style inline props in `style` attributes, mobile-first; no new classes or colours (the brand red is `--primary` on `<body>`).
+Frame a block with `--b` on all four sides, never `--bl` (Alexander, 2026-11-01).
 No new third-party script, font or tracker without Alexander's yes.
 Pages with `theme: true` load `/assets/theme/ffpf.css` (tokens and the paper shadows) and take prop strings from `src/_data/ui.js`, as `/sponsors/` does; the restyle (`docs/plans/2026-10-20-restyle.md`) extends both.
 

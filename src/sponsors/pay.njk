@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+title: Sponsor payment
+lang: en
+theme: true
+payPage: true
+eleventyExcludeFromCollections: true
+pagination:
+  data: dinner2026.openTiers
+  size: 1
+  alias: tier
+permalink: "{{ tier.pay.en }}"
+t:
+  eyebrow: 27th Annual Fundraising Dinner
+  title: Online payment is almost ready
+  testing: We are still testing card payments, so nothing has been charged. Once testing is done, this page will take you straight to our secure payment form.
+  next: If you have signed up, we have your details. FFPF will contact you about payment.
+  redirecting: Taking you to payment
+  payNow: Pay by card now
+  back: Back to the sponsor page
+  backUrl: /sponsors/
+  questions: Questions? Call
+  or: or
+---
+{% include "sponsors/pay.njk" %}

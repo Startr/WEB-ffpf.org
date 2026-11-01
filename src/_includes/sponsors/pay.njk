@@ -1,0 +1,23 @@
+{#- A tier's pay page, English and French: src/sponsors/pay.njk and
+    src/fr/commanditaires/paiement.njk set `lang`, the strings `t` and `tier`.
+    While the tier's `square` is empty it says payment is being tested; once
+    it is set, base/head.html redirects there and this is only the fallback. -#}
+{%- set d = dinner2026 -%}
+<div style="{{ ui.section }}; --pt:1.5rem">
+  <header style="{{ ui.pageHead }}">
+    <div><p style="{{ ui.eyebrow }}">{{ t.eyebrow }}</p><h1 style="{{ ui.title }}">{{ t.redirecting if tier.square else t.title }}</h1></div>
+  </header>
+  <div style="{{ ui.stack }}">
+    <p style="--m:0 0 .75rem"><strong>{{ tier.name[lang] }}, {{ tier.label[lang] }}</strong></p>
+    {%- if tier.square %}
+    <p style="--m:0"><a href="{{ tier.square }}" style="{{ ui.pill }}">{{ t.payNow }}</a></p>
+    {%- else %}
+    <p style="--m:0 0 .75rem">{{ t.testing }}</p>
+    <p style="--m:0">{{ t.next }}</p>
+    {%- endif %}
+  </div>
+  <section style="{{ ui.desk }}; --mb:1rem">
+    <p style="--m:0 0 .5rem"><a href="{{ t.backUrl }}">{{ t.back }}</a></p>
+    <p style="--m:0">{{ t.questions }} {% for c in d.contacts %}{{ c.name }}, <a href="tel:+1{{ c.phone | replace('-', '') }}" style="--ws:nowrap">{{ c.phone }}</a>{% if not loop.last %} {{ t.or }} {% endif %}{% endfor %}.</p>
+  </section>
+</div>

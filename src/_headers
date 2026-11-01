@@ -1,3 +1,9 @@
 # Design drafts are for internal review: shareable by link, kept out of search.
 /drafts/*
   X-Robots-Tag: noindex, nofollow
+
+# The pay pages are a step after sign-up, not pages to find in search.
+/sponsors/pay/*
+  X-Robots-Tag: noindex, nofollow
+/fr/commanditaires/paiement/*
+  X-Robots-Tag: noindex, nofollow

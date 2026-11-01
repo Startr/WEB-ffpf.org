@@ -10,9 +10,10 @@
     <noscript><p style="--m:0 0 1rem">{{ t.noJs }} {% for c in d.contacts %}{{ c.name }}, <a href="tel:+1{{ c.phone | replace('-', '') }}" style="--ws:nowrap">{{ c.phone }}</a>{% if not loop.last %}; {% endif %}{% endfor %}.</p></noscript>
     <form data-sponsor-form {% if d.closed %}hidden{% endif %} novalidate
       data-pb="{{ d.pb }}" data-closes="{{ d.closesAt }}"
-      {%- for tier in d.tiers %}{% if tier.open and tier.square %} data-square-{{ tier.id }}="{{ tier.square }}"{% endif %}{% endfor %}
+      {%- for tier in d.openTiers %} data-square-{{ tier.id }}="{{ tier.square or tier.pay[lang] }}"{% endfor %}
       data-msg-error="{{ t.errorGeneric }}" data-msg-type="{{ t.errorFileType }}" data-msg-size="{{ t.errorFileSize }}"
-      data-msg-total="{{ t.errorTotal }}" data-msg-count="{{ t.errorCount }}" data-msg-required="{{ t.errorRequired }}" data-msg-sending="{{ t.sending }}">
+      data-msg-total="{{ t.errorTotal }}" data-msg-count="{{ t.errorCount }}" data-msg-required="{{ t.errorRequired }}" data-msg-sending="{{ t.sending }}"
+      data-msg-pixels="{{ t.errorPixels }}" data-msg-youtube="{{ t.errorYoutube }}">
       <input type="hidden" name="lang" value="{{ lang }}">
       <fieldset style="border:0; --p:0; --m:0 0 1rem">
         <legend style="--weight:700; --mb:.5rem">{{ t.level }} *</legend>
@@ -30,9 +31,9 @@
         <label style="{{ field }}">{{ t.phone }}<input name="phone" type="tel" maxlength="50" autocomplete="tel"></label>
         <label style="{{ field }}">{{ t.website }}<input name="website" type="url" placeholder="https://" autocomplete="url"></label>
       </div>
-      <label style="{{ field }}">{{ t.logo }}<input name="logo" type="file" accept=".png,.jpg,.jpeg,.svg,.webp,.pdf" data-max-mb="10" data-types="png jpg jpeg svg webp pdf"><span style="{{ hint }}">{{ t.logoHint }}</span></label>
-      <label style="{{ field }}">{{ t.media }}<input name="stage_media" type="file" multiple data-max-files="4" accept=".pdf,.ppt,.pptx,.png,.jpg,.jpeg,.webp,.svg,.mp4,.mov" data-max-mb="20" data-types="pdf ppt pptx png jpg jpeg webp svg mp4 mov"><span style="{{ hint }}">{{ t.mediaHint }}</span></label>
-      <label style="{{ field }}">{{ t.videoUrl }}<input name="video_url" type="url" placeholder="https://"><span style="{{ hint }}">{{ t.videoHint }}</span></label>
+      <label style="{{ field }}">{{ t.logo }}<input name="logo" type="file" accept=".png,.jpg,.jpeg,.svg" data-max-mb="10" data-types="png jpg jpeg svg" data-min-width="{{ d.uploads.logoWidth }}"><span style="{{ hint }}">{{ t.logoHint | replace("{width}", d.uploads.logoWidth) }}</span></label>
+      <label style="{{ field }}">{{ t.media }}<input name="stage_media" type="file" multiple data-max-files="4" accept=".png,.jpg,.jpeg,.svg,.mp4,.mov" data-max-mb="20" data-types="png jpg jpeg svg mp4 mov" data-min-width="{{ d.uploads.stageMin }}" data-min-height="{{ d.uploads.stageMin }}" data-max-side="{{ d.uploads.stageMax }}"><span style="{{ hint }}">{{ t.mediaHint | replace("{min}", d.uploads.stageMin) | replace("{max}", d.uploads.stageMax) }}</span></label>
+      <label style="{{ field }}">{{ t.videoUrl }}<input name="video_url" type="url" placeholder="https://youtu.be/…"><span style="{{ hint }}">{{ t.videoHint }}</span></label>
       <label style="{{ field }}">{{ t.guests }}<input name="guest_names" maxlength="500"></label>
       <label style="{{ field }}">{{ t.notes }}<textarea name="notes" rows="3" maxlength="2000"></textarea></label>
       <label aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden">Fax<input name="company_fax" tabindex="-1" autocomplete="off"></label>

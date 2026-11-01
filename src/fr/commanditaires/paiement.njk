@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+title: Paiement de la commandite
+lang: fr
+theme: true
+payPage: true
+eleventyExcludeFromCollections: true
+pagination:
+  data: dinner2026.openTiers
+  size: 1
+  alias: tier
+permalink: "{{ tier.pay.fr }}"
+# French to be checked by a fluent reviewer before this goes out.
+t:
+  eyebrow: 27e Souper-bénéfice annuel
+  title: Le paiement en ligne sera bientôt prêt
+  testing: Nous testons encore les paiements par carte; aucun montant n'a été débité. Une fois les essais terminés, cette page vous mènera directement à notre formulaire de paiement sécurisé.
+  next: Si votre inscription est faite, nous avons vos coordonnées. La Fondation communiquera avec vous pour le paiement.
+  redirecting: Redirection vers le paiement
+  payNow: Payer par carte maintenant
+  back: Retour à la page des commanditaires
+  backUrl: /fr/commanditaires/
+  questions: Des questions? Appelez
+  or: ou
+---
+{% include "sponsors/pay.njk" %}
