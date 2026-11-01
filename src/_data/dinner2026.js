@@ -39,8 +39,9 @@ const dinner = {
   benefits: [
     { en: "Logo display", fr: "Affichage du logo",
       presenting: true, gold: true, silver: false },
+    // Tripled from 6, 4 and 2 (Alexander, 2026-11-01); sign-off #2 records it.
     { en: "Promotional video or slides on stage", fr: "Vidéo promotionnelle ou diapositives sur scène",
-      presenting: 6, gold: 4, silver: 2 },
+      presenting: 18, gold: 12, silver: 6 },
     { en: "Meet people and hand out business cards or brochures", fr: "Rencontrer les invités et distribuer cartes ou brochures",
       presenting: true, gold: true, silver: true },
     { en: "Sponsor name announced during the event", fr: "Nom du commanditaire annoncé pendant la soirée",
