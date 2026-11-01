@@ -39,7 +39,10 @@
     var link = form.dataset["square" + tier.charAt(0).toUpperCase() + tier.slice(1)];
     form.hidden = true;
     if (link) {
-      done.querySelector("[data-pay-link]").href = link;
+      var pay = done.querySelector("[data-pay-link]");
+      pay.href = link;
+      // A link on this site is the pay page, which waits for Square.
+      if (link.charAt(0) === "/") pay.textContent = msg("details");
       done.querySelector("[data-pay]").hidden = false;
       done.querySelector("[data-pay-later]").hidden = true;
     }
