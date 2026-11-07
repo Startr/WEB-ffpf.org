@@ -1,0 +1,9 @@
+path,reason
+node_modules,dependency cache
+dist,Eleventy build output
+docs/flyers/dinner-2026/out,flyer proofs (git-ignored build output)
+.jython_cache,Python tool cache
+.obsidian/plugins,vendored Obsidian plugin (advanced-slides)
+src/src,old site copy kept out of the build
+src/public/uploads,CMS media
+communication/media,dinner videos

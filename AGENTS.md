@@ -7,7 +7,7 @@ Agents and team members draft; FFPF decides: the board, or the president Dr. S. 
 Alexander signs off alone on design and technical work, which git can always undo; copy, legal and the like need the president's or V.P.'s backing, or the full board. Alexander may be the second board member, except on the Startr and Sage.is dealings below.
 Record who decided, who agreed and when on the card, as "(Dr. D with Alexander, 2026-10-20)".
 
-Paid work, donated services or gift-in-kind receipts between Startr or Sage.is and FFPF go to the board first: a director has an interest. Donated services cannot be receipted, so never promise a team member a tax receipt for their time. Out-of-pocket expenses FFPF agreed to repay are the exception: FFPF can receipt the repayment when the team member gives it back.
+Paid work or gift-in-kind receipts between Startr or Sage.is and FFPF go to the board first: a director has an interest. Alexander's donated hosting needs no board approval, because the work would not happen otherwise and no one else has offered; disclose it on the card. Any tax receipt for its costs is the board's call later (Alexander, 2026-11-01). Donated services cannot be receipted, so never promise a team member a tax receipt for their time. Out-of-pocket expenses FFPF agreed to repay are the exception: FFPF can receipt the repayment when the team member gives it back.
 
 The site does not yet credit a sponsor or vendor; add Startr or Sage.is only on a board decision.
 
@@ -44,6 +44,7 @@ Publish a fundraising figure, impact number or date only once its owner confirms
 ## Styling
 startr.style inline props in `style` attributes, mobile-first; no new classes or colours (the brand red is `--primary` on `<body>`).
 Frame a block with `--b` on all four sides, never `--bl` (Alexander, 2026-11-01).
+`ffpf.css` and `ui.js` are the design system's source. Its browsable copy, https://claude.ai/artifact/BqWF1v2nQGxgWNaE9948fV, is re-synced after they change (Alexander, 2026-11-01).
 No new third-party script, font or tracker without Alexander's yes.
 Pages with `theme: true` load `/assets/theme/ffpf.css` (tokens and the paper shadows) and take prop strings from `src/_data/ui.js`, as `/sponsors/` does; the restyle (`docs/plans/2026-10-20-restyle.md`) extends both.
 

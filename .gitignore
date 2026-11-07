@@ -5,6 +5,7 @@
 !/.gitattributes
 !/.editorconfig
 !/.pages.yml
+!/.todoscope-exclude.csv
 # .env.example at any depth (no leading slash). Keep this note on its OWN line —
 # gitignore has no inline comments; a trailing comment becomes part of the
 # pattern, which silently breaks the negation.
