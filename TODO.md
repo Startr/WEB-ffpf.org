@@ -45,6 +45,8 @@
   - [x] [WE] Site: `closesAt`, the deadline note and closed text in both languages, Get Involved and the flyer strings say 12 November; built, checked headless at 390px and 1280px in both languages (2026-11-07; pushed 2026-11-10). Sign-off #2's flyer proofs still say 7 November
   - [x] [WE] Committed and pushed on Alexander's go (2026-11-10). The live form had hidden itself from 7 Nov 23:59 Montreal until this deploy; the last sign-up before it came on 6 Nov
   - [x] [WE] Follow-up dashboard, local and outside git because it holds contacts: `~/Documents/ffpf/gala-2026-sponsors/` (README there). Alexander's WhatsApp list cross-referenced: 3 of 10 pledges signed up, 7 open (2026-11-10)
+    - [x] [WE] Logs every follow-up to PocketBase: `followup_pledges` and `followup_events`, superusers only, created live through the admin API; `pb/pb_migrations/005_followups.js` sets the same on the next deploy (2026-11-10)
+    - [x] [WE] Remote through a quick tunnel, with personal sign-in links for Alexander, Vinod Dargan, Dr. D and Izzy in `bw:ffpf-sponsor-dash-links`; each card has a "Who follows up" owner (2026-11-10)
   - [x] [WE] `ffpf-pb-backup` daily through 14 Nov: `UNTIL` 20261114 in OPS-Sage `deploy/ffpf-pb-backup.yaml`, applied with `cr-deploy ensure` (2026-11-07)
   - [ ] [EXTERNAL] A fluent reviewer checks the French dates
   - [ ] [MANUALLY] WhatsApp to Dr. D: sponsor pages, pay links, the sign-off #3 link; he sends Alexander the names to follow up
