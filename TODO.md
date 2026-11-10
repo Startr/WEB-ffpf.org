@@ -38,6 +38,7 @@
   - [x] [WE] `ffpf-sync` worker into Nextcloud `Gala 2026/`: running every 5 minutes; first clean pass 2026-11-01 14:09Z, 0 sponsors, test rows skipped
   - [ ] [WE] Read-only share links for the officers on `Gala 2026/`
   - [ ] [WE] Recognition: `scripts/sponsors-pull.mjs` as sponsors are approved; the last run after 12 Nov
+    - [x] [EXTERNAL] Dr. D (officer) and Alexander (board member) approved the first four by phone (2026-11-10); [WE] status and a staff note set in PocketBase, two public names tidied on Alexander's word; first run pushed: 3 Gold logos, 1 Silver by name
 - [ ] [MIXED] **Sign-ups open to Thursday 12 November, 23:59 Montreal** (Dr. D with Alexander, 2026-11-07): many who said they would sponsor had not signed up by 7 Nov; Alexander follows up with them in Montreal from Tuesday 10 Nov
   - [x] [WE] Checked 2026-11-07: PocketBase's logs (5 days kept) show no refused sign-up, and every upload so far reached Nextcloud byte for byte
   - [x] [WE] Live rule: PocketBase's create rule moved to `2026-11-13 04:59:59Z` through the admin API (2026-11-07); `pb/pb_migrations/004_deadline_12_nov.js` sets the same on the next deploy

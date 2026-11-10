@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "name": "Farenexus",
+    "tier": "gold",
+    "website": "https://www.farenexus.com/",
+    "logo": "/public/uploads/2026/sponsors/farenexus.png"
+  },
+  {
+    "name": "Patrice Marchand",
+    "tier": "gold",
+    "website": "https://wmc.rbcwealthmanagement.com/patrice-marchand",
+    "logo": "/public/uploads/2026/sponsors/patrice-marchand.jpg"
+  },
+  {
+    "name": "Street Legal Clothing",
+    "tier": "gold",
+    "website": "",
+    "logo": "/public/uploads/2026/sponsors/street-legal-clothing.png"
+  },
+  {
+    "name": "Cellchem Pharmaceuticals Inc.",
+    "tier": "silver",
+    "website": "http://www.cellchempharma.com",
+    "logo": ""
+  }
+]
