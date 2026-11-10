@@ -2,7 +2,9 @@
 // /sponsors/, /fr/commanditaires/ and the flyers (docs/flyers/dinner-2026/).
 // Public facts only. The officers approved the venue name, "India and
 // Montreal" and the sponsor page on 2026-10-23 (DocuSeal submission 29).
-// The deadline also lives in pb/pb_migrations/001_sponsors.js (create rule).
+// The deadline also lives in PocketBase's create rule
+// (pb/pb_migrations/004_deadline_12_nov.js), in deadlineNote and closedText on
+// both sponsor pages, and on Get Involved.
 const dinner = {
   date: "2026-11-14",
   time: { en: "6:00 pm", fr: "18 h" },
@@ -10,11 +12,14 @@ const dinner = {
   city: { en: "Montreal, QC", fr: "Montréal (QC)" },
   guests: "300+",
   ticket: 150,
-  deadline: { en: "7 November", fr: "7 novembre" },
-  closesAt: "2026-11-08T04:59:59Z", // 7 Nov 23:59 in Montreal (EST)
+  deadline: { en: "12 November", fr: "12 novembre" },
+  // Was 7 Nov (Dr. D with Alexander, 2026-11-07).
+  closesAt: "2026-11-13T04:59:59Z", // 12 Nov 23:59 in Montreal (EST)
   pb: "https://pb.ffpf.org",
   ticketForm: "https://forms.gle/G2iZExNBZcAuQGTM7",
   // Pixels for PNG and JPG uploads, checked in the browser only; SVG has none.
+  // A file outside them still goes through, with a line in the sign-up's notes
+  // for FFPF to ask for a better one (Alexander, 2026-11-07).
   // Stage images sit either side of the presentation, so square is recommended
   // (Alexander, 2026-11-01). File types: form.njk and
   // pb/pb_migrations/003_upload_rules.js.

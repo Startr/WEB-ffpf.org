@@ -64,7 +64,7 @@ startr.style loads unpinned from the CDN, so an upstream release can change the 
 A `--w-xl: 100vw` inside `<main>` (which has a margin) scrolls the page sideways; let blocks take the column's width.
 Netlify's `_redirects` loses to a real file at the same path unless the rule ends in `!`.
 `bun.lockb` is stale against `package.json` (2026-10-25), so `bun install --frozen-lockfile` fails; `npm ci` installs from `package-lock.json` without touching tracked files.
-The dinner's deadline is in two places: `src/_data/dinner2026.js` and the create rule in `pb/pb_migrations/001_sponsors.js`; change both together.
+The dinner's deadline is in `src/_data/dinner2026.js`, the copy its comment lists, and PocketBase's create rule; change them together. A new rule needs a new migration (as `004_deadline_12_nov.js`), because the deployed server never reruns `001_sponsors.js`.
 
 ## Before handoff
 Run `bun run build`, open changed pages at 390px and 1280px in English and French, check the footer line and `/donate`, and read `git diff --cached` for personal details.

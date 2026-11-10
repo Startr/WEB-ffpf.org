@@ -37,7 +37,18 @@
     - [x] [WE] Two test sign-ups through the live form, one with a logo and a stage file; both rows stay with status `test`, which `ffpf-sync` skips; delete them by hand if wanted (2026-11-01)
   - [x] [WE] `ffpf-sync` worker into Nextcloud `Gala 2026/`: running every 5 minutes; first clean pass 2026-11-01 14:09Z, 0 sponsors, test rows skipped
   - [ ] [WE] Read-only share links for the officers on `Gala 2026/`
-  - [ ] [WE] Recognition: `scripts/sponsors-pull.mjs` as sponsors are approved; the last run after 7 Nov
+  - [ ] [WE] Recognition: `scripts/sponsors-pull.mjs` as sponsors are approved; the last run after 12 Nov
+- [ ] [MIXED] **Sign-ups open to Thursday 12 November, 23:59 Montreal** (Dr. D with Alexander, 2026-11-07): many who said they would sponsor had not signed up by 7 Nov; Alexander follows up with them in Montreal from Tuesday 10 Nov
+  - [x] [WE] Checked 2026-11-07: PocketBase's logs (5 days kept) show no refused sign-up, and every upload so far reached Nextcloud byte for byte
+  - [x] [WE] Live rule: PocketBase's create rule moved to `2026-11-13 04:59:59Z` through the admin API (2026-11-07); `pb/pb_migrations/004_deadline_12_nov.js` sets the same on the next deploy
+  - [x] [WE] Site: `closesAt`, the deadline note and closed text in both languages, Get Involved and the flyer strings say 12 November; built, checked headless at 390px and 1280px in both languages (2026-11-07; pushed 2026-11-10). Sign-off #2's flyer proofs still say 7 November
+  - [x] [WE] Committed and pushed on Alexander's go (2026-11-10). The live form had hidden itself from 7 Nov 23:59 Montreal until this deploy; the last sign-up before it came on 6 Nov
+  - [x] [WE] Follow-up dashboard, local and outside git because it holds contacts: `~/Documents/ffpf/gala-2026-sponsors/` (README there). Alexander's WhatsApp list cross-referenced: 3 of 10 pledges signed up, 7 open (2026-11-10)
+  - [x] [WE] `ffpf-pb-backup` daily through 14 Nov: `UNTIL` 20261114 in OPS-Sage `deploy/ffpf-pb-backup.yaml`, applied with `cr-deploy ensure` (2026-11-07)
+  - [ ] [EXTERNAL] A fluent reviewer checks the French dates
+  - [ ] [MANUALLY] WhatsApp to Dr. D: sponsor pages, pay links, the sign-off #3 link; he sends Alexander the names to follow up
+- [ ] [SITE] **Image sizes flag, never block** (Alexander, 2026-11-07): a logo or stage image outside the sizes no longer stops the form; a line in the sign-up's notes names the file and its pixels, so FFPF asks for a better one
+  - [x] [WE] `src/assets/js/sponsor-form.js`, against a stubbed PocketBase in headless Chrome: a 400 px logo and a 4000 px photo go through with a line each; right-sized files add none; 1,990 characters of notes stay whole (2026-11-07; pushed 2026-11-10)
 - [ ] [MIXED] **Pay pages**, so everything can go live before Square is ready (Alexander, 2026-11-01): `/sponsors/pay/<tier>/` and `/fr/commanditaires/paiement/<tier>/`; setting a tier's `square` turns its page into a redirect
   - [x] [WE] Pages built for open tiers in English and French, thank-you step points at them; redirect tested locally with a fake link; checked at 390px and desktop (2026-11-01, uncommitted)
   - [ ] [EXTERNAL] Dr. D or Vinod backs the stub copy, and a fluent reviewer checks the French (live before backing, Alexander, 2026-11-01)

@@ -72,9 +72,12 @@
     return total > 95 * MB ? msg("total") : "";
   }
   // Each PNG and JPG against its input's data-min-width, data-min-height and
-  // data-max-side, one at a time; SVG has no pixels to count. Calls back with an
-  // error or "".
+  // data-max-side, one at a time; SVG has no pixels to count. A file outside
+  // them still goes (Alexander, 2026-11-07): it gets a line for FFPF's notes.
+  // Calls back with an error for a file that is not an image, or "", and the
+  // lines.
   function checkPixels(callback) {
+    var flags = [];
     var queue = [];
     var inputs = form.querySelectorAll("input[data-min-width]");
     for (var i = 0; i < inputs.length; i++) {
@@ -85,12 +88,12 @@
     }
     (function next() {
       var item = queue.shift();
-      if (!item) return callback("");
+      if (!item) return callback("", flags);
       var url = URL.createObjectURL(item.file);
       var image = new Image();
       image.onerror = function () {
         URL.revokeObjectURL(url);
-        callback(msg("type", { name: item.file.name }));
+        callback(msg("type", { name: item.file.name }), flags);
       };
       image.onload = function () {
         URL.revokeObjectURL(url);
@@ -98,8 +101,11 @@
         var tall = image.naturalHeight >= Number(item.input.dataset.minHeight || 0);
         var longest = Math.max(image.naturalWidth, image.naturalHeight);
         var fits = !item.input.dataset.maxSide || longest <= Number(item.input.dataset.maxSide);
-        if (wide && tall && fits) return next();
-        callback(msg("pixels", { name: item.file.name }));
+        if (!(wide && tall && fits)) {
+          flags.push("Size check (" + item.input.name + "): " + item.file.name + " is " +
+            image.naturalWidth + " x " + image.naturalHeight + " px; ask for a better file.");
+        }
+        next();
       };
       image.src = url;
     })();
@@ -119,15 +125,20 @@
     // A filled hidden field or a two-second form is a bot: thank it and stop.
     if (form.elements.company_fax.value || Date.now() - shownAt < 2000) return finish(tier);
 
-    checkPixels(function (pixelError) {
+    checkPixels(function (pixelError, flags) {
       if (pixelError) return fail(pixelError);
-      send(tier);
+      send(tier, flags);
     });
   });
 
-  function send(tier) {
+  function send(tier, flags) {
     var data = new FormData(form);
     data.delete("company_fax");
+    // The size lines go first in the notes, unless they would push the
+    // sponsor's own words past the field's 2000 characters.
+    var notes = form.elements.notes.value;
+    var flagged = flags.join("\n") + (notes ? "\n\n" + notes : "");
+    if (flags.length && flagged.length <= 2000) data.set("notes", flagged);
     ["logo", "stage_media"].forEach(function (name) {
       var files = form.elements[name].files;
       data.delete(name);
