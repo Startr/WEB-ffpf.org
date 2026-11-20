@@ -63,6 +63,7 @@ Questions for FFPF go on the "Questions for Board/Stakeholders" card; questions 
 startr.style loads unpinned from the CDN, so an upstream release can change the site.
 A `--w-xl: 100vw` inside `<main>` (which has a margin) scrolls the page sideways; let blocks take the column's width.
 Netlify's `_redirects` loses to a real file at the same path unless the rule ends in `!`.
+Netlify keeps the last build's `dist/` between builds, so a deleted page stayed live until `netlify.toml` switched to `npm run buildfresh` (2026-11-20).
 `bun.lockb` is stale against `package.json` (2026-10-25), so `bun install --frozen-lockfile` fails; `npm ci` installs from `package-lock.json` without touching tracked files.
 The dinner's deadline is in `src/_data/dinner2026.js`, the copy its comment lists, and PocketBase's create rule; change them together. A new rule needs a new migration (as `004_deadline_12_nov.js`), because the deployed server never reruns `001_sponsors.js`.
 
