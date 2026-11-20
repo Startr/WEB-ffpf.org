@@ -1,10 +1,6 @@
 ---
-title: 
-     Commentaires sur : FFPF Mission Jour 5 2024
-    
-og_title: 
-     Commentaires sur : FFPF Mission Jour 5 2024
-    
+title: "FFPF Mission Jour 5 2024 - FFPF"
+og_title: "FFPF Mission Jour 5 2024 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

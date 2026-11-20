@@ -1,10 +1,6 @@
 ---
-title: 
-     Commentaires sur : Le 24e dîner annuel souper annuel de la Fondation Freedom from Poverty Samedi, 11 novembre 2023
-    
-og_title: 
-     Commentaires sur : Le 24e dîner annuel souper annuel de la Fondation Freedom from Poverty Samedi, 11 novembre 2023
-    
+title: "Le 24e dîner annuel souper annuel de la Fondation Freedom from Poverty Samedi, 11 novembre 2023 - FFPF"
+og_title: "Le 24e dîner annuel souper annuel de la Fondation Freedom from Poverty Samedi, 11 novembre 2023 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

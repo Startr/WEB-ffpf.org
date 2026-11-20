@@ -72,7 +72,7 @@ Contact us through our [contact page](/contact/).
   * [ September 2022 ]( /article/2022/09/)
   * [ November 2020 ]( /article/2020/11/)
   * [ September 2019 ]( /article/2019/09/)
-  * [ November 2018 ](/11/)
+  * [ November 2018 ](/article/2018/11/)
   * [ May 2018 ](/)
 
 

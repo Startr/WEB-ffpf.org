@@ -1,10 +1,6 @@
 ---
-title: 
-     Commentaires sur : MISSION À VENIR Février 2020
-    
-og_title: 
-     Commentaires sur : MISSION À VENIR Février 2020
-    
+title: "MISSION À VENIR Février 2020 - FFPF"
+og_title: "MISSION À VENIR Février 2020 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

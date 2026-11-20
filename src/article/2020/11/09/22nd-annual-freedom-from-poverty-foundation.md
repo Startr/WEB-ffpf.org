@@ -1,10 +1,6 @@
 ---
-title: 
-     Comments on: 22nd Annual Freedom from Poverty Foundation
-    
-og_title: 
-     Comments on: 22nd Annual Freedom from Poverty Foundation
-    
+title: "22nd Annual Freedom from Poverty Foundation - FFPF"
+og_title: "22nd Annual Freedom from Poverty Foundation - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

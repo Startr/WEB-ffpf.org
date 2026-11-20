@@ -21,8 +21,7 @@ layout: layouts/base.njk
 Select Page
 
 ##  [ 23rd Annual Freedom from Poverty Foundation Dinner – Saturday, November
-5, 2022 ]( /article/2022/09/28/23rd-annual-freedom-from-poverty-foundation-
-dinner-saturday-november-5-2022/)
+5, 2022 ](/article/2022/09/28/23rd-annual-freedom-from-poverty-foundation-dinner-saturday-november-5-2022/)
 
 28 September 2022
 
@@ -36,7 +35,7 @@ charming, culture-filled evening that includes;...
 
 27 September 2022
 
-After the spread of the Covid-19 disease, which started in early 2021, three
+After the spread of the Covid-19 disease, which started in early 2020, three
 surgical missions had to be cancelled. The funds that had been earmarked for
 these missions were used to provide the village of Jamkhed with materials for
 the prevention and treatment of...

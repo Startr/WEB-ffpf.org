@@ -145,6 +145,12 @@
   - [x] `src/_data/metadata.js`: the title reads "Freedom Frome Poverty Foundation" (fixed on `feature/officer-review`)
   - [ ] `src/_data/metadata.js`: the author is an `example.com` placeholder
   - [x] `src/_includes/layouts/base/head.html`: each page now sets its own absolute canonical and og:url (on `feature/officer-review`)
+- [ ] [SITE] **Content review fixes** (Alexander, 2026-11-20): the definite errors in `docs/reviews/2026-11-20-site-content-review.md`; English board correct, public email `info@ffpf.org`, past dinners kept as record but matched across languages
+  - [x] [WE] Fixed the definite errors, built, checked at 390px and 1280px; marked resolved in the review: 39 fixed, 21 partly (2026-11-20)
+  - [ ] [MANUALLY] Test `info@ffpf.org` from an outside address; the site already shows it
+  - [x] [WE] Committed and pushed on Alexander's word ("signal me once it's live", 2026-11-20)
+  - [ ] [EXTERNAL] Confirm the copy changes after the fact, as in the officer review: French board, public email (Stakeholder: Dr. D / Vinod)
+  - [ ] [WE] Next: restore the 34 article bodies from `src/src/`, with the consent and contact checks the review lists
 - [ ] **Questions for Board/Stakeholders**
   - [ ] Verify fundraising goal amount ($100,000?)
   - [ ] Request photos/bios for: Dr. Jane Doe placeholder, John Smith placeholder

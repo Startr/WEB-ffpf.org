@@ -7,3 +7,18 @@
 # The French home lives at /fr/home-fr/; /fr/ had no page.
 /fr    /fr/home-fr/  301
 /fr/   /fr/home-fr/  301
+
+# Content review fixes (2026-11-20): retired pages and fixed addresses.
+/donner                     /donate          301
+/donner/                    /donate          301
+/fr/donner/                 /donate          301!
+/fr/sponsorship-tag/donate/ /donate          301!
+/article/2024/02/08/janila-2024-02-09-09_52_28-2/  /article/2024/02/08/feb-8-2024/  301
+/our_test_page/             /                301
+/posts/blog/*               /                301
+/pages/fr/*                 /fr/home-fr/     301
+/pages/de/*                 /                301
+/pages/pt/*                 /                301
+/comments/feed/             /                301
+/fr/comments/feed/          /fr/home-fr/     301
+/fr/feed/                   /fr/home-fr/     301

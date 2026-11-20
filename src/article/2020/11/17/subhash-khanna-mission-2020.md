@@ -1,10 +1,6 @@
 ---
-title: 
-     Comments on: The Subhash Khanna Mission to the village of Jamkhed in 2020
-    
-og_title: 
-     Comments on: The Subhash Khanna Mission to the village of Jamkhed in 2020
-    
+title: "The Subhash Khanna Mission to the village of Jamkhed in 2020 - FFPF"
+og_title: "The Subhash Khanna Mission to the village of Jamkhed in 2020 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

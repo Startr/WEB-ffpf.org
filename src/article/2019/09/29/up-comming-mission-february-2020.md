@@ -1,10 +1,6 @@
 ---
-title: 
-     Comments on: February 2020 Mission February 2020
-    
-og_title: 
-     Comments on: February 2020 Mission February 2020
-    
+title: "February 2020 Mission February 2020 - FFPF"
+og_title: "February 2020 Mission February 2020 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

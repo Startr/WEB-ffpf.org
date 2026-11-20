@@ -24,7 +24,6 @@ Select Page
 
 23 June 2023
 
-English video coming soon.
 
 ##  [ MERCI MR. SUVAGYA VASISHTA ARVA POUR VOTRE SOUTIEN ](
 /article/2023/06/23/MERCI MR. SUVAGYA VASISHTA ARVA POUR VOTRE SOUTIEN/)
@@ -45,7 +44,7 @@ réaliser la mission de 2023 sans nos incroyables donateurs.
 ####  Archives
 
   * [ February 2024 ]( /article/2024/02/)
-  * [ September 2023 ](/09/)
+  * [ September 2023 ](/article/2023/09/)
   * [ June 2023 ](index.html)
   * [ May 2023 ]( /article/2023/05/)
   * [ September 2022 ]( /article/2022/09/)

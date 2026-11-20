@@ -1,10 +1,6 @@
 ---
-title: 
-     Commentaires sur : 22e édition annuelle de la « Freedom from Poverty Foundation » Dîner de collecte de fonds
-    
-og_title: 
-     Commentaires sur : 22e édition annuelle de la « Freedom from Poverty Foundation » Dîner de collecte de fonds
-    
+title: "22e édition annuelle de la « Freedom from Poverty Foundation » Dîner de collecte de fonds - FFPF"
+og_title: "22e édition annuelle de la « Freedom from Poverty Foundation » Dîner de collecte de fonds - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

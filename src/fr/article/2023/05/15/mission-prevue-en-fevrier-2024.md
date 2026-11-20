@@ -1,10 +1,6 @@
 ---
-title: 
-     Commentaires sur : Mission prévue en février 2024
-    
-og_title: 
-     Commentaires sur : Mission prévue en février 2024
-    
+title: "Mission prévue en février 2024 - FFPF"
+og_title: "Mission prévue en février 2024 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

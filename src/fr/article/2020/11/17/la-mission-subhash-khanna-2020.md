@@ -1,10 +1,6 @@
 ---
-title: 
-     Commentaires sur : La mission Subhash Khanna dans le village de Jamkhed en 2020
-    
-og_title: 
-     Commentaires sur : La mission Subhash Khanna dans le village de Jamkhed en 2020
-    
+title: "La mission Subhash Khanna dans le village de Jamkhed en 2020 - FFPF"
+og_title: "La mission Subhash Khanna dans le village de Jamkhed en 2020 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

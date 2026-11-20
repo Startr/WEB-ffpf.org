@@ -1,10 +1,6 @@
 ---
-title: 
-     Comments on: Suyagya Vasishta Arya Mission 2023 – FFPF Mission February 2023
-    
-og_title: 
-     Comments on: Suyagya Vasishta Arya Mission 2023 – FFPF Mission February 2023
-    
+title: "Suyagya Vasishta Arya Mission 2023 – FFPF Mission February 2023 - FFPF"
+og_title: "Suyagya Vasishta Arya Mission 2023 – FFPF Mission February 2023 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

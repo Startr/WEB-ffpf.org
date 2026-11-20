@@ -1,10 +1,6 @@
 ---
-title: 
-     Commentaires sur : MISSION À VENIR DÉCEMBRE 2018
-    
-og_title: 
-     Commentaires sur : MISSION À VENIR DÉCEMBRE 2018
-    
+title: "MISSION À VENIR DÉCEMBRE 2018 - FFPF"
+og_title: "MISSION À VENIR DÉCEMBRE 2018 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

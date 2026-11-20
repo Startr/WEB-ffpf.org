@@ -1,10 +1,6 @@
 ---
-title: 
-     Comments on: Since 2009
-    
-og_title: 
-     Comments on: Since 2009
-    
+title: "Since 2009 - FFPF"
+og_title: "Since 2009 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

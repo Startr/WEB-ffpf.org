@@ -21,8 +21,7 @@ layout: layouts/base.njk
 Select Page
 
 ##  [ 24th Annual Freedom from Poverty Foundation Dinner – Saturday, November
-11, 2023 ]( /article/2023/05/15/24th-annual-freedom-from-poverty-
-foundation-dinner-saturday-november-11-2023/)
+11, 2023 ](/article/2023/05/15/24th-annual-freedom-from-poverty-foundation-dinner-saturday-november-11-2023/)
 
 29 September 2023
 

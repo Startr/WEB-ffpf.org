@@ -1,10 +1,6 @@
 ---
-title: 
-     Comments on: 24th Annual Freedom from Poverty Foundation Dinner – Saturday, November 11, 2023
-    
-og_title: 
-     Comments on: 24th Annual Freedom from Poverty Foundation Dinner – Saturday, November 11, 2023
-    
+title: "24th Annual Freedom from Poverty Foundation Dinner – Saturday, November 11, 2023 - FFPF"
+og_title: "24th Annual Freedom from Poverty Foundation Dinner – Saturday, November 11, 2023 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

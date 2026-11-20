@@ -14,7 +14,7 @@ links:
 layout: layouts/base.njk
 ---
 [ <img src='/wp-content/uploads/2018/10/logo-ffpf.webp' width='505'
-height='113' alt='FFPF' /> ](/sponsorship-tag/surgery/)
+height='113' alt='FFPF' /> ](/fr/home-fr/)
 
   * [ English ]( /article/2023/05/)
 
@@ -22,8 +22,7 @@ height='113' alt='FFPF' /> ](/sponsorship-tag/surgery/)
 
 Select Page
 
-##  [ Mission prévue en février 2024 ]( /fr/article/2023/05/15/mission-prevue-
-en-fevrier-2024/)
+##  [ Mission prévue en février 2024 ](/fr/article/2023/05/15/mission-prevue-en-fevrier-2024/)
 
 15 mai 2023
 
@@ -33,8 +32,7 @@ Jamkhed. Au cours de l’année écoulée, nous avons procédé à l’évaluati
 médicale de...
 
 ##  [ Le 24e dîner annuel souper annuel de la Fondation Freedom from Poverty
-Samedi, 11 novembre 2023 ]( /fr/article/2023/05/15/le-24e-diner-annuel-souper-
-annuel-de-la-fondation-freedom-from-poverty-samedi-11-novembre-2023/)
+Samedi, 11 novembre 2023 ](/fr/article/2023/05/15/le-24e-diner-annuel-souper-annuel-de-la-fondation-freedom-from-poverty-samedi-11-novembre-2023/)
 
 15 mai 2023
 
@@ -46,15 +44,15 @@ une charmante soirée culturelle qui...
 ####  Articles récents
 
   * [ FFPF Mission Jour 6 2024 ]( /fr/article/2024/02/09/ffpf-mission-jour-6-2024/)
-  * [ FFPF Mission Jour 5 2024 ](/fr)
+  * [ FFPF Mission Jour 5 2024 ](/fr/article/2024/02/09/ffpf-mission-jour-5-2024/)
   * [ FFPF Mission Jour 4 2024 ]( /fr/article/2024/02/08/mission-ffpf-2024-jour-4/)
-  * [ FFPF Mission Jour 3 2024 ]( /fr/article/2024/02/06/mission-ffpf-2023-jour-3/)
+  * [ FFPF Mission Jour 3 2024 ]( /fr/article/2024/02/06/mission-ffpf-2024-jour-3/)
   * [ FFPF Mission Jour 2 2024 ]( /fr/article/2024/02/05/mission-ffpf-2024-jour-2/)
 
 ####  Archives
 
   * [ février 2024 ]( /article/2024/02/)
-  * [ septembre 2023 ](/09/)
+  * [ septembre 2023 ](/fr/article/2023/09/)
   * [ juin 2023 ]( /article/2023/06/)
   * [ mai 2023 ](index.html)
   * [ septembre 2022 ]( /article/2022/09/)

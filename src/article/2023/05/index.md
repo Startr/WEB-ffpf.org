@@ -30,8 +30,7 @@ medically assessed hundreds of people, from which we have selected 150. Last
 November, we held our benefit...
 
 ##  [ 24th Annual Freedom from Poverty Foundation Dinner – Saturday, November
-11, 2023 ]( /article/2023/05/15/24th-annual-freedom-from-poverty-
-foundation-dinner-saturday-november-11-2023/)
+11, 2023 ](/article/2023/05/15/24th-annual-freedom-from-poverty-foundation-dinner-saturday-november-11-2023/)
 
 15 May 2023
 
@@ -51,7 +50,7 @@ charming, culture-filled evening that includes;...
 ####  Archives
 
   * [ February 2024 ]( /article/2024/02/)
-  * [ September 2023 ](/09/)
+  * [ September 2023 ](/article/2023/09/)
   * [ June 2023 ]( /article/2023/06/)
   * [ May 2023 ](index.html)
   * [ September 2022 ]( /article/2022/09/)

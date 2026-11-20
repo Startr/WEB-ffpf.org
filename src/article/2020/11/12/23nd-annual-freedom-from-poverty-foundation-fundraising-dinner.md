@@ -1,10 +1,6 @@
 ---
-title: 
-     Comments on: 23nd Annual Freedom from Poverty Foundation Fundraising Dinner
-    
-og_title: 
-     Comments on: 23nd Annual Freedom from Poverty Foundation Fundraising Dinner
-    
+title: "23nd Annual Freedom from Poverty Foundation Fundraising Dinner - FFPF"
+og_title: "23nd Annual Freedom from Poverty Foundation Fundraising Dinner - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

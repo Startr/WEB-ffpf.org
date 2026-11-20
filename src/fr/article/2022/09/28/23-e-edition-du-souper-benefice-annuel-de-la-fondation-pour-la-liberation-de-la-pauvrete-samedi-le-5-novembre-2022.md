@@ -1,10 +1,6 @@
 ---
-title: 
-     Commentaires sur : 23 e édition du souper bénéfice annuel de la Fondation pour la libération de la pauvreté – Samedi le 5 novembre, 2022
-    
-og_title: 
-     Commentaires sur : 23 e édition du souper bénéfice annuel de la Fondation pour la libération de la pauvreté – Samedi le 5 novembre, 2022
-    
+title: "23 e édition du souper bénéfice annuel de la Fondation pour la libération de la pauvreté – Samedi le 5 novembre, 2022 - FFPF"
+og_title: "23 e édition du souper bénéfice annuel de la Fondation pour la libération de la pauvreté – Samedi le 5 novembre, 2022 - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

@@ -30,9 +30,7 @@ Subhash Khanna Mission to the village of Jamkhed in 2020. In February, we sent
 Sixteen professionals from Montreal, Quebec, and a team from Australia
 consisted of an orthopedist and a...
 
-##  [ 23nd Annual Freedom from Poverty Foundation Fundraising Dinner ](
-/article/2022/09/28/23rd-annual-freedom-from-poverty-foundation-dinner-
-saturday-november-5-2022/)
+##  [ 23nd Annual Freedom from Poverty Foundation Fundraising Dinner ](/article/2020/11/12/23nd-annual-freedom-from-poverty-foundation-fundraising-dinner/)
 
 12 November 2020
 
@@ -41,9 +39,7 @@ defer this year’s annual fundraising dinner because of the ongoing Covid-19
 pandemic. In its place we will be holding an online fundraising campaign that
 starts this November 2020. Please...
 
-##  [ 22nd Annual Freedom from Poverty Foundation ](
-/article/2020/11/12/23nd-annual-freedom-from-poverty-foundation-
-fundraising-dinner/)
+##  [ 22nd Annual Freedom from Poverty Foundation ](/article/2020/11/09/22nd-annual-freedom-from-poverty-foundation/)
 
 9 November 2020
 

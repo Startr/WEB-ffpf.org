@@ -1,10 +1,6 @@
 ---
-title: 
-     Commentaires sur : 23e dîner annuel de collecte de fonds de la Freedom from Poverty Foundation
-    
-og_title: 
-     Commentaires sur : 23e dîner annuel de collecte de fonds de la Freedom from Poverty Foundation
-    
+title: "23e dîner annuel de collecte de fonds de la Freedom from Poverty Foundation - FFPF"
+og_title: "23e dîner annuel de collecte de fonds de la Freedom from Poverty Foundation - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

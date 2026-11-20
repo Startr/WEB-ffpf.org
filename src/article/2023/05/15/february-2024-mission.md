@@ -1,10 +1,6 @@
 ---
-title: 
-     Comments on: February 2024 Mission
-    
-og_title: 
-     Comments on: February 2024 Mission
-    
+title: "February 2024 Mission - FFPF"
+og_title: "February 2024 Mission - FFPF"
 og_description: No Description
 og_image: No Image
 og_image_width: Unknown Width

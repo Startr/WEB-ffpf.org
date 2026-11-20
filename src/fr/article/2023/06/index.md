@@ -14,7 +14,7 @@ links:
 layout: layouts/base.njk
 ---
 [ <img src='/wp-content/uploads/2018/10/logo-ffpf.webp' width='505'
-height='113' alt='FFPF' /> ](/sponsorship-tag/surgery/)
+height='113' alt='FFPF' /> ](/fr/home-fr/)
 
   * [ English ]( /article/2023/06/)
 
@@ -27,20 +27,19 @@ Select Page
 
 23 juin 2023
 
-An english message will follow.
 
 ####  Articles récents
 
   * [ FFPF Mission Jour 6 2024 ]( /fr/article/2024/02/09/ffpf-mission-jour-6-2024/)
-  * [ FFPF Mission Jour 5 2024 ](/fr)
+  * [ FFPF Mission Jour 5 2024 ](/fr/article/2024/02/09/ffpf-mission-jour-5-2024/)
   * [ FFPF Mission Jour 4 2024 ]( /fr/article/2024/02/08/mission-ffpf-2024-jour-4/)
-  * [ FFPF Mission Jour 3 2024 ]( /fr/article/2024/02/06/mission-ffpf-2023-jour-3/)
+  * [ FFPF Mission Jour 3 2024 ]( /fr/article/2024/02/06/mission-ffpf-2024-jour-3/)
   * [ FFPF Mission Jour 2 2024 ]( /fr/article/2024/02/05/mission-ffpf-2024-jour-2/)
 
 ####  Archives
 
   * [ février 2024 ]( /article/2024/02/)
-  * [ septembre 2023 ](/09/)
+  * [ septembre 2023 ](/fr/article/2023/09/)
   * [ juin 2023 ](index.html)
   * [ mai 2023 ]( /article/2023/05/)
   * [ septembre 2022 ]( /article/2022/09/)

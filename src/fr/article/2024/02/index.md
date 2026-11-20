@@ -14,7 +14,7 @@ links:
 layout: layouts/base.njk
 ---
 [ <img src='/wp-content/uploads/2018/10/logo-ffpf.webp' width='505'
-height='113' alt='FFPF' /> ](/sponsorship-tag/surgery/)
+height='113' alt='FFPF' /> ](/fr/home-fr/)
 
   * [ English ]( /article/2024/02/)
 
@@ -22,8 +22,7 @@ height='113' alt='FFPF' /> ](/sponsorship-tag/surgery/)
 
 Select Page
 
-##  [ FFPF Mission Jour 6 2024 ]( /fr/article/2024/02/09/ffpf-mission-
-jour-6-2024/)
+##  [ FFPF Mission Jour 6 2024 ](/fr/article/2024/02/09/ffpf-mission-jour-6-2024/)
 
 9 février 2024
 
@@ -32,7 +31,7 @@ bienveillance, d’amour et d’espoir. Tous les patients ayant reçu des soins
 chirurgicaux ont été vus en matinée par l’équipe médicale pour assurer un
 post-opération et une récupération sans...
 
-##  [ FFPF Mission Jour 5 2024 ](/fr)
+##  [ FFPF Mission Jour 5 2024 ](/fr/article/2024/02/09/ffpf-mission-jour-5-2024/)
 
 9 février 2024
 
@@ -41,8 +40,7 @@ lieux permet d’être proactive dès leur entrée à l’hôpital Julia. L’ef
 de l’équipe médicale canadienne a permis de réduire la liste de patients en
 attente d’une chirurgie....
 
-##  [ FFPF Mission Jour 4 2024 ]( /fr/article/2024/02/08/mission-
-ffpf-2024-jour-4/)
+##  [ FFPF Mission Jour 4 2024 ](/fr/article/2024/02/08/mission-ffpf-2024-jour-4/)
 
 8 février 2024
 
@@ -51,8 +49,7 @@ déjà à la mi-camp et de nombreux patients ont reçu les soins requis pour une
 meilleure qualité de vie. L’équipe canadienne de professionnels de la santé
 s’adapte continuellement à...
 
-##  [ FFPF Mission Jour 3 2024 ]( /fr/article/2024/02/06/mission-
-ffpf-2023-jour-3/)
+##  [ FFPF Mission Jour 3 2024 ](/fr/article/2024/02/06/mission-ffpf-2024-jour-3/)
 
 6 février 2024
 
@@ -61,8 +58,7 @@ journée est le même que celui qui l’a précédé et la marche matinale perme
 commencer la journée sur le bon pied. l’équipe canadienne de professionnels de
 la santé s’est regroupée...
 
-##  [ FFPF Mission Jour 2 2024 ]( /fr/article/2024/02/05/mission-
-ffpf-2024-jour-2/)
+##  [ FFPF Mission Jour 2 2024 ](/fr/article/2024/02/05/mission-ffpf-2024-jour-2/)
 
 5 février 2024
 
@@ -76,9 +72,9 @@ Jamkhed. Ils se sont dégourdis et ont pu...
 ####  Articles récents
 
   * [ FFPF Mission Jour 6 2024 ]( /fr/article/2024/02/09/ffpf-mission-jour-6-2024/)
-  * [ FFPF Mission Jour 5 2024 ](/fr)
+  * [ FFPF Mission Jour 5 2024 ](/fr/article/2024/02/09/ffpf-mission-jour-5-2024/)
   * [ FFPF Mission Jour 4 2024 ]( /fr/article/2024/02/08/mission-ffpf-2024-jour-4/)
-  * [ FFPF Mission Jour 3 2024 ]( /fr/article/2024/02/06/mission-ffpf-2023-jour-3/)
+  * [ FFPF Mission Jour 3 2024 ]( /fr/article/2024/02/06/mission-ffpf-2024-jour-3/)
   * [ FFPF Mission Jour 2 2024 ]( /fr/article/2024/02/05/mission-ffpf-2024-jour-2/)
 
 ####  Archives
